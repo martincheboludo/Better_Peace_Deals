@@ -1,0 +1,13 @@
+spriteTypes = {
+	#Event Pictures
+	spriteType = {
+        name = "GFX_report_event_Peace_Country"
+        texturefile = "gfx/event_pictures/BPD/Peace_Country.dds"
+    }
+	#Decisions
+	spriteType = {
+		name = "GFX_decision_cat_BPD_Peace_Deal_Manager"
+		texturefile = "gfx/interface/decisions/BPD/BPD_Peace_Deal_Manager.dds"
+	}
+	
+}

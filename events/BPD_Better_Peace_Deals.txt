@@ -1,0 +1,35 @@
+add_namespace = BPD_Better_Peace_Deals_Country
+add_namespace = BPD_Better_Peace_Deals_News
+
+#Propose Peace Deal To Western Allies
+country_event = {
+	id = BPD_Better_Peace_Deals_Country.1
+	title = BPD_Better_Peace_Deals_Country.1.t
+	desc = BPD_Better_Peace_Deals_Country.1.d
+	picture = GFX_report_event_Peace_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Open Settings
+		name = BPD_Better_Peace_Deals_Country.1.a
+
+		ai_chance = {
+			factor = 1000
+		}
+		
+		
+	}
+	
+	option = {
+		#Close Negotiations
+		name = BPD_Better_Peace_Deals_Country.1.b
+
+		ai_chance = {
+			factor = 0
+		}
+		
+	}
+
+}
+

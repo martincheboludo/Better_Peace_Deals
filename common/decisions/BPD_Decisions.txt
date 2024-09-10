@@ -1,0 +1,22 @@
+BPD_Peace_Deal_Manager = {
+
+	show_hide_peace_decisions = {
+        priority = 100
+        visible = { always = yes }
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+        complete_effect = { 
+            if = {
+                limit = { has_country_flag = show_peace_decisions }
+                clr_country_flag = show_peace_decisions
+            }
+            else = {
+                set_country_flag = show_peace_decisions
+            }
+        }
+    }
+	
+}
