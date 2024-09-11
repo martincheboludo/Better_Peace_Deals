@@ -405,18 +405,18 @@ country_event = {
 			every_state = {
 				limit = { 
 					NOT = {
-						is_owned_by = PREV
+						is_owned_by = PREV.PREV
 					} 
-					is_controlled_by = PREV
+					is_controlled_by = PREV.PREV
 					owner = {
-						has_war_with = PREV
+						has_war_with = PREV.PREV
 						OR = {
 							is_in_faction_with = FROM
 							tag = FROM
 						}
 					}
 				} 
-				PREV = { 
+				PREV.PREV = { 
 					transfer_state = PREV 
 				} 
 			}
