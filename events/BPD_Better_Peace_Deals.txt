@@ -781,7 +781,7 @@ country_event = {
 
 #Restore the Status Stalemate/Slightly Losing
 country_event = {
-	id = BPD_Better_Peace_Deals_Country.1
+	id = BPD_Better_Peace_Deals_Country.1000
 	title = "AI Acceptance to Peace Deals"
 	desc = "AI Acceptance to Peace Deals"
 	picture = GFX_report_event_Peace_Country
