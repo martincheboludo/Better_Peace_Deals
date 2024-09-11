@@ -1,6 +1,8 @@
 version="1.0"
 tags={
 	"Balance"
+	"Gameplay"
+	"Utilities"
 }
 name="Better Peace Deals"
 picture="thumbnail.png"

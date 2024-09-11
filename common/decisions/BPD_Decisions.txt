@@ -18,5 +18,185 @@ BPD_Peace_Deal_Manager = {
             }
         }
     }
+
+	BPD_restore_status_quo_td_attacker = {
+	
+		icon = SWI_swiss_democratic_tradition_campaign
+		
+		allowed = {
+		}
+	
+        visible = {
+			NOT = { has_country_flag = show_peace_decisions }
+        }
+        target_trigger = {
+            FROM = {
+                has_war_with = ROOT
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+            }
+        }
+        cost = 25
+		modifier = { }
+		days_re_enable = 180
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+        available = {
+		
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
+		
+			war_length_with = {
+				tag = FROM
+				months > 5
+			}
+
+        }
+		complete_effect = {
+			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.1 hours = 6 } }
+		}
+    }
+	
+	BPD_secure_our_claims_td_attacker = {
+	
+		icon = SWI_swiss_democratic_tradition_campaign
+		
+		allowed = {
+		}
+	
+        visible = {
+			NOT = { has_country_flag = show_peace_decisions }
+        }
+        target_trigger = {
+            FROM = {
+                has_war_with = ROOT
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+            }
+        }
+        cost = 25
+		modifier = { }
+		days_re_enable = 180
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+        available = {
+		
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
+		
+			war_length_with = {
+				tag = FROM
+				months > 5
+			}
+
+        }
+		complete_effect = {
+			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.2 hours = 6 } }
+		}
+    }
+	
+	BPD_peace_current_borders_td_attacker = {
+	
+		icon = SWI_swiss_democratic_tradition_campaign
+		
+		allowed = {
+		}
+	
+        visible = {
+			NOT = { has_country_flag = show_peace_decisions }
+        }
+        target_trigger = {
+            FROM = {
+                has_war_with = ROOT
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+            }
+        }
+        cost = 25
+		modifier = { }
+		days_re_enable = 180
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+        available = {
+		
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
+		
+			war_length_with = {
+				tag = FROM
+				months > 5
+			}
+
+        }
+		complete_effect = {
+			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.3 hours = 6 } }
+		}
+    }
+	
+	BPD_secure_our_claims_td_loser = {
+	
+		icon = SWI_swiss_democratic_tradition_campaign
+		
+		allowed = {
+		}
+	
+        visible = {
+			NOT = { has_country_flag = show_peace_decisions }
+        }
+        target_trigger = {
+            FROM = {
+                has_war_with = ROOT
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+            }
+        }
+        cost = 25
+		modifier = { }
+		days_re_enable = 180
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+        available = {
+		
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
+		
+			war_length_with = {
+				tag = FROM
+				months > 5
+			}
+
+        }
+		complete_effect = {
+			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.5 hours = 6 } }
+		}
+    }
 	
 }

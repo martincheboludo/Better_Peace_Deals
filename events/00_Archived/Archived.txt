@@ -1,0 +1,221 @@
+#Restore the Status Quo Defender
+country_event = {
+	id = BPD_Better_Peace_Deals_Country.4
+	title = BPD_Better_Peace_Deals_Country.4.t
+	desc = BPD_Better_Peace_Deals_Country.4.d
+	picture = GFX_report_event_Peace_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Accept
+		name = BPD_Better_Peace_Deals_Country.4.a
+
+		ai_chance = {
+			factor = 500
+		}
+		
+		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.13 hours = 6 } }
+		
+		
+	}
+	
+	option = {
+		#Decline
+		name = BPD_Better_Peace_Deals_Country.4.b
+
+		ai_chance = {
+			factor = 500
+		}
+		
+		add_war_support = 0.05
+		add_stability = -0.05
+		
+		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.14 hours = 6 } }
+		
+	}
+
+}
+
+
+#Peace At Current Frontiers Defender
+country_event = {
+	id = BPD_Better_Peace_Deals_Country.6
+	title = BPD_Better_Peace_Deals_Country.6.t
+	desc = BPD_Better_Peace_Deals_Country.6.d
+	picture = GFX_report_event_Peace_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Accept
+		name = BPD_Better_Peace_Deals_Country.6.a
+
+		ai_chance = {
+			factor = 500
+		}
+		
+		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.17 hours = 6 } }
+		
+		
+	}
+	
+	option = {
+		#Decline
+		name = BPD_Better_Peace_Deals_Country.6.b
+
+		ai_chance = {
+			factor = 500
+		}
+		
+		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.18 hours = 6 } }
+		
+	}
+
+}
+
+#Accepts
+country_event = {
+	id = BPD_Better_Peace_Deals_Country.13
+	title = BPD_Better_Peace_Deals_Country.13.t
+	desc = BPD_Better_Peace_Deals_Country.13.d
+	picture = GFX_report_event_Peace_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Excellent
+		name = BPD_Better_Peace_Deals_Country.13.a
+
+		ai_chance = {
+			factor = 500
+		}
+		
+		every_country = {
+			limit = { is_in_faction_with = FROM }
+			white_peace = ROOT
+		}
+		
+		every_country = {
+			limit = { is_in_faction_with = ROOT }
+			white_peace = FROM
+		}
+		
+		
+	}
+
+}
+
+#Declines
+country_event = {
+	id = BPD_Better_Peace_Deals_Country.14
+	title = BPD_Better_Peace_Deals_Country.14.t
+	desc = BPD_Better_Peace_Deals_Country.14.d
+	picture = GFX_report_event_Peace_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Excellent
+		name = BPD_Better_Peace_Deals_Country.14.a
+
+		ai_chance = {
+			factor = 500
+		}
+		
+		add_war_support = -0.05
+		
+		
+	}
+
+}
+
+
+#Accepts
+country_event = {
+	id = BPD_Better_Peace_Deals_Country.17
+	title = BPD_Better_Peace_Deals_Country.17.t
+	desc = BPD_Better_Peace_Deals_Country.17.d
+	picture = GFX_report_event_Peace_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Excellent
+		name = BPD_Better_Peace_Deals_Country.17.a
+
+		ai_chance = {
+			factor = 500
+		}
+		
+		every_country = {
+			limit = { is_in_faction_with = FROM }
+			white_peace = ROOT
+		}
+		
+		every_country = {
+			limit = { is_in_faction_with = ROOT }
+			white_peace = FROM
+		}
+		
+		
+	}
+
+}
+
+#Declines
+country_event = {
+	id = BPD_Better_Peace_Deals_Country.18
+	title = BPD_Better_Peace_Deals_Country.18.t
+	desc = BPD_Better_Peace_Deals_Country.18.d
+	picture = GFX_report_event_Peace_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Excellent
+		name = BPD_Better_Peace_Deals_Country.18.a
+
+		ai_chance = {
+			factor = 500
+		}
+		
+		add_war_support = -0.05
+		
+		
+	}
+
+}
+
+ BPD_Better_Peace_Deals_Country.4.t:0 "[FROM.GetName] Proposes Status Quo Ante Bellum"
+ BPD_Better_Peace_Deals_Country.4.d:0 ""We have received a proposal from [FROM.GetAdjective] leadership suggesting a return to the status quo ante bellum. [FROM.GetLeader] is offering to revert all territorial changes made during the conflict and restore the pre-war borders. This proposal reflects a desire to end hostilities and return to the state of affairs before the war began. The [FROM.GetName] government believes that neither side has gained a decisive advantage and that further fighting will only lead to more suffering. The decision is now in your hands; do we accept this offer to restore the previous status, or continue the conflict?""
+ BPD_Better_Peace_Deals_Country.4.a:1 "Accept the proposal and restore the status quo."
+ BPD_Better_Peace_Deals_Country.4.b:1 "Reject the proposal and continue the war."
+ 
+ BPD_Better_Peace_Deals_Country.5.t:0 "[FROM.GetName] Proposes Territorial Concessions"
+ BPD_Better_Peace_Deals_Country.5.d:0 "We have received a proposal from the [FROM.GetAdjective] government offering territorial concessions to [ROOT.GetName]. [FROM.GetLeader] is willing to cede the land that [ROOT.GetName] claims as its rightful cores in order to bring an end to the conflict. This offer indicates that [FROM.GetName] is prepared to make significant sacrifices to avoid further destruction and bloodshed. Accepting this proposal would grant [ROOT.GetName] the territories it seeks but would end the war with a clear gain for your nation. The decision is now yours: do you accept these concessions, or continue the fight for further gains?"
+ BPD_Better_Peace_Deals_Country.5.a:1 "Accept the proposal and receive the territorial concessions."
+ BPD_Better_Peace_Deals_Country.5.b:1 "Reject the proposal and continue the war."
+ 
+ BPD_Better_Peace_Deals_Country.6.t:0 "[FROM.GetName] Proposes Peace At Current Frontiers"
+ BPD_Better_Peace_Deals_Country.6.d:0 ""We have received a proposal from the [FROM.GetAdjective] government suggesting peace based on the current frontlines. [FROM.GetLeader] is offering to end the war with the existing territorial situation as the new borders. This proposal reflects a pragmatic approach to ending the conflict, acknowledging that the frontlines have stabilized and that continuing the fight would only lead to further destruction. Accepting this offer would mean formalizing the current territorial gains and losses. The decision now lies with you; do you accept peace at the current frontiers, or reject the proposal and continue the conflict?""
+ BPD_Better_Peace_Deals_Country.6.a:1 "Accept the proposal and cement the current frontiers."
+ BPD_Better_Peace_Deals_Country.6.b:1 "Reject the proposal and continue the war."
+
+ BPD_Better_Peace_Deals_Country.13.t:0 "[FROM.GetName] Accepts Peace Offer"
+ BPD_Better_Peace_Deals_Country.13.d:0 "[FROM.GetName] has agreed to [ROOT.GetName]'s proposal to restore the status quo ante bellum. Both sides will return to their pre-war borders and conditions, ending the conflict. This decision brings an end to hostilities and restores peace between our nations."
+ BPD_Better_Peace_Deals_Country.13.a:1 "Excellent"
+ 
+ BPD_Better_Peace_Deals_Country.14.t:0 "[FROM.GetName] Declines Peace Offer"
+ BPD_Better_Peace_Deals_Country.14.d:0 "[FROM.GetName] has rejected [ROOT.GetName]'s proposal to restore the status quo ante bellum. The conflict will continue as both sides remain unwilling to revert to the pre-war borders. [FROM.GetLeader] may see this as an opportunity to press further, while [ROOT.GetLeader] must prepare for continued hostilities."
+ BPD_Better_Peace_Deals_Country.14.a:1 "The War Continues..."
+ 
+
+ 
+ BPD_Better_Peace_Deals_Country.17.t:0 "[FROM.GetName] Accepts Peace Offer"
+ BPD_Better_Peace_Deals_Country.17.d:0 "[FROM.GetName] has agreed to [ROOT.GetName]'s proposal for peace based on the current frontlines. The current territorial lines will be formalized, ending the conflict and establishing new borders. This decision concludes the hostilities and solidifies the existing situation."
+ BPD_Better_Peace_Deals_Country.17.a:1 "Excellent"
+ 
+ BPD_Better_Peace_Deals_Country.18.t:0 "[FROM.GetName] Declines Peace Offer"
+ BPD_Better_Peace_Deals_Country.18.d:0 "[FROM.GetName] has rejected [ROOT.GetName]'s offer of peace at the current frontiers. The conflict will continue as both sides refuse to formalize the existing borders. [FROM.GetLeader] remains determined to achieve a better outcome, while [ROOT.GetLeader] prepares for further engagements."
+ BPD_Better_Peace_Deals_Country.18.a:1 "The War Continues..."

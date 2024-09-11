@@ -1,7 +1,7 @@
 add_namespace = BPD_Better_Peace_Deals_Country
 add_namespace = BPD_Better_Peace_Deals_News
 
-#Restore the Status Quo Attacker
+#Restore the Status Stalemate/Slightly Losing
 country_event = {
 	id = BPD_Better_Peace_Deals_Country.1
 	title = BPD_Better_Peace_Deals_Country.1.t
@@ -39,7 +39,7 @@ country_event = {
 	}
 
 }
-#Territorial Concessions Attacker
+#Territorial Concessions Slightly Winning
 country_event = {
 	id = BPD_Better_Peace_Deals_Country.2
 	title = BPD_Better_Peace_Deals_Country.2.t
@@ -54,6 +54,15 @@ country_event = {
 
 		ai_chance = {
 			factor = 500
+		}
+		
+		every_country = {
+			limit = {
+				is_in_faction_with = FROM
+				has_war_with = ROOT
+				NOT = { tag = FROM }
+			}
+			country_event = { id = BPD_Better_Peace_Deals_Country.90 hours = 5 }
 		}
 		
 		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.9 hours = 6 } }
@@ -77,7 +86,7 @@ country_event = {
 	}
 
 }
-#Peace At Current Frontiers Attacker
+#Peace At Current Frontiers Stalemate
 country_event = {
 	id = BPD_Better_Peace_Deals_Country.3
 	title = BPD_Better_Peace_Deals_Country.3.t
@@ -93,10 +102,44 @@ country_event = {
 		ai_chance = {
 			factor = 500
 		}
+		#Curent Country Gets The States They Control
+		every_state = {
+			limit = { 
+				NOT = {
+					is_owned_by = ROOT 
+				} 
+				is_controlled_by = ROOT
+				owner = {
+					has_war_with = ROOT
+					OR = {
+						is_in_faction_with = FROM
+						tag = FROM
+					}
+				}
+			} 
+			ROOT = { 
+				transfer_state = PREV 
+			} 
+		}
 		
+		#Enemy Faction Leader Gets Event to give Allied Faction Members The States They Control
+		hidden_effect = {
+			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.100 } }
+		}
+		
+		#Enemy Faction Members Get The Territories They Control
+		every_country = {
+			limit = {
+				is_in_faction_with = FROM
+				has_war_with = ROOT
+				NOT = { tag = FROM }
+			}
+			country_event = { id = BPD_Better_Peace_Deals_Country.110 hours = 5 }
+		}
+		
+		#Enemy Faction Leader Gets Final Peace Event
 		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.11 hours = 6 } }
-		
-		
+
 	}
 	
 	option = {
@@ -115,45 +158,8 @@ country_event = {
 	}
 
 }
-#Restore the Status Quo Defender
-country_event = {
-	id = BPD_Better_Peace_Deals_Country.4
-	title = BPD_Better_Peace_Deals_Country.4.t
-	desc = BPD_Better_Peace_Deals_Country.4.d
-	picture = GFX_report_event_Peace_Country
 
-	is_triggered_only = yes
-
-	option = {
-		#Accept
-		name = BPD_Better_Peace_Deals_Country.4.a
-
-		ai_chance = {
-			factor = 500
-		}
-		
-		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.13 hours = 6 } }
-		
-		
-	}
-	
-	option = {
-		#Decline
-		name = BPD_Better_Peace_Deals_Country.4.b
-
-		ai_chance = {
-			factor = 500
-		}
-		
-		add_war_support = 0.05
-		add_stability = -0.05
-		
-		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.14 hours = 6 } }
-		
-	}
-
-}
-#Territorial Concessions Defender
+#Territorial Concessions Losing
 country_event = {
 	id = BPD_Better_Peace_Deals_Country.5
 	title = BPD_Better_Peace_Deals_Country.5.t
@@ -168,6 +174,33 @@ country_event = {
 
 		ai_chance = {
 			factor = 500
+		}
+		
+		every_state = { 
+			limit = { 
+				NOT = {
+					is_owned_by = FROM 
+				} 
+				OR = { 
+					is_core_of = FROM
+					is_claimed_by = FROM
+				}
+				owner = {
+					has_war_with = ROOT
+					OR = {
+						is_in_faction_with = FROM
+						tag = FROM
+					}
+				}
+			} 
+			FROM = { 
+				transfer_state = PREV 
+			} 
+		}
+		
+		#Enemy Faction Leader Gets Event to give My Allies Their Claims
+		hidden_effect = {
+			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.150 } }
 		}
 		
 		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.15 hours = 6 } }
@@ -192,41 +225,6 @@ country_event = {
 
 }
 
-#Peace At Current Frontiers Defender
-country_event = {
-	id = BPD_Better_Peace_Deals_Country.6
-	title = BPD_Better_Peace_Deals_Country.6.t
-	desc = BPD_Better_Peace_Deals_Country.6.d
-	picture = GFX_report_event_Peace_Country
-
-	is_triggered_only = yes
-
-	option = {
-		#Accept
-		name = BPD_Better_Peace_Deals_Country.6.a
-
-		ai_chance = {
-			factor = 500
-		}
-		
-		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.17 hours = 6 } }
-		
-		
-	}
-	
-	option = {
-		#Decline
-		name = BPD_Better_Peace_Deals_Country.6.b
-
-		ai_chance = {
-			factor = 500
-		}
-		
-		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.18 hours = 6 } }
-		
-	}
-
-}
 
 #Accepts White Peace
 country_event = {
@@ -397,30 +395,6 @@ country_event = {
 				transfer_state = PREV 
 			} 
 		}
-
-		every_country = {
-			limit = { 
-				is_in_faction_with = ROOT
-			}
-			every_state = {
-				limit = { 
-					NOT = {
-						is_owned_by = PREV.PREV
-					} 
-					is_controlled_by = PREV.PREV
-					owner = {
-						has_war_with = PREV.PREV
-						OR = {
-							is_in_faction_with = FROM
-							tag = FROM
-						}
-					}
-				} 
-				PREV.PREV = { 
-					transfer_state = PREV 
-				} 
-			}
-		}
 		
 		every_country = {
 			limit = { is_in_faction_with = FROM }
@@ -461,63 +435,8 @@ country_event = {
 
 }
 
-#Accepts
-country_event = {
-	id = BPD_Better_Peace_Deals_Country.13
-	title = BPD_Better_Peace_Deals_Country.13.t
-	desc = BPD_Better_Peace_Deals_Country.13.d
-	picture = GFX_report_event_Peace_Country
 
-	is_triggered_only = yes
-
-	option = {
-		#Excellent
-		name = BPD_Better_Peace_Deals_Country.13.a
-
-		ai_chance = {
-			factor = 500
-		}
-		
-		every_country = {
-			limit = { is_in_faction_with = FROM }
-			white_peace = ROOT
-		}
-		
-		every_country = {
-			limit = { is_in_faction_with = ROOT }
-			white_peace = FROM
-		}
-		
-		
-	}
-
-}
-
-#Declines
-country_event = {
-	id = BPD_Better_Peace_Deals_Country.14
-	title = BPD_Better_Peace_Deals_Country.14.t
-	desc = BPD_Better_Peace_Deals_Country.14.d
-	picture = GFX_report_event_Peace_Country
-
-	is_triggered_only = yes
-
-	option = {
-		#Excellent
-		name = BPD_Better_Peace_Deals_Country.14.a
-
-		ai_chance = {
-			factor = 500
-		}
-		
-		add_war_support = -0.05
-		
-		
-	}
-
-}
-
-#Territorial Concessions Defender Accepts
+#Territorial Concessions Winner Accepts
 country_event = {
 	id = BPD_Better_Peace_Deals_Country.15
 	title = BPD_Better_Peace_Deals_Country.15.t
@@ -534,28 +453,6 @@ country_event = {
 			factor = 500
 		}
 		
-		every_state = { 
-			limit = { 
-				NOT = {
-					is_owned_by = FROM 
-				} 
-				OR = { 
-					is_core_of = FROM
-					is_claimed_by = FROM
-				}
-				owner = {
-					has_war_with = ROOT
-					OR = {
-						is_in_faction_with = FROM
-						tag = FROM
-					}
-				}
-			} 
-			FROM = { 
-				transfer_state = PREV 
-			} 
-		}
-		
 		every_country = {
 			limit = { is_in_faction_with = FROM }
 			white_peace = ROOT
@@ -571,7 +468,7 @@ country_event = {
 
 }
 
-#Declines
+#Territorial Concessions Winner Declines
 country_event = {
 	id = BPD_Better_Peace_Deals_Country.16
 	title = BPD_Better_Peace_Deals_Country.16.t
@@ -596,57 +493,255 @@ country_event = {
 }
 
 
-#Accepts
+#Accept Territorial Claims For Allies
 country_event = {
-	id = BPD_Better_Peace_Deals_Country.17
-	title = BPD_Better_Peace_Deals_Country.17.t
-	desc = BPD_Better_Peace_Deals_Country.17.d
+	id = BPD_Better_Peace_Deals_Country.90
+	title = BPD_Better_Peace_Deals_Country.90.t
+	desc = BPD_Better_Peace_Deals_Country.90.d
 	picture = GFX_report_event_Peace_Country
 
 	is_triggered_only = yes
+	
+	immediate = {
+			hidden_effect = {
+				every_state = { 
+					limit = { 
+						NOT = {
+							is_owned_by = ROOT 
+						} 
+						OR = { 
+							is_core_of = ROOT 
+							is_claimed_by = ROOT 
+						}
+						owner = {
+							has_war_with = ROOT
+							OR = {
+								is_in_faction_with = FROM
+								tag = FROM
+							}
+						}
+					} 
+					ROOT = { 
+						transfer_state = PREV 
+					} 
+				}
+			}
+	}
 
 	option = {
 		#Excellent
-		name = BPD_Better_Peace_Deals_Country.17.a
+		name = BPD_Better_Peace_Deals_Country.90.a
 
 		ai_chance = {
 			factor = 500
 		}
-		
-		every_country = {
-			limit = { is_in_faction_with = FROM }
-			white_peace = ROOT
-		}
-		
-		every_country = {
-			limit = { is_in_faction_with = ROOT }
-			white_peace = FROM
-		}
-		
 		
 	}
 
 }
 
-#Declines
+#Accept Territorial Claims For Allies
 country_event = {
-	id = BPD_Better_Peace_Deals_Country.18
-	title = BPD_Better_Peace_Deals_Country.18.t
-	desc = BPD_Better_Peace_Deals_Country.18.d
+	id = BPD_Better_Peace_Deals_Country.100
+	title = BPD_Better_Peace_Deals_Country.100.t
+	desc = BPD_Better_Peace_Deals_Country.100.d
 	picture = GFX_report_event_Peace_Country
+	hidden = yes
 
 	is_triggered_only = yes
+	
+	immediate = {
+			hidden_effect = {
+				#Enemy Faction Members Get The Territories They Control
+				every_country = {
+					limit = {
+						is_in_faction_with = FROM
+						has_war_with = ROOT
+						NOT = { tag = FROM }
+					}
+					country_event = { id = BPD_Better_Peace_Deals_Country.101 hours = 5 }
+				}
+			}
+	}
 
 	option = {
 		#Excellent
-		name = BPD_Better_Peace_Deals_Country.18.a
+		name = BPD_Better_Peace_Deals_Country.100.a
 
 		ai_chance = {
 			factor = 500
 		}
 		
-		add_war_support = -0.05
+	}
+
+}
+
+#Accept Current Frontiers For Allies
+country_event = {
+	id = BPD_Better_Peace_Deals_Country.101
+	title = BPD_Better_Peace_Deals_Country.101.t
+	desc = BPD_Better_Peace_Deals_Country.101.d
+	picture = GFX_report_event_Peace_Country
+
+	is_triggered_only = yes
+	
+	immediate = {
+			hidden_effect = {
+				every_state = {
+					limit = { 
+						NOT = {
+							is_owned_by = ROOT 
+						} 
+						is_controlled_by = ROOT
+						owner = {
+							has_war_with = ROOT
+							OR = {
+								is_in_faction_with = FROM
+								tag = FROM
+							}
+						}
+					} 
+					ROOT = { 
+						transfer_state = PREV 
+					} 
+				}
+			}
+	}
+
+	option = {
+		#Excellent
+		name = BPD_Better_Peace_Deals_Country.101.a
+
+		ai_chance = {
+			factor = 500
+		}
 		
+	}
+
+}
+
+##Accept Peace At Current Frontiers For Allies
+country_event = {
+	id = BPD_Better_Peace_Deals_Country.110
+	title = BPD_Better_Peace_Deals_Country.110.t
+	desc = BPD_Better_Peace_Deals_Country.110.d
+	picture = GFX_report_event_Peace_Country
+	#hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			every_state = {
+				limit = { 
+					NOT = {
+						is_owned_by = ROOT 
+					} 
+					is_controlled_by = ROOT
+					owner = {
+						has_war_with = ROOT
+						OR = {
+							is_in_faction_with = FROM
+							tag = FROM
+						}
+					}
+				} 
+				ROOT = { 
+					transfer_state = PREV 
+				} 
+			}
+		}
+	}
+
+	option = {
+		#Excellent
+		name = BPD_Better_Peace_Deals_Country.110.a
+
+		ai_chance = {
+			factor = 500
+		}
+
+	}
+
+}
+
+#Accept Territorial Claims For Allies
+country_event = {
+	id = BPD_Better_Peace_Deals_Country.150
+	title = BPD_Better_Peace_Deals_Country.150.t
+	desc = BPD_Better_Peace_Deals_Country.150.d
+	picture = GFX_report_event_Peace_Country
+	hidden = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+			hidden_effect = {
+				#Enemy Faction Members Get The Territories They Control
+				every_country = {
+					limit = {
+						is_in_faction_with = FROM
+						has_war_with = ROOT
+						NOT = { tag = FROM }
+					}
+					country_event = { id = BPD_Better_Peace_Deals_Country.151 hours = 5 }
+				}
+			}
+	}
+
+	option = {
+		#Excellent
+		name = BPD_Better_Peace_Deals_Country.150.a
+
+		ai_chance = {
+			factor = 500
+		}
+		
+	}
+
+}
+
+#Accept Territorial Claims For Allies
+country_event = {
+	id = BPD_Better_Peace_Deals_Country.151
+	title = BPD_Better_Peace_Deals_Country.151.t
+	desc = BPD_Better_Peace_Deals_Country.151.d
+	picture = GFX_report_event_Peace_Country
+
+	is_triggered_only = yes
+	
+	immediate = {
+			hidden_effect = {
+				every_state = { 
+					limit = { 
+						NOT = {
+							is_owned_by = FROM 
+						} 
+						OR = { 
+							is_core_of = FROM
+							is_claimed_by = FROM
+						}
+						owner = {
+							has_war_with = ROOT
+							OR = {
+								is_in_faction_with = FROM
+								tag = FROM
+							}
+						}
+					} 
+					FROM = { 
+						transfer_state = PREV 
+					} 
+				}
+			}
+	}
+
+	option = {
+		#Excellent
+		name = BPD_Better_Peace_Deals_Country.151.a
+
+		ai_chance = {
+			factor = 500
+		}
 		
 	}
 
