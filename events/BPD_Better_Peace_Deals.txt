@@ -29,6 +29,10 @@ country_event = {
 
 		ai_chance = {
 			factor = 500
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Always_Accept
+			}
 		}
 		
 		add_war_support = 0.05
@@ -75,7 +79,11 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.2.b
 
 		ai_chance = {
-			factor = 0
+			factor = 500
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Always_Accept
+			}
 		}
 		
 		add_war_support = 0.05
@@ -148,6 +156,10 @@ country_event = {
 
 		ai_chance = {
 			factor = 500
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Always_Accept
+			}
 		}
 		
 		add_war_support = 0.05
@@ -218,6 +230,10 @@ country_event = {
 
 		ai_chance = {
 			factor = 500
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Always_Accept
+			}
 		}
 		
 		add_war_support = 0.05
@@ -758,6 +774,42 @@ country_event = {
 		ai_chance = {
 			factor = 500
 		}
+		
+	}
+
+}
+
+#Restore the Status Stalemate/Slightly Losing
+country_event = {
+	id = BPD_Better_Peace_Deals_Country.1
+	title = "AI Acceptance to Peace Deals"
+	desc = "AI Acceptance to Peace Deals"
+	picture = GFX_report_event_Peace_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Accept
+		name = "AI Always Accepts"
+
+		ai_chance = {
+			factor = 500
+		}
+		
+		set_global_flag = BPD_Always_Accept
+		
+		
+	}
+	
+	option = {
+		#Decline
+		name = "50-50 Chance"
+
+		ai_chance = {
+			factor = 500
+		}
+		
+		clr_global_flag = BPD_Always_Accept
 		
 	}
 
