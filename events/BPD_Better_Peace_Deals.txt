@@ -75,7 +75,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.2.b
 
 		ai_chance = {
-			factor = 500
+			factor = 0
 		}
 		
 		add_war_support = 0.05
@@ -176,14 +176,18 @@ country_event = {
 			factor = 500
 		}
 		
+		hidden_effect = {
+			BPD_Handle_Vichy_France_Lost = yes
+		}
+		
 		every_state = { 
 			limit = { 
 				NOT = {
-					is_owned_by = FROM 
+					is_owned_by = ROOT
 				} 
 				OR = { 
-					is_core_of = FROM
-					is_claimed_by = FROM
+					is_core_of = ROOT
+					is_claimed_by = ROOT
 				}
 				owner = {
 					has_war_with = ROOT
@@ -193,7 +197,7 @@ country_event = {
 					}
 				}
 			} 
-			FROM = { 
+			ROOT = { 
 				transfer_state = PREV 
 			} 
 		}
@@ -241,6 +245,10 @@ country_event = {
 
 		ai_chance = {
 			factor = 500
+		}
+		
+		hidden_effect = {
+		BPD_Handle_Vichy_France = yes
 		}
 		
 		every_country = {
@@ -297,6 +305,10 @@ country_event = {
 
 		ai_chance = {
 			factor = 500
+		}
+		
+		hidden_effect = {
+		BPD_Handle_Vichy_France = yes
 		}
 		
 		every_state = { 
@@ -375,6 +387,10 @@ country_event = {
 
 		ai_chance = {
 			factor = 500
+		}
+		
+		hidden_effect = {
+		BPD_Handle_Vichy_France = yes
 		}
 		
 		every_state = {
@@ -714,11 +730,11 @@ country_event = {
 				every_state = { 
 					limit = { 
 						NOT = {
-							is_owned_by = FROM 
+							is_owned_by = ROOT
 						} 
 						OR = { 
-							is_core_of = FROM
-							is_claimed_by = FROM
+							is_core_of = ROOT
+							is_claimed_by = ROOT
 						}
 						owner = {
 							has_war_with = ROOT
@@ -728,7 +744,7 @@ country_event = {
 							}
 						}
 					} 
-					FROM = { 
+					ROOT = { 
 						transfer_state = PREV 
 					} 
 				}

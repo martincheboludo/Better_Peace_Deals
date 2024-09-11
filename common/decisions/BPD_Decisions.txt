@@ -21,7 +21,7 @@ BPD_Peace_Deal_Manager = {
 
 	BPD_restore_status_quo_td_attacker = {
 	
-		icon = SWI_swiss_democratic_tradition_campaign
+		icon = eng_trade_unions_support
 		
 		allowed = {
 		}
@@ -66,7 +66,7 @@ BPD_Peace_Deal_Manager = {
 	
 	BPD_secure_our_claims_td_attacker = {
 	
-		icon = SWI_swiss_democratic_tradition_campaign
+		icon = eng_trade_unions_support
 		
 		allowed = {
 		}
@@ -111,7 +111,7 @@ BPD_Peace_Deal_Manager = {
 	
 	BPD_peace_current_borders_td_attacker = {
 	
-		icon = SWI_swiss_democratic_tradition_campaign
+		icon = eng_trade_unions_support
 		
 		allowed = {
 		}
@@ -156,7 +156,7 @@ BPD_Peace_Deal_Manager = {
 	
 	BPD_secure_our_claims_td_loser = {
 	
-		icon = SWI_swiss_democratic_tradition_campaign
+		icon = eng_trade_unions_support
 		
 		allowed = {
 		}
