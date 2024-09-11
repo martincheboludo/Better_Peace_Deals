@@ -34,6 +34,17 @@ BPD_Handle_Vichy_France = {
 						target = FRA
 						transfer_troops = yes
 					}
+					every_owned_state = {
+						limit = { 
+							OR = {
+								is_claimed_by = GER
+								is_core_of = GER
+							}
+						} 
+						GER = { 
+							transfer_state = PREV 
+						} 
+					}
 				}
 			}
 }
