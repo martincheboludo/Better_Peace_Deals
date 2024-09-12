@@ -1,0 +1,163 @@
+
+	ITA_Italian_Demands_ETH = {
+		priority = 90
+		icon = GFX_decision_eng_trade_unions_demand
+		
+		allowed = {
+			tag = ITA
+		}
+
+		available = {
+			has_war_with = ETH
+			any_state = { OR = { is_core_of = ETH is_core_of = SOM } NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+		}
+
+		visible = {
+		NOT = { has_country_flag = show_claim_decisions }
+		}
+
+		cost = 50
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			if = { limit = { is_ai = no } hidden_effect = { sound_effect = complete_focus } }
+			every_state = {
+				limit = { OR = { is_core_of = ETH is_core_of = SOM } NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+				add_claim_by = ITA
+			}
+		}
+		
+	}
+	
+	ITA_Italian_Demands_TUN = {
+		priority = 90
+		icon = GFX_decision_eng_trade_unions_demand
+		
+		allowed = {
+			tag = ITA
+		}
+
+		available = {
+			has_war_with = FRA
+			any_state = { is_core_of = TUN NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+		}
+
+		visible = {
+		NOT = { has_country_flag = show_claim_decisions }
+		}
+
+		cost = 50
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			if = { limit = { is_ai = no } hidden_effect = { sound_effect = complete_focus } }
+			every_state = {
+				limit = { is_core_of = TUN NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+				add_claim_by = ITA
+			}
+		}
+		
+	}
+
+	ITA_Italian_Demands_EGY = {
+		priority = 90
+		icon = GFX_decision_eng_trade_unions_demand
+		
+		allowed = {
+			tag = ITA
+		}
+
+		available = {
+			has_war_with = ENG
+			any_state = { OR = { is_core_of = EGY is_core_of = SUD } NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+		}
+
+		visible = {
+		NOT = { has_country_flag = show_claim_decisions }
+		}
+
+		cost = 50
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				AND = {
+					country_exists = SOV
+					NOT = { SOV = { is_in_faction_with = ITA } }
+				}
+				factor = 0
+			}
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			if = { limit = { is_ai = no } hidden_effect = { sound_effect = complete_focus } }
+			every_state = {
+				limit = { OR = { is_core_of = EGY is_core_of = SUD } NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+				add_claim_by = ITA
+			}
+		}
+		
+	}
+	
+	GER_German_Demands_POL = {
+		priority = 90
+		icon = GFX_decision_eng_trade_unions_demand
+		
+		allowed = {
+			tag = GER
+		}
+
+		available = {
+			has_war_with = POL
+			any_state = { is_core_of = POL NOT = { is_core_of = UKR } NOT = { is_core_of = BLR } NOT = { is_core_of = LIT } NOT = { is_core_of = GER } NOT = { is_claimed_by = GER } }
+		}
+
+		visible = {
+		NOT = { has_country_flag = show_claim_decisions }
+		}
+
+		cost = 50
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			if = { limit = { is_ai = no } hidden_effect = { sound_effect = complete_focus } }
+			every_state = {
+				limit = { is_core_of = POL NOT = { is_core_of = UKR } NOT = { is_core_of = BLR } NOT = { is_core_of = LIT } NOT = { is_core_of = GER } NOT = { is_claimed_by = GER } }
+				add_claim_by = GER
+			}
+		}
+		
+	}

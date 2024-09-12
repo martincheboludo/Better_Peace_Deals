@@ -11,13 +11,13 @@
  
 
  show_hide_peace_decisions:0 "Show/Hide State Peace Deal Decisions"
- BPD_restore_status_quo_td_attacker:0 "Restore the Status Quo with [FROM.GetName]"
+ BPD_restore_status_quo_td_attacker:0 "White Peace with [FROM.GetName]"
  BPD_restore_status_quo_td_attacker_desc:0 "Propose to return to the pre-war status quo with [FROM.GetName]. This decision aims to restore the borders and conditions as they were before the conflict began, bringing an end to hostilities and reverting any territorial changes made during the war."
- BPD_secure_our_claims_td_attacker:0 "Demand Concessions against [FROM.GetName]"
+ BPD_secure_our_claims_td_attacker:0 "Limited Victory Over [FROM.GetName]"
  BPD_secure_our_claims_td_attacker_desc:0 "Request that [FROM.GetName] hand over the regions you have claimed as your own. By pressing your claims, you aim to formalize your gains and secure the territories you believe are rightfully yours as a result of the war."
- BPD_peace_current_borders_td_attacker:0 "Peace at the Current Frontiers with [FROM.GetName]"
+ BPD_peace_current_borders_td_attacker:0 "Stalemate with [FROM.GetName]"
  BPD_peace_current_borders_td_attacker_desc:0 "Offer peace based on the current frontlines. This decision proposes to formalize the existing territorial lines as the new borders, ending the conflict with the current situation as the new status quo."
- BPD_secure_our_claims_td_loser:0 "Offer Concessions against [FROM.GetName]"
+ BPD_secure_our_claims_td_loser:0 "Limited Surrender to [FROM.GetName]"
  BPD_secure_our_claims_td_loser_desc:0 "Offer [FROM.GetName] to hand over the regions they have claimed as their own. By accepting their demands, you wish to seek a quick end to this conflict."
  show_hide_claim_decisions:0 "Show/Hide Claim Sate Decisions"
  BFN_claim_states_targeted_decision:0 "Claim [FROM.GetName]"
