@@ -18,8 +18,8 @@ BPD_Peace_Deal_Manager = {
             }
         }
     }
-
-	BPD_restore_status_quo_td_attacker = {
+	
+	BPD_demand_surrender_td_attacker = {
 	
 		icon = eng_trade_unions_support
 		
@@ -60,7 +60,7 @@ BPD_Peace_Deal_Manager = {
 
         }
 		complete_effect = {
-			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.1 hours = 6 } }
+			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.4 hours = 6 } }
 		}
     }
 	
@@ -153,6 +153,51 @@ BPD_Peace_Deal_Manager = {
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.3 hours = 6 } }
 		}
     }
+
+	BPD_restore_status_quo_td_attacker = {
+	
+		icon = eng_trade_unions_support
+		
+		allowed = {
+		}
+	
+        visible = {
+			NOT = { has_country_flag = show_peace_decisions }
+        }
+        target_trigger = {
+            FROM = {
+                has_war_with = ROOT
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+            }
+        }
+        cost = 25
+		modifier = { }
+		days_re_enable = 180
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+        available = {
+		
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
+		
+			war_length_with = {
+				tag = FROM
+				months > 5
+			}
+
+        }
+		complete_effect = {
+			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.1 hours = 6 } }
+		}
+    }
 	
 	BPD_secure_our_claims_td_loser = {
 	
@@ -196,6 +241,51 @@ BPD_Peace_Deal_Manager = {
         }
 		complete_effect = {
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.5 hours = 6 } }
+		}
+    }
+	
+	BPD_total_surrender_td_loser = {
+	
+		icon = eng_trade_unions_support
+		
+		allowed = {
+		}
+	
+        visible = {
+			NOT = { has_country_flag = show_peace_decisions }
+        }
+        target_trigger = {
+            FROM = {
+                has_war_with = ROOT
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+            }
+        }
+        cost = 25
+		modifier = { }
+		days_re_enable = 180
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+        available = {
+		
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
+		
+			war_length_with = {
+				tag = FROM
+				months > 5
+			}
+
+        }
+		complete_effect = {
+			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.6 hours = 6 } }
 		}
     }
 	

@@ -11,14 +11,19 @@
  
 
  show_hide_peace_decisions:0 "Show/Hide State Peace Deal Decisions"
+ BPD_demand_surrender_td_attacker:0 "Total Victory Over [FROM.GetName]"
+ BPD_demand_surrender_td_attacker_desc:0 "We are in a strong position to demand [FROM.GetAdjective]’s surrender and force them to end this war on our terms. By doing so, we will solidify control over all territories currently occupied by our forces, along with any regions we claim or have cores on. This demand is not just for peace but for a decisive victory that reshapes the map in our favor. If [FROM.GetLeader] accepts, we will gain vast new territories, but if they refuse, the war may escalate further. The time has come to push for total dominance or risk a prolonged struggle."
  BPD_restore_status_quo_td_attacker:0 "White Peace with [FROM.GetName]"
  BPD_restore_status_quo_td_attacker_desc:0 "Propose to return to the pre-war status quo with [FROM.GetName]. This decision aims to restore the borders and conditions as they were before the conflict began, bringing an end to hostilities and reverting any territorial changes made during the war."
  BPD_secure_our_claims_td_attacker:0 "Limited Victory Over [FROM.GetName]"
  BPD_secure_our_claims_td_attacker_desc:0 "Request that [FROM.GetName] hand over the regions you have claimed as your own. By pressing your claims, you aim to formalize your gains and secure the territories you believe are rightfully yours as a result of the war."
- BPD_peace_current_borders_td_attacker:0 "Stalemate with [FROM.GetName]"
+ BPD_peace_current_borders_td_attacker:0 "Stalemate With [FROM.GetName]"
  BPD_peace_current_borders_td_attacker_desc:0 "Offer peace based on the current frontlines. This decision proposes to formalize the existing territorial lines as the new borders, ending the conflict with the current situation as the new status quo."
  BPD_secure_our_claims_td_loser:0 "Limited Surrender to [FROM.GetName]"
  BPD_secure_our_claims_td_loser_desc:0 "Offer [FROM.GetName] to hand over the regions they have claimed as their own. By accepting their demands, you wish to seek a quick end to this conflict."
+ BPD_total_surrender_td_loser:0 "Total Surrender to [FROM.GetName]"
+ BPD_total_surrender_td_loser_desc:0 "Offer to surrender to [FROM.GetName], conceding not only the regions currently occupied by their forces but also any territories they have claimed or hold cores on. By accepting their demands, you seek a swift resolution to the conflict, albeit at the cost of significant territorial and political concessions. This gesture aims to end hostilities and prevent further devastation."
+
  show_hide_claim_decisions:0 "Show/Hide Claim Sate Decisions"
  BFN_claim_states_targeted_decision:0 "Claim [FROM.GetName]"
  BFN_claim_states_targeted_decision_at_war:0 "Claim [FROM.GetName]"
@@ -41,7 +46,7 @@
  BPD_Better_Peace_Deals_Country.1.b:1 "Reject the proposal and continue the war."
  
  BPD_Better_Peace_Deals_Country.2.t:0 "[FROM.GetName] Demands Territorial Concessions"
- BPD_Better_Peace_Deals_Country.2.d:0 "We have just received a formal communication from the [FROM.GetAdjective] government. [FROM.GetLeader] is proposing a peace agreement, but with a significant condition; they demand that [ROOT.GetName] cede all territory that [FROM.GetName] claims as its rightful cores. The [FROM.GetAdjective] leadership argues that they have already achieved their primary objectives and wish to avoid further bloodshed. However, accepting these terms would mean relinquishing valuable land and resources. The decision now rests upon us; do we agree to these concessions in the interest of peace, or do we continue to resist [FROM.GetName]'s demands?"
+ BPD_Better_Peace_Deals_Country.2.d:0 "We have just received a formal communication from the [FROM.GetAdjective] government. [FROM.GetLeader] is proposing a peace agreement, but with a significant condition; they demand that [ROOT.GetName] cede all territory that [FROM.GetName] claims as its rightful cores (Cores and Claims). The [FROM.GetAdjective] leadership argues that they have already achieved their primary objectives and wish to avoid further bloodshed. However, accepting these terms would mean relinquishing valuable land and resources. The decision now rests upon us; do we agree to these concessions in the interest of peace, or do we continue to resist [FROM.GetName]'s demands?"
  BPD_Better_Peace_Deals_Country.2.a:1 "Accept the proposal and cede the territory."
  BPD_Better_Peace_Deals_Country.2.b:1 "Reject the proposal and continue the war."
  
@@ -50,10 +55,21 @@
  BPD_Better_Peace_Deals_Country.3.a:1 "Accept the proposal and cement the current frontiers."
  BPD_Better_Peace_Deals_Country.3.b:1 "Reject the proposal and continue the war."
  
+ 
+ BPD_Better_Peace_Deals_Country.4.t:0 "[FROM.GetName] Demands Our Surrender"
+ BPD_Better_Peace_Deals_Country.4.d:0 "We have received a demand from [FROM.GetAdjective] leadership for our unconditional surrender. [FROM.GetLeader] insists that we not only cease fighting but also hand over all territories currently occupied by their forces, along with any regions they have claimed or have a core on. This ultimatum is a clear signal that they believe further resistance is futile. Should we accept, our current frontlines will become the new borders, and we will cede additional territory as specified by [FROM.GetAdjective] demands. The question now stands before us: do we surrender, or fight on to the bitter end?"
+ BPD_Better_Peace_Deals_Country.4.a:1 "Surrender"
+ BPD_Better_Peace_Deals_Country.4.b:1 "We will never surrender"
+
  BPD_Better_Peace_Deals_Country.5.t:0 "[FROM.GetName] Proposes Territorial Concessions"
  BPD_Better_Peace_Deals_Country.5.d:0 "We have received a proposal from the [FROM.GetAdjective] government offering territorial concessions to [ROOT.GetName]. [FROM.GetLeader] is willing to cede the land that [ROOT.GetName] claims as its rightful cores in order to bring an end to the conflict. This offer indicates that [FROM.GetName] is prepared to make significant sacrifices to avoid further destruction and bloodshed. Accepting this proposal would grant [ROOT.GetName] the territories it seeks but would end the war with a clear gain for your nation. The decision is now yours: do you accept these concessions, or continue the fight for further gains?"
  BPD_Better_Peace_Deals_Country.5.a:1 "Accept the proposal and receive the territorial concessions."
  BPD_Better_Peace_Deals_Country.5.b:1 "Reject the proposal and continue the war."
+ 
+ BPD_Better_Peace_Deals_Country.6.t:0 "[FROM.GetName] Offers To Surrender"
+ BPD_Better_Peace_Deals_Country.6.d:0 "We have received a surrender offer from the [FROM.GetAdjective] government. They propose to end the war based on the current frontlines, with all territory they control ceded to us. Additionally, any regions that we claim or have cores on would be handed over as part of the terms. [FROM.GetLeader] is conceding that further resistance is futile and seeks to prevent further destruction by formalizing the territorial gains we’ve made thus far. The decision now falls to you: do we accept their surrender and solidify our position, or reject the offer and pursue further conquest?"
+ BPD_Better_Peace_Deals_Country.6.a:1 "Accept their surrnder"
+ BPD_Better_Peace_Deals_Country.6.b:1 "We have other plans for them"
  
  BPD_Better_Peace_Deals_Country.7.t:0 "[FROM.GetName] Accepts Peace Offer"
  BPD_Better_Peace_Deals_Country.7.d:0 "[FROM.GetName] has agreed to [ROOT.GetName]'s proposal to restore the status quo ante bellum. Both sides will return to their pre-war borders and conditions, ending the conflict. This decision brings an end to hostilities and restores peace between our nations."
@@ -79,6 +95,14 @@
  BPD_Better_Peace_Deals_Country.12.d:0 "[FROM.GetName] has rejected [ROOT.GetName]'s offer of peace at the current frontiers. The conflict will continue as both sides remain dissatisfied with the existing territorial situation. [FROM.GetLeader] may seek to gain more ground, while [ROOT.GetLeader] prepares for further battles."
  BPD_Better_Peace_Deals_Country.12.a:1 "The War Continues..."
  
+  BPD_Better_Peace_Deals_Country.13.t:0 "[FROM.GetName] Surrenders"
+ BPD_Better_Peace_Deals_Country.13.d:0 "[FROM.GetName] has agreed to [ROOT.GetName]'s demand for surrender. As per the terms, [FROM.GetAdjective] forces will cease all hostilities and relinquish control of any occupied territories. Additionally, any lands claimed or cored by [ROOT.GetName] will be handed over, marking a significant shift in our borders. This decision brings an end to the war, but at the cost of territorial concessions to [ROOT.GetAdjective] demands."
+ BPD_Better_Peace_Deals_Country.13.a:1 "Excellent"
+ 
+ BPD_Better_Peace_Deals_Country.14.t:0 "[FROM.GetName] Refuses To Surrender"
+ BPD_Better_Peace_Deals_Country.14.d:0 "[FROM.GetName] has rejected [ROOT.GetName]'s demand for surrender, refusing to cede territory and accept the new borders dictated by the ongoing conflict. [FROM.GetLeader] is determined to continue fighting, believing that victory is still within reach. This means the war will go on, and [ROOT.GetLeader] must now prepare for a prolonged and more brutal campaign."
+ BPD_Better_Peace_Deals_Country.14.a:1 "The War Continues..."
+ 
  BPD_Better_Peace_Deals_Country.15.t:0 "[FROM.GetName] Accepts Peace Offer"
  BPD_Better_Peace_Deals_Country.15.d:0 "[FROM.GetName] has accepted [ROOT.GetName]'s proposal for territorial concessions. The agreed-upon territories will be ceded, ending the conflict with [FROM.GetName] gaining the land. This agreement signifies a major shift in borders and concludes the ongoing hostilities."
  BPD_Better_Peace_Deals_Country.15.a:1 "Excellent"
@@ -86,6 +110,14 @@
  BPD_Better_Peace_Deals_Country.16.t:0 "[FROM.GetName] Declines Peace Offer"
  BPD_Better_Peace_Deals_Country.16.d:0 "[FROM.GetName] has rejected [ROOT.GetName]'s offer of territorial concessions. The conflict will persist as both sides remain at odds. [FROM.GetLeader] presses on with their assault, while [ROOT.GetLeader] may consider other options to resolve this conflict."
  BPD_Better_Peace_Deals_Country.16.a:1 "The War Continues..."
+ 
+ BPD_Better_Peace_Deals_Country.17.t:0 "[FROM.GetName] Accepts Our Surrender"
+ BPD_Better_Peace_Deals_Country.17.d:0 "[FROM.GetName] has agreed to [ROOT.GetName]'s offer of surrender. The current frontlines will now be recognized as the official borders, and all territories [FROM.GetName] claims or has cores on will be ceded to them. With this decision, the war is officially over, but at the cost of significant territorial concessions on our part. Our defeat has been cemented, and we must now live with the consequences."
+ BPD_Better_Peace_Deals_Country.17.a:1 "We Had No Choice..."
+ 
+ BPD_Better_Peace_Deals_Country.18.t:0 "[FROM.GetName] Declines Our Surrender"
+ BPD_Better_Peace_Deals_Country.18.d:0 "[FROM.GetName] has refused [ROOT.GetName]'s offer of surrender, rejecting peace on the current frontlines. [FROM.GetLeader] is clearly not satisfied with the terms and intends to continue the war, likely seeking further gains. The conflict will drag on, as neither side is willing to settle with the present situation. [ROOT.GetLeader] must now brace for renewed hostilities as the war continues."
+ BPD_Better_Peace_Deals_Country.18.a:1 "The War Continues..."
  
  BPD_Better_Peace_Deals_Country.90.t:0 "[FROM.GetName] Accepts Peace Offer"
  BPD_Better_Peace_Deals_Country.90.d:0 "[FROM.GetName] has accepted our faction leader's demand of territorial concessions. The proposed territories will be ceded, and the war will come to an end with [ROOT.GetName] gaining the claimed regions. This agreement marks a significant shift in borders and concludes the ongoing conflict."
@@ -98,6 +130,14 @@
  BPD_Better_Peace_Deals_Country.110.t:0 "[FROM.GetName] Accepts Peace Offer"
  BPD_Better_Peace_Deals_Country.110.d:0 "[FROM.GetName] has agreed to our faction leader's proposal for peace based on the current frontlines. The territorial gains and losses are now formalized, ending the conflict with the current borders as the new status quo. This agreement marks the end of hostilities between our nations."
  BPD_Better_Peace_Deals_Country.110.a:1 "Excellent"
+ 
+ BPD_Better_Peace_Deals_Country.131.t:0 "[FROM.GetName] Surrenders"
+ BPD_Better_Peace_Deals_Country.131.d:0 "[FROM.GetName] has agreed to our faction leader's demand for surrender. As per the terms, [FROM.GetAdjective] forces will cease all hostilities and relinquish control of any occupied territories. Additionally, any lands claimed or cored by [ROOT.GetName] will be handed over, marking a significant shift in our borders. This decision brings an end to the war, but at the cost of territorial concessions to [ROOT.GetAdjective] demands."
+ BPD_Better_Peace_Deals_Country.131.a:1 "Excellent"
+ 
+ BPD_Better_Peace_Deals_Country.171.t:0 "[FROM.GetName] Accepts Our Surrender"
+ BPD_Better_Peace_Deals_Country.171.d:0 "[FROM.GetName] has agreed to our faction leader's offer of surrender. The current frontlines will now be recognized as the official borders, and all territories [FROM.GetName] claims or has cores on will be ceded to them. With this decision, the war is officially over, but at the cost of significant territorial concessions on our part. Our defeat has been cemented, and we must now live with the consequences."
+ BPD_Better_Peace_Deals_Country.171.a:1 "We Had No Choice..."
  
  BPD_Better_Peace_Deals_Country.151.t:0 "[FROM.GetName] Signs Ceasefire"
  BPD_Better_Peace_Deals_Country.151.d:0 "Our faction leader has accepted [FROM.GetName]'s proposal for territorial concessions. The agreed-upon territories will be ceded, ending the conflict with [ROOT.GetName] gaining the land. This agreement signifies a major shift in borders and concludes the ongoing hostilities."
