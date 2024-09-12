@@ -14,3 +14,20 @@ BPD_Peace_Deal_Manager = {
 	visible = {
 	}
 }
+
+
+BPD_War_Aims = {
+	picture = GFX_decision_cat_BPD_War_Aims
+	icon = eng_imperial_conference
+	
+	#Medium Priority so it doesn't obscure other decisions
+	priority = {
+		base = 450
+	}
+
+	allowed = {
+	}
+
+	visible = {
+	}
+}

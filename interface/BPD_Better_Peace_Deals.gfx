@@ -9,5 +9,9 @@ spriteTypes = {
 		name = "GFX_decision_cat_BPD_Peace_Deal_Manager"
 		texturefile = "gfx/interface/decisions/BPD/BPD_Peace_Deal_Manager.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_cat_BPD_War_Aims"
+		texturefile = "gfx/interface/decisions/BPD/BPD_War_Aims.dds"
+	}
 	
 }
