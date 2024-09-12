@@ -45,6 +45,20 @@ BPD_Handle_Vichy_France = {
 							transfer_state = PREV 
 						} 
 					}
+					if = {
+						limit = { ITA = { is_in_faction_with = GER } }
+						every_owned_state = {
+							limit = { 
+								OR = {
+									is_claimed_by = ITA
+									is_core_of = ITA
+								}
+							} 
+							ITA = { 
+								transfer_state = PREV 
+							} 
+						}
+					}
 				}
 			}
 }

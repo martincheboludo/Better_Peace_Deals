@@ -18,6 +18,146 @@ BPD_Peace_Deal_Manager = {
             }
         }
     }
+	
+	show_hide_claim_decisions2 = {
+        priority = 100
+        visible = { always = yes }
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+        complete_effect = { 
+            if = {
+                limit = { has_country_flag = show_claim_decisions }
+                clr_country_flag = show_claim_decisions
+            }
+            else = {
+                set_country_flag = show_claim_decisions
+            }
+        }
+    }
+
+	ITA_Italian_Demands_ETH = {
+		icon = GFX_decision_eng_trade_unions_demand
+		
+		allowed = {
+			tag = ITA
+		}
+
+		available = {
+			has_war_with = ETH
+			any_state = { OR = { is_core_of = ETH is_core_of = SOM } NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+		}
+
+		visible = {
+		NOT = { has_country_flag = show_claim_decisions }
+		}
+
+		cost = 50
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			if = { limit = { is_ai = no } hidden_effect = { sound_effect = complete_focus } }
+			every_state = {
+				limit = { OR = { is_core_of = ETH is_core_of = SOM } NOT = { is_core_of = ITA } }
+				add_claim_by = ITA
+			}
+		}
+		
+	}
+	
+	ITA_Italian_Demands_TUN = {
+		icon = GFX_decision_eng_trade_unions_demand
+		
+		allowed = {
+			tag = ITA
+		}
+
+		available = {
+			has_war_with = FRA
+			any_state = { is_core_of = TUN NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+		}
+
+		visible = {
+		NOT = { has_country_flag = show_claim_decisions }
+		}
+
+		cost = 50
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			if = { limit = { is_ai = no } hidden_effect = { sound_effect = complete_focus } }
+			every_state = {
+				limit = { is_core_of = TUN NOT = { is_core_of = ITA } }
+				add_claim_by = ITA
+			}
+		}
+		
+	}
+
+	ITA_Italian_Demands_EGY = {
+		icon = GFX_decision_eng_trade_unions_demand
+		
+		allowed = {
+			tag = ITA
+		}
+
+		available = {
+			has_war_with = ENG
+			any_state = { OR = { is_core_of = EGY is_core_of = SUD } NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+		}
+
+		visible = {
+		NOT = { has_country_flag = show_claim_decisions }
+		}
+
+		cost = 50
+		days_remove = 30
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				AND = {
+					country_exists = SOV
+					NOT = { SOV = { is_in_faction_with = ITA } }
+				}
+				factor = 0
+			}
+		}
+		
+		complete_effect = {
+		}
+
+		remove_effect = {
+			if = { limit = { is_ai = no } hidden_effect = { sound_effect = complete_focus } }
+			every_state = {
+				limit = { OR = { is_core_of = EGY is_core_of = SUD } NOT = { is_core_of = ITA } }
+				add_claim_by = ITA
+			}
+		}
+		
+	}
 
 	BPD_restore_status_quo_td_attacker = {
 	
@@ -198,5 +338,7 @@ BPD_Peace_Deal_Manager = {
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.5 hours = 6 } }
 		}
     }
+	
+
 	
 }

@@ -14,6 +14,10 @@
  BPD_peace_current_borders_td_attacker_desc:0 "Offer peace based on the current frontlines. This decision proposes to formalize the existing territorial lines as the new borders, ending the conflict with the current situation as the new status quo."
  BPD_secure_our_claims_td_loser:0 "Offer Concessions against [FROM.GetName]"
  BPD_secure_our_claims_td_loser_desc:0 "Offer [FROM.GetName] to hand over the regions they have claimed as their own. By accepting their demands, you wish to seek a quick end to this conflict."
+ show_hide_claim_decisions2:0 "Show/Hide Claim Sate Decisions"
+ ITA_Italian_Demands_ETH:0 "Claim Ethiopia"
+ ITA_Italian_Demands_TUN:0 "Claim Tunisia"
+ ITA_Italian_Demands_EGY:0 "Claim Egypt"
 
  #Events
  
