@@ -3,16 +3,16 @@ Total Victory scenario LOSER gets this event from the WINNER and can accept or d
 ---------------------------
 
 Surrender Percentage:
-0-10%: Flat Out Refuse
-10-20%: Flat Out Refuse
+0-10%: +50% to Decline
+10-20%: +40% to Decline
 20-30%: +30% to Decline
 30-40%: +20% to Decline
 40-50%: +10% to Decline
 50-60%: Neutral (0%)
 60-70%: +10% to Acceptance
-70-80%: +30% to Acceptance
-80-90%: +40% to Acceptance
-90-100%: +50% to Acceptance
+70-80%: +20% to Acceptance
+80-90%: +30% to Acceptance
+90-100%: +40% to Acceptance
 
 Stability Percentage:
 0-10%: +50% to Acceptance
@@ -37,10 +37,6 @@ War Support Percentage:
 70-80%: +20% to Decline
 80-90%: +30% to Decline
 90-100%: +40% to Decline
-
-Presence of a Strong Ally:
-No strong allies: +20% to acceptance rate
-Strong ally present: +20% to decline rate
 
 Strength Ratio of Army
 Enemy Strength is More Than Three Times Yours: +50% to Acceptance
@@ -76,6 +72,37 @@ Early Mobilization: +40% to Acceptance
 Partial Mobilization: +30% to Acceptance
 War Economy: +20% to Acceptance
 Total Mobilization: Neutral (0%)
+
+Naval Strength Ratio:
+
+Enemy Naval Strength is More Than Three Times Yours: +40% to Acceptance
+Enemy Naval Strength is Two to Three Times Yours: +30% to Acceptance
+Enemy Naval Strength is Equal to or Slightly Greater Than Yours: +20% to Acceptance
+Your Naval Strength is Equal to or Slightly Greater Than the Enemy’s: +10% to Acceptance
+Your Naval Strength is Two to Three Times the Enemy’s: +10% to Decline
+Your Naval Strength is More Than Three Times the Enemy’s: +20% to Decline
+Enemy Has Strong Allies: +10% to Acceptance (enemy’s strong allies make the war seem unwinnable, encouraging you to accept the deal). You Have Strong Allies: +10% to Decline (your strong allies make you less inclined to accept the deal).
+
+Enemy Has War With Other Major Faction: +10% to Decline (the enemy is stretched thin and may be less likely to accept, making you more inclined to reject the deal). You Have War With Another Major Faction: +10% to Acceptance (being involved in another major war may compel you to accept the deal to focus resources).
+
+Casualties:
+
+0-500,000: +10% to Acceptance
+500,000 - 1,000,000: +20% to Acceptance
+1,000,000 - 2,000,000: +30% to Acceptance
+2,000,000 - 4,000,000: +40% to Acceptance
+4,000,000 - 6,000,000: +50% to Acceptance
+6,000,000 - 8,000,000: +60% to Acceptance
+8,000,000 - 10,000,000: +70% to Acceptance
+10,000,000+: +80% to Acceptance
+IC Ratio (Industrial Capacity Ratio):
+
+Enemy IC is More Than Three Times Yours: +40% to Acceptance
+Enemy IC is Two to Three Times Yours: +30% to Acceptance
+Enemy IC is Equal to or Slightly Greater Than Yours: +20% to Acceptance
+Your IC is Equal to or Slightly Greater Than the Enemy’s: +10% to Acceptance
+Your IC is Two to Three Times the Enemy’s: +10% to Decline
+Your IC is More Than Three Times the Enemy’s: +20% to Decline
 
 ---------------------------
 Limited Victory scenario LOSER gets this event from the WINNER and can accept or decline
@@ -156,14 +183,6 @@ Rationale: Stability affects the likelihood of acceptance, with lower stability 
 
 Rationale: Lower war support increases acceptance, but less so compared to more severe deals.
 
-4. Presence of a Strong Ally:
-
-No strong allies: +10% to Acceptance
-
-Strong ally present: +10% to Decline
-
-Rationale: The presence of a strong ally still affects the decision, though less dramatically for a less severe peace deal.
-
 5. Strength Ratio of Army:
 
 Enemy Strength is More Than Three Times Yours: +30% to Acceptance
@@ -233,6 +252,37 @@ War Economy: +10% to Acceptance
 Total Mobilization: Neutral (0%)
 
 Rationale: The economy's impact on acceptance is less severe for a less harsh peace deal compared to more extreme scenarios.
+
+Naval Strength Ratio:
+
+Enemy Naval Strength is More Than Three Times Yours: +30% to Acceptance
+Enemy Naval Strength is Two to Three Times Yours: +20% to Acceptance
+Enemy Naval Strength is Equal to or Slightly Greater Than Yours: +10% to Acceptance
+Your Naval Strength is Equal to or Slightly Greater Than the Enemy’s: 0% (Neutral)
+Your Naval Strength is Two to Three Times the Enemy’s: +10% to Decline
+Your Naval Strength is More Than Three Times the Enemy’s: +20% to Decline
+Enemy Has Strong Allies: +10% to Acceptance (enemy sees the war as unwinnable due to strong allies). You Have Strong Allies: +10% to Decline (you are less inclined to accept as you have support).
+
+Enemy Has War With Other Major Faction: +10% to Decline (enemy’s attention is divided, making you more likely to reject the deal). You Have War With Another Major Faction: +10% to Acceptance (you may be more inclined to accept to focus on the other war).
+
+Casualties:
+
+0-500,000: +10% to Acceptance
+500,000 - 1,000,000: +20% to Acceptance
+1,000,000 - 2,000,000: +30% to Acceptance
+2,000,000 - 4,000,000: +40% to Acceptance
+4,000,000 - 6,000,000: +50% to Acceptance
+6,000,000 - 8,000,000: +60% to Acceptance
+8,000,000 - 10,000,000: +70% to Acceptance
+10,000,000+: +80% to Acceptance
+IC Ratio (Industrial Capacity Ratio):
+
+Enemy IC is More Than Three Times Yours: +40% to Acceptance
+Enemy IC is Two to Three Times Yours: +30% to Acceptance
+Enemy IC is Equal to or Slightly Greater Than Yours: +20% to Acceptance
+Your IC is Equal to or Slightly Greater Than the Enemy’s: +10% to Acceptance
+Your IC is Two to Three Times the Enemy’s: +20% to Decline
+Your IC is More Than Three Times the Enemy’s: +30% to Decline
 
 ---------------------------
 Stalemate Scenario ANY ONE OF THE TWO CAN SEND IT TO EACH OTHER
@@ -310,14 +360,6 @@ Rationale: Extremely low stability makes acceptance more likely, while higher st
 
 Rationale: Lower war support makes acceptance more likely, while higher war support increases the likelihood of declining.
 
-4. Presence of a Strong Ally:
-
-No strong allies: +10% to Acceptance
-
-Strong ally present: Neutral (0%)
-
-Rationale: Presence of a strong ally has a minor influence on the decision to accept or decline the stalemate.
-
 5. Strength Ratio of Army:
 
 Enemy Strength is More Than Three Times Yours: +20% to Acceptance
@@ -388,6 +430,43 @@ Total Mobilization: Neutral (0%)
 
 Rationale: Economy law has a moderate impact on acceptance, with more extreme laws making it easier to accept a stalemate.
 
+
+Enemy Naval Strength is More Than Three Times Yours: +30% to Acceptance
+Enemy Naval Strength is Two to Three Times Yours: +20% to Acceptance
+Enemy Naval Strength is Equal to or Slightly Greater Than Yours: +10% to Acceptance
+Your Naval Strength is Equal to or Slightly Greater Than the Enemy’s: 0% (Neutral)
+Your Naval Strength is Two to Three Times the Enemy’s: +10% to Decline
+Your Naval Strength is More Than Three Times the Enemy’s: +20% to Decline
+Enemy Has Strong Allies:
+
++10% to Acceptance (you might accept to avoid the risk of their allies' involvement)
+You Have Strong Allies:
+
++10% to Decline (you might decline, leveraging your allies' support)
+Enemy Has War With Other Major Faction:
+
++20% to Decline (you might reject the deal as they could be overstretched)
+You Have War With Another Major Faction:
+
++20% to Acceptance (you might accept to focus on other fronts)
+Casualties:
+
+0-500,000: +10% to Acceptance
+500,000 - 1,000,000: +20% to Acceptance
+1,000,000 - 2,000,000: +30% to Acceptance
+2,000,000 - 4,000,000: +40% to Acceptance
+4,000,000 - 6,000,000: +50% to Acceptance
+6,000,000 - 8,000,000: +60% to Acceptance
+8,000,000 - 10,000,000: +70% to Acceptance
+10,000,000+: +80% to Acceptance
+IC Ratio (Industrial Capacity Ratio):
+
+Enemy IC is More Than Three Times Yours: +30% to Acceptance
+Enemy IC is Two to Three Times Yours: +20% to Acceptance
+Enemy IC is Equal to or Slightly Greater Than Yours: +10% to Acceptance
+Your IC is Equal to or Slightly Greater Than the Enemy’s: 0% (Neutral)
+Your IC is Two to Three Times the Enemy’s: +10% to Decline
+Your IC is More Than Three Times the Enemy’s: +20% to Decline
 
 --------------------
 Status Quo Ante Bellum Scenario ANY ONE OF THE TWO CAN SEND IT TO EACH OTHER
@@ -468,14 +547,6 @@ Rationale: Stability affects the decision, but since the terms are neutral, high
 
 Rationale: Lower war support typically increases acceptance, but for a white peace, higher war support can push towards a desire to continue the conflict.
 
-4. Presence of a Strong Ally:
-
-No strong allies: +20% to Acceptance
-
-Strong ally present: +20% to Decline
-
-Rationale: Having no strong allies might make acceptance more favorable, but the presence of an ally could lead to a stronger push to continue.
-
 5. Strength Ratio of Army:
 
 Enemy Strength is More Than Three Times Yours: +30% to Acceptance
@@ -548,6 +619,48 @@ Rationale: The economy’s impact on acceptance for a white peace is moderate, w
 
 This setup should reflect the nature of the Status Quo Ante Bellum scenario and how various factors could influence the decision to accept or decline the peace offer.
 
+
+Naval Strength Ratio:
+
+Enemy Naval Strength is More Than Three Times Yours: +20% to Acceptance
+Enemy Naval Strength is Two to Three Times Yours: +15% to Acceptance
+Enemy Naval Strength is Equal to or Slightly Greater Than Yours: +10% to Acceptance
+Your Naval Strength is Equal to or Slightly Greater Than the Enemy’s: 0% (Neutral)
+Your Naval Strength is Two to Three Times the Enemy’s: +10% to Decline
+Your Naval Strength is More Than Three Times the Enemy’s: +15% to Decline
+Enemy Has Strong Allies:
+
+Enemy’s Strong Allies: +10% to Acceptance (you might accept to avoid complications from their allies’ involvement)
+You Have Strong Allies:
+
+Your Strong Allies: +10% to Decline (you might reject the offer, using your allies’ support)
+Enemy Has War With Other Major Faction:
+
+Enemy’s Major War: +20% to Decline (enemy is overstretched and might be less inclined to push for a white peace)
+Your Major War: +20% to Acceptance (you might accept to consolidate your efforts and manage resources better)
+You Have War With Another Major Faction:
+
+Your Major War: +20% to Acceptance (you might find the white peace more appealing to focus on the other conflict)
+Enemy’s Major War: +20% to Decline (they might be more willing to push for better terms if they are already overstretched)
+Casualties:
+
+0-500,000: +10% to Acceptance
+500,000 - 1,000,000: +20% to Acceptance
+1,000,000 - 2,000,000: +30% to Acceptance
+2,000,000 - 4,000,000: +40% to Acceptance
+4,000,000 - 6,000,000: +50% to Acceptance
+6,000,000 - 8,000,000: +60% to Acceptance
+8,000,000 - 10,000,000: +70% to Acceptance
+10,000,000+: +80% to Acceptance
+IC Ratio (Industrial Capacity Ratio):
+
+Enemy IC is More Than Three Times Yours: +30% to Acceptance
+Enemy IC is Two to Three Times Yours: +20% to Acceptance
+Enemy IC is Equal to or Slightly Greater Than Yours: +10% to Acceptance
+Your IC is Equal to or Slightly Greater Than the Enemy’s: 0% (Neutral)
+Your IC is Two to Three Times the Enemy’s: +10% to Decline
+Your IC is More Than Three Times the Enemy’s: +20% to Decline
+
 -----------------------
 Limited Surrender Scenario LOSER SENDS TO WINNER, WINNER CAN ACCEPT OR DECLINE
 ------------------------
@@ -594,12 +707,6 @@ War Support Percentage of the Winner:
 90-100%: +50% to Decline
 Rationale: Low war support might increase the winner's willingness to accept a limited surrender to end the conflict.
 
-Presence of Strong Allies for the Winner:
-
-No strong allies: +20% to Acceptance
-Strong ally present: +20% to Decline
-Rationale: If the winner has strong allies, they might prefer to continue the war with their support, decreasing the likelihood of accepting a limited surrender.
-
 Strength Ratio of Army (Winner’s Perspective):
 
 Enemy Strength is More Than Three Times Yours: +30% to Acceptance
@@ -642,6 +749,45 @@ Partial Mobilization: +20% to Acceptance
 War Economy: +10% to Acceptance
 Total Mobilization: Neutral (0%)
 Rationale: If the economy is less mobilized, the winner might be more inclined to accept a limited surrender to avoid prolonged conflict.
+
+Naval Strength Ratio:
+
+Enemy Naval Strength is More Than Three Times Yours: +40% to Acceptance
+Enemy Naval Strength is Two to Three Times Yours: +30% to Acceptance
+Enemy Naval Strength is Equal to or Slightly Greater Than Yours: +20% to Acceptance
+Your Naval Strength is Equal to or Slightly Greater Than the Enemy’s: +10% to Acceptance
+Your Naval Strength is Two to Three Times the Enemy’s: +20% to Decline
+Your Naval Strength is More Than Three Times the Enemy’s: +30% to Decline
+Enemy Has Strong Allies:
+
++10% Decline (you might be less eager to accept if they have strong allies, as they might recover with their support).
+You Have Strong Allies:
+
++10% Acceptance (if you have strong allies, it reinforces the likelihood of accepting the surrender).
+Enemy Has War With Other Major Faction:
+
++20% to Decline (they might be overstretched, and you could potentially secure better terms in a peace conference).
+You Have War With Another Major Faction:
+
++20% to Acceptance (accepting the surrender allows you to focus on the other major war).
+Casualties:
+
+0-500,000: +10% to Acceptance
+500,000 - 1,000,000: +20% to Acceptance
+1,000,000 - 2,000,000: +30% to Acceptance
+2,000,000 - 4,000,000: +40% to Acceptance
+4,000,000 - 6,000,000: +50% to Acceptance
+6,000,000 - 8,000,000: +60% to Acceptance
+8,000,000 - 10,000,000: +70% to Acceptance
+10,000,000+: +80% to Acceptance
+IC Ratio (Industrial Capacity Ratio):
+
+Enemy IC is More Than Three Times Yours: +40% to Acceptance
+Enemy IC is Two to Three Times Yours: +30% to Acceptance
+Enemy IC is Equal to or Slightly Greater Than Yours: +20% to Acceptance
+Your IC is Equal to or Slightly Greater Than the Enemy’s: +10% to Acceptance
+Your IC is Two to Three Times the Enemy’s: +20% to Decline
+Your IC is More Than Three Times the Enemy’s: +30% to Decline
 
 -----------------------
 Total Surrender Scenario LOSER SENDS TO WINNER, WINNER CAN ACCEPT OR DECLINE
@@ -692,12 +838,6 @@ War Support Percentage of the Winner:
 90-100%: +40% to Decline
 Rationale: Low war support might increase the winner's willingness to accept a total surrender offer as it would end the conflict. High war support may make them prefer to continue fighting.
 
-Presence of Strong Allies for the Winner:
-
-No strong allies: +30% to Acceptance
-Strong ally present: +10% to Decline
-Rationale: If the winner lacks strong allies, they might be more inclined to accept a total surrender to secure a significant win and end the war. Strong allies might provide the necessary support to continue the conflict.
-
 Strength Ratio of Army (Winner’s Perspective):
 
 Enemy Strength is More Than Three Times Yours: +40% to Acceptance
@@ -740,29 +880,23 @@ Partial Mobilization: +30% to Acceptance
 War Economy: +20% to Acceptance
 Total Mobilization: Neutral (0%)
 
--------------------------
-Limited Surrender Scenario
----------------------
-Rationale:
-
-In this scenario, the losing country is offering to cede its cores and claims in exchange for peace. The decision to accept or reject this offer can be influenced by various factors:
-
 Naval Strength Ratio:
 
-Enemy Naval Strength is More Than Three Times Yours: +20% to Acceptance
-Enemy Naval Strength is Two to Three Times Yours: +15% to Acceptance
-Enemy Naval Strength is Equal to or Slightly Greater Than Yours: +10% to Acceptance
-Your Naval Strength is Equal to or Slightly Greater Than the Enemy’s: 0% (Neutral)
-Your Naval Strength is Two to Three Times the Enemy’s: +10% to Decline
-Your Naval Strength is More Than Three Times the Enemy’s: +20% to Decline
-Enemy Has Strong Allies:
+Enemy Naval Strength is More Than Three Times Yours: +40% to Acceptance
+Enemy Naval Strength is Two to Three Times Yours: +30% to Acceptance
+Enemy Naval Strength is Equal to or Slightly Greater Than Yours: +20% to Acceptance
+Your Naval Strength is Equal to or Slightly Greater Than the Enemy’s: +10% to Acceptance
+Your Naval Strength is Two to Three Times the Enemy’s: +20% to Decline
+Your Naval Strength is More Than Three Times the Enemy’s: +30% to Decline
 
-Enemy’s Strong Allies: +10% to Acceptance (their allies might pressure them to offer a deal)
-Your Strong Allies: +10% to Decline (you may feel less inclined to accept as your strong allies can help you achieve a better outcome)
-Enemy Has War With Other Major Faction:
+Enemy Has Strong Allies: +10% Decline (you might be less eager to accept if they have strong allies, as they might recover with their support).
 
-Your Major War: +20% to Acceptance (you might be more willing to accept the deal to concentrate on your other conflict)
-Enemy’s Major War: +20% to Decline (if the enemy is already engaged in another major conflict, you might be more inclined to push for more concessions)
+You Have Strong Allies: +10% Acceptance (if you have strong allies, it reinforces the likelihood of accepting the surrender).
+
+Enemy Has War With Other Major Faction: +20% to Decline (they might be overstretched, and you could potentially secure better terms in a peace conference).
+
+You Have War With Another Major Faction: +20% to Acceptance (accepting the surrender allows you to focus on the other major war).
+
 Casualties:
 
 0-500,000: +10% to Acceptance
@@ -775,9 +909,9 @@ Casualties:
 10,000,000+: +80% to Acceptance
 IC Ratio (Industrial Capacity Ratio):
 
-Enemy IC is More Than Three Times Yours: +20% to Acceptance
-Enemy IC is Two to Three Times Yours: +15% to Acceptance
-Enemy IC is Equal to or Slightly Greater Than Yours: +10% to Acceptance
-Your IC is Equal to or Slightly Greater Than the Enemy’s: 0% (Neutral)
-Your IC is Two to Three Times the Enemy’s: +10% to Decline
-Your IC is More Than Three Times the Enemy’s: +20% to Decline
+Enemy IC is More Than Three Times Yours: +40% to Acceptance
+Enemy IC is Two to Three Times Yours: +30% to Acceptance
+Enemy IC is Equal to or Slightly Greater Than Yours: +20% to Acceptance
+Your IC is Equal to or Slightly Greater Than the Enemy’s: +10% to Acceptance
+Your IC is Two to Three Times the Enemy’s: +20% to Decline
+Your IC is More Than Three Times the Enemy’s: +30% to Decline

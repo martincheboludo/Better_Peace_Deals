@@ -70,3 +70,11 @@ Fascist: +30% to Decline (prefers fighting until complete victory, aggressive st
 Communist: +20% to Decline (focused on revolution and may reject deals that don’t align with ideological goals)
 Democratic: +20% to Acceptance (more inclined to negotiate peace to avoid prolonged wars and casualties)
 Non-Aligned: +10% to Acceptance (pragmatic approach, willing to negotiate to maintain stability)
+
+Churchill’s +50% to Decline Peace Offers from Fascist Countries:
+
+Effect: This makes Churchill significantly less likely to accept peace offers from fascist countries, but it still leaves room for the possibility of acceptance under certain conditions. It reflects his strong stance against fascism without making it impossible to negotiate peace.
+
+Hitler’s +50% to Decline All Demands to Surrender:
+
+Effect: This will make Hitler much more resistant to surrender demands, but it allows for a possible surrender under extreme circumstances. It captures his refusal to accept defeat while providing a realistic chance for an outcome if the situation becomes dire enough.

@@ -15,7 +15,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.1.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.7 hours = 6 } }
@@ -28,7 +28,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.1.b
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 			modifier = {
 				factor = 0
 				has_global_flag = BPD_Always_Accept
@@ -57,7 +57,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.2.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		every_country = {
@@ -79,7 +79,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.2.b
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 			modifier = {
 				factor = 0
 				has_global_flag = BPD_Always_Accept
@@ -108,7 +108,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.3.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		#Curent Country Gets The States They Control
 		every_state = {
@@ -155,7 +155,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.3.b
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 			modifier = {
 				factor = 0
 				has_global_flag = BPD_Always_Accept
@@ -171,7 +171,7 @@ country_event = {
 
 }
 
-#A Demand For Our Surrender
+#A Demand For Our Total Surrender
 country_event = {
 	id = BPD_Better_Peace_Deals_Country.4
 	title = BPD_Better_Peace_Deals_Country.4.t
@@ -185,7 +185,137 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.4.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
+			modifier = {
+				add = 10
+				ROOT = { surrender_progress > 0.60 }
+				ROOT = { surrender_progress < 0.71 }
+			}
+			modifier = {
+				add = 20
+				ROOT = { surrender_progress > 0.70 }
+				ROOT = { surrender_progress < 0.81 }
+			}
+			modifier = {
+				add = 30
+				ROOT = { surrender_progress > 0.80 }
+				ROOT = { surrender_progress < 0.91 }
+			}
+			modifier = {
+				add = 40
+				ROOT = { surrender_progress > 0.90 }
+			}
+			modifier = {
+				add = 50
+				ROOT = { has_stability < 0.11 }
+			}
+			modifier = {
+				add = 40
+				ROOT = { has_stability > 0.10 }
+				ROOT = { has_stability < 0.21 }
+			}
+			modifier = {
+				add = 30
+				ROOT = { has_stability > 0.20 }
+				ROOT = { has_stability < 0.31 }
+			}
+			modifier = {
+				add = 20
+				ROOT = { has_stability > 0.30 }
+				ROOT = { has_stability < 0.41 }
+			}
+			modifier = {
+				add = 10
+				ROOT = { has_stability > 0.40 }
+				ROOT = { has_stability < 0.51 }
+			}
+			modifier = {
+				add = 50
+				ROOT = { has_war_support < 0.11 }
+			}
+			modifier = {
+				add = 40
+				ROOT = { has_war_support > 0.10 }
+				ROOT = { has_war_support < 0.21 }
+			}
+			modifier = {
+				add = 30
+				ROOT = { has_war_support > 0.20 }
+				ROOT = { has_war_support < 0.31 }
+			}
+			modifier = {
+				add = 20
+				ROOT = { has_war_support > 0.30 }
+				ROOT = { has_war_support < 0.41 }
+			}
+			modifier = {
+				add = 10
+				ROOT = { has_war_support > 0.40 }
+				ROOT = { has_war_support < 0.51 }
+			}
+			modifier = {
+				add = 50
+				FROM = {
+					strength_ratio = {
+						tag = ROOT
+						ratio > 2.9
+					}
+				}
+			}
+			modifier = {
+				add = 40
+				FROM = {
+					strength_ratio = {
+						tag = ROOT
+						ratio > 1.9
+					}
+				}
+				FROM = {
+					strength_ratio = {
+						tag = ROOT
+						ratio < 3
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				FROM = {
+					strength_ratio = {
+						tag = ROOT
+						ratio > 0.9
+					}
+				}
+				FROM = {
+					strength_ratio = {
+						tag = ROOT
+						ratio < 2
+					}
+				}
+			}
+			modifier = {
+				add = 50
+				ROOT = { has_manpower < 1 }
+			}
+			modifier = {
+				add = 40
+				ROOT = { has_manpower > 0 }
+				ROOT = { has_manpower < 10000 }
+			}
+			modifier = {
+				add = 30
+				ROOT = { has_manpower > 9999 }
+				ROOT = { has_manpower < 50000 }
+			}
+			modifier = {
+				add = 20
+				ROOT = { has_manpower > 49999 }
+				ROOT = { has_manpower < 100000 }
+			}
+			modifier = {
+				add = 10
+				ROOT = { has_manpower > 99999 }
+				ROOT = { has_manpower < 250000 }
+			}
 		}
 		
 		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.13 hours = 6 } }
@@ -198,10 +328,125 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.4.b
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 			modifier = {
 				factor = 0
 				has_global_flag = BPD_Always_Accept
+			}
+			modifier = {
+				add = 50
+				ROOT = { surrender_progress < 0.11 }
+			}
+			modifier = {
+				add = 40
+				ROOT = { surrender_progress > 0.10 }
+				ROOT = { surrender_progress < 0.21 }
+			}
+			modifier = {
+				add = 30
+				ROOT = { surrender_progress > 0.20 }
+				ROOT = { surrender_progress < 0.31 }
+			}
+			modifier = {
+				add = 20
+				ROOT = { surrender_progress > 0.30 }
+				ROOT = { surrender_progress < 0.41 }
+			}
+			modifier = {
+				add = 10
+				ROOT = { surrender_progress > 0.40 }
+				ROOT = { surrender_progress < 0.51 }
+			}
+			modifier = {
+				add = 10
+				ROOT = { has_stability > 0.60 }
+				ROOT = { has_stability < 0.71 }
+			}
+			modifier = {
+				add = 20
+				ROOT = { has_stability > 0.70 }
+				ROOT = { has_stability < 0.81 }
+			}
+			modifier = {
+				add = 30
+				ROOT = { has_stability > 0.80 }
+				ROOT = { has_stability < 0.91 }
+			}
+			modifier = {
+				add = 40
+				ROOT = { has_stability > 0.90 }
+			}
+			modifier = {
+				add = 10
+				ROOT = { has_war_support > 0.60 }
+				ROOT = { has_war_support < 0.71 }
+			}
+			modifier = {
+				add = 20
+				ROOT = { has_war_support > 0.70 }
+				ROOT = { has_war_support < 0.81 }
+			}
+			modifier = {
+				add = 30
+				ROOT = { has_war_support > 0.80 }
+				ROOT = { has_war_support < 0.91 }
+			}
+			modifier = {
+				add = 40
+				ROOT = { has_war_support > 0.90 }
+			}
+			modifier = {
+				add = 50
+				ROOT = {
+					strength_ratio = {
+						tag = FROM
+						ratio > 2.9
+					}
+				}
+			}
+			modifier = {
+				add = 40
+				ROOT = {
+					strength_ratio = {
+						tag = FROM
+						ratio > 1.9
+					}
+				}
+				ROOT = {
+					strength_ratio = {
+						tag = FROM
+						ratio < 3
+					}
+				}
+			}
+			modifier = {
+				add = 20
+				ROOT = {
+					strength_ratio = {
+						tag = FROM
+						ratio > 0.9
+					}
+				}
+				ROOT = {
+					strength_ratio = {
+						tag = FROM
+						ratio < 2
+					}
+				}
+			}
+			modifier = {
+				add = 10
+				ROOT = { has_manpower > 499999 }
+				ROOT = { has_manpower < 1000000 }
+			}
+			modifier = {
+				add = 20
+				ROOT = { has_manpower > 999999 }
+				ROOT = { has_manpower < 2000000 }
+			}
+			modifier = {
+				add = 30
+				ROOT = { has_manpower > 1999999 }
 			}
 		}
 		
@@ -228,7 +473,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.5.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		hidden_effect = {
@@ -272,7 +517,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.5.b
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 			modifier = {
 				factor = 0
 				has_global_flag = BPD_Always_Accept
@@ -302,7 +547,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.6.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		hidden_effect = {
@@ -348,7 +593,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.6.b
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 			modifier = {
 				factor = 0
 				has_global_flag = BPD_Always_Accept
@@ -375,7 +620,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.7.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		hidden_effect = {
@@ -413,7 +658,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.8.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		add_war_support = -0.05
@@ -437,7 +682,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.9.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		hidden_effect = {
@@ -497,7 +742,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.10.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		add_war_support = -0.05
@@ -521,7 +766,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.11.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		hidden_effect = {
@@ -578,7 +823,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.12.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		add_war_support = -0.05
@@ -602,7 +847,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.13.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		
@@ -670,7 +915,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.14.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		add_war_support = -0.05
@@ -695,7 +940,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.15.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		every_country = {
@@ -729,7 +974,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.16.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		add_war_support = -0.05
@@ -753,7 +998,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.17.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		every_country = {
@@ -787,7 +1032,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.18.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		add_war_support = -0.05
@@ -838,7 +1083,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.90.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 	}
@@ -874,7 +1119,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.100.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 	}
@@ -918,7 +1163,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.101.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 	}
@@ -962,7 +1207,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.110.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 
 	}
@@ -1000,7 +1245,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.130.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 	}
@@ -1048,7 +1293,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.131.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 	}
@@ -1084,7 +1329,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.150.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 	}
@@ -1131,7 +1376,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.151.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 	}
@@ -1167,7 +1412,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.170.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 	}
@@ -1216,7 +1461,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.171.a
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 	}
@@ -1237,7 +1482,7 @@ country_event = {
 		name = "AI Always Accepts"
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		set_global_flag = BPD_Always_Accept
@@ -1250,7 +1495,7 @@ country_event = {
 		name = "50-50 Chance"
 
 		ai_chance = {
-			factor = 500
+			factor = 50
 		}
 		
 		clr_global_flag = BPD_Always_Accept
