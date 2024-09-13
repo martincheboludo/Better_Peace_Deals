@@ -188,11 +188,6 @@ country_event = {
 			factor = 500
 		}
 		
-		#Enemy Faction Leader Gets Event to give Allied Faction Members Their Reward
-		hidden_effect = {
-			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.130 } }
-		}
-		
 		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.13 hours = 6 } }
 		
 		
@@ -321,8 +316,9 @@ country_event = {
 					is_owned_by = ROOT
 				} 
 				OR = { 
-					is_core_of = ROOT
-					is_claimed_by = ROOT
+					is_core_of = ROOT 
+					is_claimed_by = ROOT 
+					is_controlled_by = ROOT
 				}
 				owner = {
 					has_war_with = ROOT
@@ -614,13 +610,17 @@ country_event = {
 		BPD_Handle_Vichy_France = yes
 		}
 		
-		#Peace At Current Frontlines
+		#Peace At Current Frontlines and Cores and Claims
 		every_state = {
 			limit = { 
 				NOT = {
 					is_owned_by = ROOT 
 				} 
-				is_controlled_by = ROOT
+				OR = { 
+					is_core_of = ROOT 
+					is_claimed_by = ROOT 
+					is_controlled_by = ROOT
+				}
 				owner = {
 					has_war_with = ROOT
 					OR = {
@@ -634,27 +634,9 @@ country_event = {
 			} 
 		}
 		
-		#Cores and Claims
-		every_state = { 
-			limit = { 
-				NOT = {
-					is_owned_by = ROOT 
-				} 
-				OR = { 
-					is_core_of = ROOT 
-					is_claimed_by = ROOT 
-				}
-				owner = {
-					has_war_with = ROOT
-					OR = {
-						is_in_faction_with = FROM
-						tag = FROM
-					}
-				}
-			} 
-			ROOT = { 
-				transfer_state = PREV 
-			} 
+		#Enemy Faction Leader Gets Event to give Allied Faction Members Their Reward
+		hidden_effect = {
+			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.130 } }
 		}
 		
 		every_country = {
@@ -1008,7 +990,7 @@ country_event = {
 						has_war_with = ROOT
 						NOT = { tag = FROM }
 					}
-					country_event = { id = BPD_Better_Peace_Deals_Country.131 hours = 5 }
+					country_event = { id = BPD_Better_Peace_Deals_Country.131 }
 				}
 			}
 	}
@@ -1044,25 +1026,8 @@ country_event = {
 						OR = { 
 							is_core_of = ROOT 
 							is_claimed_by = ROOT 
+							is_controlled_by = ROOT
 						}
-						owner = {
-							has_war_with = ROOT
-							OR = {
-								is_in_faction_with = FROM
-								tag = FROM
-							}
-						}
-					} 
-					ROOT = { 
-						transfer_state = PREV 
-					} 
-				}
-				every_state = {
-					limit = { 
-						NOT = {
-							is_owned_by = ROOT 
-						} 
-						is_controlled_by = ROOT
 						owner = {
 							has_war_with = ROOT
 							OR = {
@@ -1192,7 +1157,7 @@ country_event = {
 						has_war_with = ROOT
 						NOT = { tag = FROM }
 					}
-					country_event = { id = BPD_Better_Peace_Deals_Country.171 hours = 5 }
+					country_event = { id = BPD_Better_Peace_Deals_Country.171 }
 				}
 			}
 	}
@@ -1226,28 +1191,10 @@ country_event = {
 						NOT = {
 							is_owned_by = ROOT 
 						} 
-						is_controlled_by = ROOT
-						owner = {
-							has_war_with = ROOT
-							OR = {
-								is_in_faction_with = FROM
-								tag = FROM
-							}
-						}
-					} 
-					ROOT = { 
-						transfer_state = PREV 
-					} 
-				}
-				#Claimed States
-				every_state = { 
-					limit = { 
-						NOT = {
-							is_owned_by = ROOT
-						} 
 						OR = { 
-							is_core_of = ROOT
-							is_claimed_by = ROOT
+							is_core_of = ROOT 
+							is_claimed_by = ROOT 
+							is_controlled_by = ROOT
 						}
 						owner = {
 							has_war_with = ROOT

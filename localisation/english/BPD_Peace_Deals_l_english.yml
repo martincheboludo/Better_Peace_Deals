@@ -56,7 +56,7 @@
  BPD_Better_Peace_Deals_Country.3.b:1 "Reject the proposal and continue the war."
  
  
- BPD_Better_Peace_Deals_Country.4.t:0 "[FROM.GetName] Demands Our Surrender"
+ BPD_Better_Peace_Deals_Country.4.t:0 "[FROM.GetName] Demands Our Total Surrender"
  BPD_Better_Peace_Deals_Country.4.d:0 "We have received a demand from [FROM.GetAdjective] leadership for our unconditional surrender. [FROM.GetLeader] insists that we not only cease fighting but also hand over all territories currently occupied by their forces, along with any regions they have claimed or have a core on. This ultimatum is a clear signal that they believe further resistance is futile. Should we accept, our current frontlines will become the new borders, and we will cede additional territory as specified by [FROM.GetAdjective] demands. The question now stands before us: do we surrender, or fight on to the bitter end?"
  BPD_Better_Peace_Deals_Country.4.a:1 "Surrender"
  BPD_Better_Peace_Deals_Country.4.b:1 "We will never surrender"
@@ -66,7 +66,7 @@
  BPD_Better_Peace_Deals_Country.5.a:1 "Accept the proposal and receive the territorial concessions."
  BPD_Better_Peace_Deals_Country.5.b:1 "Reject the proposal and continue the war."
  
- BPD_Better_Peace_Deals_Country.6.t:0 "[FROM.GetName] Offers To Surrender"
+ BPD_Better_Peace_Deals_Country.6.t:0 "[FROM.GetName] Offers Total Surrender"
  BPD_Better_Peace_Deals_Country.6.d:0 "We have received a surrender offer from the [FROM.GetAdjective] government. They propose to end the war based on the current frontlines, with all territory they control ceded to us. Additionally, any regions that we claim or have cores on would be handed over as part of the terms. [FROM.GetLeader] is conceding that further resistance is futile and seeks to prevent further destruction by formalizing the territorial gains we’ve made thus far. The decision now falls to you: do we accept their surrender and solidify our position, or reject the offer and pursue further conquest?"
  BPD_Better_Peace_Deals_Country.6.a:1 "Accept their surrnder"
  BPD_Better_Peace_Deals_Country.6.b:1 "We have other plans for them"
