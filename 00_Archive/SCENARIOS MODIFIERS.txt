@@ -81,9 +81,14 @@ Enemy Naval Strength is Equal to or Slightly Greater Than Yours: +20% to Accepta
 Your Naval Strength is Equal to or Slightly Greater Than the Enemy’s: +10% to Acceptance
 Your Naval Strength is Two to Three Times the Enemy’s: +10% to Decline
 Your Naval Strength is More Than Three Times the Enemy’s: +20% to Decline
-Enemy Has Strong Allies: +10% to Acceptance (enemy’s strong allies make the war seem unwinnable, encouraging you to accept the deal). You Have Strong Allies: +10% to Decline (your strong allies make you less inclined to accept the deal).
 
-Enemy Has War With Other Major Faction: +10% to Decline (the enemy is stretched thin and may be less likely to accept, making you more inclined to reject the deal). You Have War With Another Major Faction: +10% to Acceptance (being involved in another major war may compel you to accept the deal to focus resources).
+Enemy Has Strong Allies: +10% to Acceptance (enemy’s strong allies make the war seem unwinnable, encouraging you to accept the deal). 
+
+You Have Strong Allies: +10% to Decline (your strong allies make you less inclined to accept the deal).
+
+Enemy Has War With Other Major Faction: +10% to Decline (the enemy is stretched thin and may be less likely to accept, making you more inclined to reject the deal). 
+
+You Have War With Another Major Faction: +10% to Acceptance (being involved in another major war may compel you to accept the deal to focus resources).
 
 Casualties:
 
@@ -95,6 +100,8 @@ Casualties:
 6,000,000 - 8,000,000: +60% to Acceptance
 8,000,000 - 10,000,000: +70% to Acceptance
 10,000,000+: +80% to Acceptance
+
+
 IC Ratio (Industrial Capacity Ratio):
 
 Enemy IC is More Than Three Times Yours: +40% to Acceptance
