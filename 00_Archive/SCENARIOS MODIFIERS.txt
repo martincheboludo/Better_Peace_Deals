@@ -1,0 +1,783 @@
+---------------------------
+Total Victory scenario LOSER gets this event from the WINNER and can accept or decline
+---------------------------
+
+Surrender Percentage:
+0-10%: Flat Out Refuse
+10-20%: Flat Out Refuse
+20-30%: +30% to Decline
+30-40%: +20% to Decline
+40-50%: +10% to Decline
+50-60%: Neutral (0%)
+60-70%: +10% to Acceptance
+70-80%: +30% to Acceptance
+80-90%: +40% to Acceptance
+90-100%: +50% to Acceptance
+
+Stability Percentage:
+0-10%: +50% to Acceptance
+10-20%: +40% to Acceptance
+20-30%: +30% to Acceptance
+30-40%: +20% to Acceptance
+40-50%: +10% to Acceptance
+50-60%: Neutral (0%)
+60-70%: +10% to Decline
+70-80%: +20% to Decline
+80-90%: +30% to Decline
+90-100%: +40% to Decline
+
+War Support Percentage:
+0-10%: +50% to Acceptance
+10-20%: +40% to Acceptance
+20-30%: +30% to Acceptance
+30-40%: +20% to Acceptance
+40-50%: +10% to Acceptance
+50-60%: Neutral (0%)
+60-70%: +10% to Decline
+70-80%: +20% to Decline
+80-90%: +30% to Decline
+90-100%: +40% to Decline
+
+Presence of a Strong Ally:
+No strong allies: +20% to acceptance rate
+Strong ally present: +20% to decline rate
+
+Strength Ratio of Army
+Enemy Strength is More Than Three Times Yours: +50% to Acceptance
+Enemy Strength is Two to Three Times Yours: +40% to Acceptance
+Enemy Strength is Equal to or Slightly Greater Than Yours: +20% to Acceptance
+Your Strength is Equal to or Slightly Greater Than the Enemy’s: +20% to Decline
+Your Strength is More Than Two Times the Enemy’s: +40% to Decline
+Your Strength is More Than Three Times the Enemy’s: +50% to Decline
+
+Manpower
+0 Manpower: +50% to Acceptance
+1,000 to 10,000 Manpower: +40% to Acceptance
+10,000 to 50,000 Manpower: +30% to Acceptance
+50,000 to 100,000 Manpower: +20% to Acceptance
+100,000 to 250,000 Manpower: +10% to Acceptance
+250,000 to 500,000 Manpower: Neutral (0%)
+500,000 to 1,000,000 Manpower: -10% to Decline
+1,000,000 to 2,000,000 Manpower: -20% to Decline
+More Than 2,000,000 Manpower: -30% to Decline
+
+Manpower Law
+Disarmed Nation: +50% to Acceptance
+Volunteer Only: +40% to Acceptance
+Limited Conscription: +30% to Acceptance
+Extensive Conscription: +20% to Acceptance
+Service by Requirement: Neutral (0%)
+All Adults Serve: -10% to Decline
+Scraping the Barrel: -20% to Decline
+
+Economy Law
+Civilian Economy: +50% to Acceptance
+Early Mobilization: +40% to Acceptance
+Partial Mobilization: +30% to Acceptance
+War Economy: +20% to Acceptance
+Total Mobilization: Neutral (0%)
+
+---------------------------
+Limited Victory scenario LOSER gets this event from the WINNER and can accept or decline
+---------------------------
+
+For the Limited Victory scenario, where the loser only hands over cores and claims but not all occupied states, the acceptance or decline modifiers will be adjusted to reflect the less severe nature of the peace deal compared to Total Victory. Here’s how you might set up the modifiers:
+
+Revised Limited Victory Scenario (Loser’s Perspective)
+1. Surrender Percentage:
+
+0-10%: +50% to Decline
+
+10-20%: +40% to Decline
+
+20-30%: +30% to Decline
+
+30-40%: +20% to Decline
+
+40-50%: Neutral (0%)
+
+50-60%: +10% to Acceptance
+
+60-70%: +20% to Acceptance
+
+70-80%: +30% to Acceptance
+
+80-90%: +40% to Acceptance
+
+90-100%: +50% to Acceptance
+
+Rationale: Very low surrender percentages indicate strong resistance, making acceptance less likely. As surrender percentage increases, acceptance becomes more feasible.
+
+2. Stability Percentage:
+
+0-10%: +40% to Acceptance
+
+10-20%: +30% to Acceptance
+
+20-30%: +20% to Acceptance
+
+30-40%: +10% to Acceptance
+
+40-50%: Neutral (0%)
+
+50-60%: +10% to Decline
+
+60-70%: +20% to Decline
+
+70-80%: +30% to Decline
+
+80-90%: +40% to Decline
+
+90-100%: +50% to Decline
+
+Rationale: Stability affects the likelihood of acceptance, with lower stability making acceptance more likely.
+
+3. War Support Percentage:
+
+0-10%: +40% to Acceptance
+
+10-20%: +30% to Acceptance
+
+20-30%: +20% to Acceptance
+
+30-40%: +10% to Acceptance
+
+40-50%: Neutral (0%)
+
+50-60%: +10% to Decline
+
+60-70%: +20% to Decline
+
+70-80%: +30% to Decline
+
+80-90%: +40% to Decline
+
+90-100%: +50% to Decline
+
+Rationale: Lower war support increases acceptance, but less so compared to more severe deals.
+
+4. Presence of a Strong Ally:
+
+No strong allies: +10% to Acceptance
+
+Strong ally present: +10% to Decline
+
+Rationale: The presence of a strong ally still affects the decision, though less dramatically for a less severe peace deal.
+
+5. Strength Ratio of Army:
+
+Enemy Strength is More Than Three Times Yours: +30% to Acceptance
+
+Enemy Strength is Two to Three Times Yours: +20% to Acceptance
+
+Enemy Strength is Equal to or Slightly Greater Than Yours: +10% to Acceptance
+
+Your Strength is Equal to or Slightly Greater Than the Enemy’s: +10% to Decline
+
+Your Strength is More Than Two Times the Enemy’s: +20% to Decline
+
+Your Strength is More Than Three Times the Enemy’s: +30% to Decline
+
+Rationale: The strength ratio affects acceptance or decline, with stronger opponents or significantly stronger defenders influencing the decision.
+
+6. Manpower:
+
+0 Manpower: +40% to Acceptance
+
+1,000 to 10,000 Manpower: +30% to Acceptance
+
+10,000 to 50,000 Manpower: +20% to Acceptance
+
+50,000 to 100,000 Manpower: +10% to Acceptance
+
+100,000 to 250,000 Manpower: Neutral (0%)
+
+250,000 to 500,000 Manpower: +10% to Decline
+
+500,000 to 1,000,000 Manpower: +20% to Decline
+
+1,000,000 to 2,000,000 Manpower: +30% to Decline
+
+More Than 2,000,000 Manpower: +40% to Decline
+
+Rationale: Lower manpower increases acceptance likelihood, but this effect is less pronounced compared to more severe scenarios.
+
+7. Manpower Law:
+
+Disarmed Nation: +40% to Acceptance
+
+Volunteer Only: +30% to Acceptance
+
+Limited Conscription: +20% to Acceptance
+
+Extensive Conscription: +10% to Acceptance
+
+Service by Requirement: Neutral (0%)
+
+All Adults Serve: +10% to Decline
+
+Scraping the Barrel: +20% to Decline
+
+Rationale: Manpower laws affect acceptance, with more severe laws making decline more likely.
+
+8. Economy Law:
+
+Civilian Economy: +40% to Acceptance
+
+Early Mobilization: +30% to Acceptance
+
+Partial Mobilization: +20% to Acceptance
+
+War Economy: +10% to Acceptance
+
+Total Mobilization: Neutral (0%)
+
+Rationale: The economy's impact on acceptance is less severe for a less harsh peace deal compared to more extreme scenarios.
+
+---------------------------
+Stalemate Scenario ANY ONE OF THE TWO CAN SEND IT TO EACH OTHER
+---------------------------
+
+1. Surrender Percentage:
+
+0-10%: +20% to Acceptance
+
+10-20%: +15% to Acceptance
+
+20-30%: +10% to Acceptance
+
+30-40%: +5% to Acceptance
+
+40-50%: Neutral (0%)
+
+50-60%: +5% to Decline
+
+60-70%: +10% to Decline
+
+70-80%: +15% to Decline
+
+80-90%: +20% to Decline
+
+90-100%: +25% to Decline
+
+Rationale: Extreme low surrender progress makes acceptance more likely, while higher surrender percentages increase the likelihood of declining.
+
+2. Stability Percentage:
+
+0-10%: +30% to Acceptance
+
+10-20%: +20% to Acceptance
+
+20-30%: +10% to Acceptance
+
+30-40%: Neutral (0%)
+
+40-50%: Neutral (0%)
+
+50-60%: Neutral (0%)
+
+60-70%: +10% to Decline
+
+70-80%: +20% to Decline
+
+80-90%: +30% to Decline
+
+90-100%: +40% to Decline
+
+Rationale: Extremely low stability makes acceptance more likely, while higher stability increases the likelihood of declining.
+
+3. War Support Percentage:
+
+0-10%: +30% to Acceptance
+
+10-20%: +20% to Acceptance
+
+20-30%: +10% to Acceptance
+
+30-40%: Neutral (0%)
+
+40-50%: Neutral (0%)
+
+50-60%: Neutral (0%)
+
+60-70%: +10% to Decline
+
+70-80%: +20% to Decline
+
+80-90%: +30% to Decline
+
+90-100%: +40% to Decline
+
+Rationale: Lower war support makes acceptance more likely, while higher war support increases the likelihood of declining.
+
+4. Presence of a Strong Ally:
+
+No strong allies: +10% to Acceptance
+
+Strong ally present: Neutral (0%)
+
+Rationale: Presence of a strong ally has a minor influence on the decision to accept or decline the stalemate.
+
+5. Strength Ratio of Army:
+
+Enemy Strength is More Than Three Times Yours: +20% to Acceptance
+
+Enemy Strength is Two to Three Times Yours: +10% to Acceptance
+
+Enemy Strength is Equal to or Slightly Greater Than Yours: Neutral (0%)
+
+Your Strength is Equal to or Slightly Greater Than the Enemy’s: Neutral (0%)
+
+Your Strength is More Than Two Times the Enemy’s: +10% to Decline
+
+Your Strength is More Than Three Times the Enemy’s: +20% to Decline
+
+Rationale: A significant disparity in strength makes acceptance more likely, while having more strength than the enemy may increase the likelihood of declining.
+
+6. Manpower:
+
+0 Manpower: +20% to Acceptance
+
+1,000 to 10,000 Manpower: +10% to Acceptance
+
+10,000 to 50,000 Manpower: Neutral (0%)
+
+50,000 to 100,000 Manpower: Neutral (0%)
+
+100,000 to 250,000 Manpower: Neutral (0%)
+
+250,000 to 500,000 Manpower: +10% to Decline
+
+500,000 to 1,000,000 Manpower: +20% to Decline
+
+1,000,000 to 2,000,000 Manpower: +30% to Decline
+
+More Than 2,000,000 Manpower: +40% to Decline
+
+Rationale: Extremely low manpower makes acceptance more likely, while high manpower increases the likelihood of declining.
+
+7. Manpower Law:
+
+Disarmed Nation: +20% to Acceptance
+
+Volunteer Only: +10% to Acceptance
+
+Limited Conscription: Neutral (0%)
+
+Extensive Conscription: Neutral (0%)
+
+Service by Requirement: Neutral (0%)
+
+All Adults Serve: +10% to Decline
+
+Scraping the Barrel: +20% to Decline
+
+Rationale: The manpower law affects acceptance; more severe laws increase the likelihood of declining the stalemate.
+
+8. Economy Law:
+
+Civilian Economy: +20% to Acceptance
+
+Early Mobilization: +10% to Acceptance
+
+Partial Mobilization: Neutral (0%)
+
+War Economy: Neutral (0%)
+
+Total Mobilization: Neutral (0%)
+
+Rationale: Economy law has a moderate impact on acceptance, with more extreme laws making it easier to accept a stalemate.
+
+
+--------------------
+Status Quo Ante Bellum Scenario ANY ONE OF THE TWO CAN SEND IT TO EACH OTHER
+--------------------
+
+For the Status Quo Ante Bellum scenario, where the peace deal involves a white peace with no territorial changes, the acceptance or decline will likely be influenced by the less severe nature of the deal. Here’s how the modifiers might look from the loser’s perspective:
+
+
+1. Surrender Percentage:
+
+0-10%: +50% to Acceptance
+
+10-20%: +40% to Acceptance
+
+20-30%: +30% to Acceptance
+
+30-40%: +20% to Acceptance
+
+40-50%: +10% to Acceptance
+
+50-60%: Neutral (0%)
+
+60-70%: +10% to Decline
+
+70-80%: +20% to Decline
+
+80-90%: +30% to Decline
+
+90-100%: +40% to Decline
+
+Rationale: Given the non-punitive nature of a white peace, lower surrender percentages are more likely to favor acceptance.
+
+2. Stability Percentage:
+
+0-10%: +40% to Acceptance
+
+10-20%: +30% to Acceptance
+
+20-30%: +20% to Acceptance
+
+30-40%: +10% to Acceptance
+
+40-50%: Neutral (0%)
+
+50-60%: +10% to Decline
+
+60-70%: +20% to Decline
+
+70-80%: +30% to Decline
+
+80-90%: +40% to Decline
+
+90-100%: +50% to Decline
+
+Rationale: Stability affects the decision, but since the terms are neutral, higher stability might make acceptance less favorable as they might want to continue.
+
+3. War Support Percentage:
+
+0-10%: +40% to Acceptance
+
+10-20%: +30% to Acceptance
+
+20-30%: +20% to Acceptance
+
+30-40%: +10% to Acceptance
+
+40-50%: Neutral (0%)
+
+50-60%: +10% to Decline
+
+60-70%: +20% to Decline
+
+70-80%: +30% to Decline
+
+80-90%: +40% to Decline
+
+90-100%: +50% to Decline
+
+Rationale: Lower war support typically increases acceptance, but for a white peace, higher war support can push towards a desire to continue the conflict.
+
+4. Presence of a Strong Ally:
+
+No strong allies: +20% to Acceptance
+
+Strong ally present: +20% to Decline
+
+Rationale: Having no strong allies might make acceptance more favorable, but the presence of an ally could lead to a stronger push to continue.
+
+5. Strength Ratio of Army:
+
+Enemy Strength is More Than Three Times Yours: +30% to Acceptance
+
+Enemy Strength is Two to Three Times Yours: +20% to Acceptance
+
+Enemy Strength is Equal to or Slightly Greater Than Yours: +10% to Acceptance
+
+Your Strength is Equal to or Slightly Greater Than the Enemy’s: +10% to Decline
+
+Your Strength is More Than Two Times the Enemy’s: +20% to Decline
+
+Your Strength is More Than Three Times the Enemy’s: +30% to Decline
+
+Rationale: If the enemy is significantly stronger, acceptance is more likely, but if the strength is more balanced, the decision could lean towards decline.
+
+6. Manpower:
+
+0 Manpower: +40% to Acceptance
+
+1,000 to 10,000 Manpower: +30% to Acceptance
+
+10,000 to 50,000 Manpower: +20% to Acceptance
+
+50,000 to 100,000 Manpower: +10% to Acceptance
+
+100,000 to 250,000 Manpower: Neutral (0%)
+
+250,000 to 500,000 Manpower: +10% to Decline
+
+500,000 to 1,000,000 Manpower: +20% to Decline
+
+1,000,000 to 2,000,000 Manpower: +30% to Decline
+
+More Than 2,000,000 Manpower: +40% to Decline
+
+Rationale: Very low manpower makes acceptance more likely, as the country might prefer to avoid further conflict.
+
+7. Manpower Law:
+
+Disarmed Nation: +30% to Acceptance
+
+Volunteer Only: +20% to Acceptance
+
+Limited Conscription: +10% to Acceptance
+
+Extensive Conscription: Neutral (0%)
+
+Service by Requirement: Neutral (0%)
+
+All Adults Serve: +10% to Decline
+
+Scraping the Barrel: +20% to Decline
+
+Rationale: The impact of manpower laws influences the decision, with more severe laws making it slightly more likely to accept.
+
+8. Economy Law:
+
+Civilian Economy: +30% to Acceptance
+
+Early Mobilization: +20% to Acceptance
+
+Partial Mobilization: +10% to Acceptance
+
+War Economy: Neutral (0%)
+
+Total Mobilization: +10% to Decline
+
+Rationale: The economy’s impact on acceptance for a white peace is moderate, with higher mobilization laws potentially pushing towards a desire to continue the fight.
+
+This setup should reflect the nature of the Status Quo Ante Bellum scenario and how various factors could influence the decision to accept or decline the peace offer.
+
+-----------------------
+Limited Surrender Scenario LOSER SENDS TO WINNER, WINNER CAN ACCEPT OR DECLINE
+------------------------
+
+Surrender Percentage of the Loser:
+
+0-10%: +40% to Acceptance
+10-20%: +30% to Acceptance
+20-30%: +20% to Acceptance
+30-40%: +10% to Acceptance
+40-50%: Neutral (0%)
+50-60%: +10% to Decline
+60-70%: +20% to Decline
+70-80%: +30% to Decline
+80-90%: +40% to Decline
+90-100%: +50% to Decline
+Rationale: If the loser is close to surrendering, the winner might prefer to press on for a better deal, making them less likely to accept a limited surrender offer.
+
+Stability Percentage of the Winner:
+
+0-10%: +50% to Acceptance
+10-20%: +40% to Acceptance
+20-30%: +30% to Acceptance
+30-40%: +20% to Acceptance
+40-50%: Neutral (0%)
+50-60%: +10% to Decline
+60-70%: +20% to Decline
+70-80%: +30% to Decline
+80-90%: +40% to Decline
+90-100%: +50% to Decline
+Rationale: Higher stability might encourage the winner to continue the war, decreasing the likelihood of accepting a limited surrender.
+
+War Support Percentage of the Winner:
+
+0-10%: +50% to Acceptance
+10-20%: +40% to Acceptance
+20-30%: +30% to Acceptance
+30-40%: +20% to Acceptance
+40-50%: Neutral (0%)
+50-60%: +10% to Decline
+60-70%: +20% to Decline
+70-80%: +30% to Decline
+80-90%: +40% to Decline
+90-100%: +50% to Decline
+Rationale: Low war support might increase the winner's willingness to accept a limited surrender to end the conflict.
+
+Presence of Strong Allies for the Winner:
+
+No strong allies: +20% to Acceptance
+Strong ally present: +20% to Decline
+Rationale: If the winner has strong allies, they might prefer to continue the war with their support, decreasing the likelihood of accepting a limited surrender.
+
+Strength Ratio of Army (Winner’s Perspective):
+
+Enemy Strength is More Than Three Times Yours: +30% to Acceptance
+Enemy Strength is Two to Three Times Yours: +20% to Acceptance
+Enemy Strength is Equal to or Slightly Greater Than Yours: +10% to Acceptance
+Your Strength is Equal to or Slightly Greater Than the Enemy’s: +10% to Decline
+Your Strength is More Than Two Times the Enemy’s: +20% to Decline
+Your Strength is More Than Three Times the Enemy’s: +30% to Decline
+Rationale: If the winner has superior strength, they might prefer to continue fighting rather than accepting a limited surrender.
+
+Remaining Manpower of the Winner:
+
+0 Manpower: +40% to Acceptance
+1,000 to 10,000 Manpower: +30% to Acceptance
+10,000 to 50,000 Manpower: +20% to Acceptance
+50,000 to 100,000 Manpower: +10% to Acceptance
+100,000 to 250,000 Manpower: Neutral (0%)
+250,000 to 500,000 Manpower: +10% to Decline
+500,000 to 1,000,000 Manpower: +20% to Decline
+1,000,000 to 2,000,000 Manpower: +30% to Decline
+More Than 2,000,000 Manpower: +40% to Decline
+Rationale: Lower manpower might make the winner more willing to accept a limited surrender to end the war.
+
+Manpower Law of the Winner:
+
+Disarmed Nation: +40% to Acceptance
+Volunteer Only: +30% to Acceptance
+Limited Conscription: +20% to Acceptance
+Extensive Conscription: +10% to Acceptance
+Service by Requirement: Neutral (0%)
+All Adults Serve: +10% to Decline
+Scraping the Barrel: +20% to Decline
+Rationale: More restrictive manpower laws may indicate a greater strain on the winner’s resources, making them more likely to accept a limited surrender.
+
+Economy Law of the Winner:
+
+Civilian Economy: +40% to Acceptance
+Early Mobilization: +30% to Acceptance
+Partial Mobilization: +20% to Acceptance
+War Economy: +10% to Acceptance
+Total Mobilization: Neutral (0%)
+Rationale: If the economy is less mobilized, the winner might be more inclined to accept a limited surrender to avoid prolonged conflict.
+
+-----------------------
+Total Surrender Scenario LOSER SENDS TO WINNER, WINNER CAN ACCEPT OR DECLINE
+------------------------
+
+Total Surrender Scenario (Winner’s Perspective)
+In the Total Surrender scenario, the loser offers everything including occupied states, cores, and claims in exchange for peace. This is the most severe form of surrender for the loser. From the winner's perspective, accepting this deal or not will be influenced by various factors, with the emphasis on how likely they are to achieve a better outcome by continuing the war versus accepting the comprehensive surrender offer.
+
+Surrender Percentage of the Loser:
+
+0-10%: +50% to Acceptance
+10-20%: +40% to Acceptance
+20-30%: +30% to Acceptance
+30-40%: +20% to Acceptance
+40-50%: +10% to Acceptance
+50-60%: Neutral (0%)
+60-70%: +10% to Decline
+70-80%: +20% to Decline
+80-90%: +30% to Decline
+90-100%: +40% to Decline
+Rationale: If the loser is far from surrendering, the winner may prefer to push for a complete victory, making them less likely to accept the offer. If the surrender progress is high, the deal becomes more attractive as it secures a significant win with minimal additional effort.
+
+Stability Percentage of the Winner:
+
+0-10%: +50% to Acceptance
+10-20%: +40% to Acceptance
+20-30%: +30% to Acceptance
+30-40%: +20% to Acceptance
+40-50%: +10% to Acceptance
+50-60%: Neutral (0%)
+60-70%: +10% to Decline
+70-80%: +20% to Decline
+80-90%: +30% to Decline
+90-100%: +40% to Decline
+Rationale: High stability might encourage the winner to continue the war, decreasing the likelihood of accepting the offer. Conversely, low stability could make accepting the offer more attractive as it could end the conflict and stabilize the situation.
+
+War Support Percentage of the Winner:
+
+0-10%: +50% to Acceptance
+10-20%: +40% to Acceptance
+20-30%: +30% to Acceptance
+30-40%: +20% to Acceptance
+40-50%: +10% to Acceptance
+50-60%: Neutral (0%)
+60-70%: +10% to Decline
+70-80%: +20% to Decline
+80-90%: +30% to Decline
+90-100%: +40% to Decline
+Rationale: Low war support might increase the winner's willingness to accept a total surrender offer as it would end the conflict. High war support may make them prefer to continue fighting.
+
+Presence of Strong Allies for the Winner:
+
+No strong allies: +30% to Acceptance
+Strong ally present: +10% to Decline
+Rationale: If the winner lacks strong allies, they might be more inclined to accept a total surrender to secure a significant win and end the war. Strong allies might provide the necessary support to continue the conflict.
+
+Strength Ratio of Army (Winner’s Perspective):
+
+Enemy Strength is More Than Three Times Yours: +40% to Acceptance
+Enemy Strength is Two to Three Times Yours: +30% to Acceptance
+Enemy Strength is Equal to or Slightly Greater Than Yours: +20% to Acceptance
+Your Strength is Equal to or Slightly Greater Than the Enemy’s: +10% to Acceptance
+Your Strength is More Than Two Times the Enemy’s: +10% to Decline
+Your Strength is More Than Three Times the Enemy’s: +20% to Decline
+Rationale: If the winner has significantly greater strength, they might find the total surrender offer attractive as it secures a complete victory. If they are relatively strong compared to the enemy, they might prefer to push for further gains.
+
+Remaining Manpower of the Winner:
+
+0 Manpower: +50% to Acceptance
+1,000 to 10,000 Manpower: +40% to Acceptance
+10,000 to 50,000 Manpower: +30% to Acceptance
+50,000 to 100,000 Manpower: +20% to Acceptance
+100,000 to 250,000 Manpower: +10% to Acceptance
+250,000 to 500,000 Manpower: Neutral (0%)
+500,000 to 1,000,000 Manpower: +10% to Decline
+1,000,000 to 2,000,000 Manpower: +20% to Decline
+More Than 2,000,000 Manpower: +30% to Decline
+Rationale: Low manpower could make the winner more inclined to accept a total surrender to avoid further strain. High manpower might make them prefer to continue fighting.
+
+Manpower Law of the Winner:
+
+Disarmed Nation: +50% to Acceptance
+Volunteer Only: +40% to Acceptance
+Limited Conscription: +30% to Acceptance
+Extensive Conscription: +20% to Acceptance
+Service by Requirement: +10% to Acceptance
+All Adults Serve: Neutral (0%)
+Scraping the Barrel: -10% to Decline
+Rationale: If the winner has more restrictive manpower laws, they might be more inclined to accept a total surrender to avoid further resource strain. More relaxed laws could make them more willing to continue the fight.
+
+Economy Law of the Winner:
+
+Civilian Economy: +50% to Acceptance
+Early Mobilization: +40% to Acceptance
+Partial Mobilization: +30% to Acceptance
+War Economy: +20% to Acceptance
+Total Mobilization: Neutral (0%)
+
+-------------------------
+Limited Surrender Scenario
+---------------------
+Rationale:
+
+In this scenario, the losing country is offering to cede its cores and claims in exchange for peace. The decision to accept or reject this offer can be influenced by various factors:
+
+Naval Strength Ratio:
+
+Enemy Naval Strength is More Than Three Times Yours: +20% to Acceptance
+Enemy Naval Strength is Two to Three Times Yours: +15% to Acceptance
+Enemy Naval Strength is Equal to or Slightly Greater Than Yours: +10% to Acceptance
+Your Naval Strength is Equal to or Slightly Greater Than the Enemy’s: 0% (Neutral)
+Your Naval Strength is Two to Three Times the Enemy’s: +10% to Decline
+Your Naval Strength is More Than Three Times the Enemy’s: +20% to Decline
+Enemy Has Strong Allies:
+
+Enemy’s Strong Allies: +10% to Acceptance (their allies might pressure them to offer a deal)
+Your Strong Allies: +10% to Decline (you may feel less inclined to accept as your strong allies can help you achieve a better outcome)
+Enemy Has War With Other Major Faction:
+
+Your Major War: +20% to Acceptance (you might be more willing to accept the deal to concentrate on your other conflict)
+Enemy’s Major War: +20% to Decline (if the enemy is already engaged in another major conflict, you might be more inclined to push for more concessions)
+Casualties:
+
+0-500,000: +10% to Acceptance
+500,000 - 1,000,000: +20% to Acceptance
+1,000,000 - 2,000,000: +30% to Acceptance
+2,000,000 - 4,000,000: +40% to Acceptance
+4,000,000 - 6,000,000: +50% to Acceptance
+6,000,000 - 8,000,000: +60% to Acceptance
+8,000,000 - 10,000,000: +70% to Acceptance
+10,000,000+: +80% to Acceptance
+IC Ratio (Industrial Capacity Ratio):
+
+Enemy IC is More Than Three Times Yours: +20% to Acceptance
+Enemy IC is Two to Three Times Yours: +15% to Acceptance
+Enemy IC is Equal to or Slightly Greater Than Yours: +10% to Acceptance
+Your IC is Equal to or Slightly Greater Than the Enemy’s: 0% (Neutral)
+Your IC is Two to Three Times the Enemy’s: +10% to Decline
+Your IC is More Than Three Times the Enemy’s: +20% to Decline
