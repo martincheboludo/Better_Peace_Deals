@@ -59,6 +59,17 @@ BPD_Peace_Deal_Manager = {
 				tag = FROM
 				months > 5
 			}
+			OR = {
+				FROM = { 
+				surrender_progress > 0.69 
+				}
+				any_country = {
+					is_major = yes
+					has_war_with = ROOT
+					is_in_faction_with = FROM
+					has_capitulated = yes
+				}
+			}
 
         }
 		complete_effect = {
@@ -105,6 +116,18 @@ BPD_Peace_Deal_Manager = {
 			war_length_with = {
 				tag = FROM
 				months > 5
+			}
+			
+			OR = {
+				FROM = { 
+				surrender_progress > 0.34
+				}
+				any_country = {
+					is_major = yes
+					has_war_with = ROOT
+					is_in_faction_with = FROM
+					has_capitulated = yes
+				}
 			}
 
         }
