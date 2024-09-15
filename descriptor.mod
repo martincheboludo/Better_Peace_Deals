@@ -7,3 +7,4 @@ tags={
 name="Better Peace Deals"
 picture="thumbnail.png"
 supported_version="1.14.*"
+remote_file_id="3331870680"

@@ -1,0 +1,60 @@
+Better Peace Deals
+
+[img]https://i.imgur.com/NVBHkZ6.png[/img]
+
+Welcome to Better Peace Deals, a mod created by TK2030 to bring more realism and strategic depth to peace negotiations in Hearts of Iron IV. Designed to prevent wars from dragging on endlessly, this mod introduces new mechanics that allow for more realistic and balanced peace deals, encouraging more dynamic endings to conflicts. Whether you're seeking to press for total victory or negotiating a stalemate, Better Peace Deals ensures that wars can be concluded logically and strategically. Enhance your WWII strategy with this tailored improvement to the base game's diplomatic system.
+
+[img]https://i.imgur.com/6OXWwEl.png[/img]
+
+Current:
+
+Dynamic Peace Deal System: Better Peace Deals introduces a sophisticated peace deal mechanic, offering six different types of peace treaties based on the state of the war. These range from total victory to total surrender, with terms reflecting the war’s progress and each faction’s situation. For balance reasons, the AI will never propose peace deals but will carefully consider any peace proposals sent to them.
+
+Total Victory: Demand all occupied states, cores, and claims of your faction.
+Limited Victory: Demand all cores and claims of your faction.
+Stalemate: Agree to peace at the current frontlines.
+White Peace (Status Quo Ante Bellum): Return to pre-war borders.
+Limited Surrender: Offer the enemy all cores and claims they have on your faction in exchange for peace.
+Total Surrender: Offer the enemy all occupied states, cores, and claims they have on your faction in exchange for peace.
+AI-Driven Decisions: When the AI is in control, it will assess a variety of factors when considering peace deals. These include:
+
+Relative Strength: Evaluates military power.
+Surrender Progress: Considers how close they are to capitulation.
+War Duration: Weighs how many years the conflict has dragged on.
+Casualties: Analyzes the toll of war on their manpower.
+Manpower Levels: Assesses the available manpower to continue the fight.
+Industrial Capacity: Examines the production strength of both sides.
+Leader Propensities: Personalities of leaders like Winston Churchill (who is more likely to reject deals from fascists) and Adolf Hitler (who avoids surrender at all costs) influence decision-making.
+Claim States Decisions: The mod also includes a feature where you can claim any state you control:
+
+50 PP for a state that borders your cores or claims.
+150 PP for a state that does not.
+
+Planned:
+
+Specific Claim Decisions & Events: Tailored decisions and events reflecting the war aims of major powers in World War II.
+Major War Ending Conditions: Unique conditions for ending historically significant wars, such as:
+German-Allied war
+German-Soviet conflict
+Japanese-Allied war
+Japanese-Chinese war
+
+For an epic World War II experience, consider combining Better Peace Deals, Golden Edition, and Better Formable Nations in a single playthrough. Together, these mods offer a rich, immersive blend of enhanced peace deal mechanics, deeper nation-forming options, and intensified strategic realism. Whether you're shaping new empires, negotiating complex peace deals, or tackling tougher enemies, these sister mods provide a truly dynamic and authentic World War II journey in Hearts of Iron IV.
+
+DISCLAIMER: 
+Better Peace Deals (BPD) does not require any other mods to function and works perfectly as a standalone addition to your Hearts of Iron IV experience. Furthermore, BPD is designed to be almost universally compatible with most mods. For total conversion mods or mods that drastically change the game’s states and eras, we recommend enabling the Compatibility Patch in the In-Game Welcome Event to avoid any potential issues.
+
+*Useful Links*
+
+Better Formable Nations and Coring Decisions
+https://steamcommunity.com/sharedfiles/filedetails/?id=3319039017
+
+Golden Edition: A World War 2 Enhancement Mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=3319743038
+
+Better Peace Deals
+https://steamcommunity.com/sharedfiles/filedetails/?id=3331870680
+
+[url=https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=M7N2RCCYGMSDL&source=url]
+[img]https://i.imgur.com/DR7KrNk.png[/img][/url]
+[url=https://discord.gg/s8vrSkfEMF][img]https://i.imgur.com/g7mnaUQ.png[/img][/url]

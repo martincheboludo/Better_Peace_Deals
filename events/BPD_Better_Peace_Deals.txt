@@ -17,6 +17,10 @@ country_event = {
 		ai_chance = {
 			factor = 50
 			modifier = {
+				factor = 0
+				has_global_flag = BPD_Never_Accept
+			}
+			modifier = {
 				add = 50
 				ROOT = { surrender_progress < 0.11 }
 			}
@@ -746,6 +750,10 @@ country_event = {
 
 		ai_chance = {
 			factor = 50
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Never_Accept
+			}
 			modifier = {
 				add = 10
 				ROOT = { surrender_progress > 0.50 }
@@ -1518,6 +1526,10 @@ country_event = {
 
 		ai_chance = {
 			factor = 50
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Never_Accept
+			}
 			#Less Incentive to Continue War
 			modifier = {
 				add = 200
@@ -2234,6 +2246,10 @@ country_event = {
 
 		ai_chance = {
 			factor = 50
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Never_Accept
+			}
 			modifier = {
 				add = 10
 				ROOT = { surrender_progress > 0.60 }
@@ -3002,6 +3018,10 @@ country_event = {
 
 		ai_chance = {
 			factor = 50
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Never_Accept
+			}
 			modifier = {
 				add = 40
 				FROM = { surrender_progress < 0.11 }
@@ -3775,6 +3795,10 @@ country_event = {
 
 		ai_chance = {
 			factor = 50
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Never_Accept
+			}
 			modifier = {
 				add = 50
 				FROM = { surrender_progress < 0.11 }
@@ -5516,6 +5540,18 @@ country_event = {
 		}
 		
 		set_global_flag = BPD_Always_Accept
+		
+	}
+	
+	option = {
+		#AI Never Accepts Peace Deals
+		name = "BPD_Better_Peace_Deals_Country.1001.e"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		set_global_flag = BPD_Never_Accept
 		
 	}
 

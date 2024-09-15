@@ -347,15 +347,16 @@ show_hide_claim_decisions = {
 		
 		allowed = {
 			tag = ITA
-			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 		}
 
 		available = {
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = ETH
 			any_state = { OR = { is_core_of = ETH is_core_of = SOM } NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
 		}
 
 		visible = {
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
 		}
 
