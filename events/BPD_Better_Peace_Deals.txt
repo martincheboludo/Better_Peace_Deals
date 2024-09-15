@@ -434,6 +434,10 @@ country_event = {
 				has_global_flag = BPD_Always_Accept
 			}
 			modifier = {
+				add = 200
+				has_global_flag = BPD_Less_Likely_Accept
+			}
+			modifier = {
 				add = 10
 				ROOT = { surrender_progress > 0.50 }
 				ROOT = { surrender_progress < 0.61 }
@@ -688,7 +692,7 @@ country_event = {
 			}
 			#Hitler Unwillingness to Surrender
 			modifier = {
-				add = 50
+				add = 500
 				ROOT = {
 					has_country_leader = {
 						name = "Adolf Hitler"
@@ -698,7 +702,7 @@ country_event = {
 			}
 			#Churchill's Refusal to negotiate with Fascists
 			modifier = {
-				add = 50
+				add = 500
 				ROOT = {
 					has_country_leader = {
 						name = "Winston Churchill"
@@ -711,7 +715,7 @@ country_event = {
 			}
 			#Japan's Bushido Code
 			modifier = {
-				add = 50
+				add = 500
 				ROOT = {
 					tag = JAP
 					has_government = fascism
@@ -1172,6 +1176,17 @@ country_event = {
 				is_in_faction_with = FROM
 				has_war_with = ROOT
 				NOT = { tag = FROM }
+				is_subject = no
+			}
+			country_event = { id = BPD_Better_Peace_Deals_Country.90 hours = 4 }
+		}
+		
+		every_country = {
+			limit = {
+				is_in_faction_with = FROM
+				has_war_with = ROOT
+				NOT = { tag = FROM }
+				is_subject = yes
 			}
 			country_event = { id = BPD_Better_Peace_Deals_Country.90 hours = 5 }
 		}
@@ -1190,6 +1205,10 @@ country_event = {
 			modifier = {
 				factor = 0
 				has_global_flag = BPD_Always_Accept
+			}
+			modifier = {
+				add = 200
+				has_global_flag = BPD_Less_Likely_Accept
 			}
 			modifier = {
 				add = 50
@@ -1445,7 +1464,7 @@ country_event = {
 			}
 			#Hitler Unwillingness to Surrender
 			modifier = {
-				add = 50
+				add = 500
 				ROOT = {
 					has_country_leader = {
 						name = "Adolf Hitler"
@@ -1455,7 +1474,7 @@ country_event = {
 			}
 			#Churchill's Refusal to negotiate with Fascists
 			modifier = {
-				add = 50
+				add = 500
 				ROOT = {
 					has_country_leader = {
 						name = "Winston Churchill"
@@ -1468,7 +1487,7 @@ country_event = {
 			}
 			#Japan's Bushido Code
 			modifier = {
-				add = 50
+				add = 500
 				ROOT = {
 					tag = JAP
 					has_government = fascism
@@ -1499,6 +1518,13 @@ country_event = {
 
 		ai_chance = {
 			factor = 50
+			#Less Incentive to Continue War
+			modifier = {
+				add = 200
+				NOT = {
+					is_neighbor_of = FROM
+				}
+			}
 			modifier = {
 				add = 20
 				ROOT = { surrender_progress < 0.11 }
@@ -1884,6 +1910,18 @@ country_event = {
 				is_in_faction_with = FROM
 				has_war_with = ROOT
 				NOT = { tag = FROM }
+				is_subject = no
+			}
+			country_event = { id = BPD_Better_Peace_Deals_Country.110 hours = 4 }
+		}
+		
+		#Enemy Faction Members Get The Territories They Control
+		every_country = {
+			limit = {
+				is_in_faction_with = FROM
+				has_war_with = ROOT
+				NOT = { tag = FROM }
+				is_subject = yes
 			}
 			country_event = { id = BPD_Better_Peace_Deals_Country.110 hours = 5 }
 		}
@@ -1902,6 +1940,10 @@ country_event = {
 			modifier = {
 				factor = 0
 				has_global_flag = BPD_Always_Accept
+			}
+			modifier = {
+				add = 200
+				has_global_flag = BPD_Less_Likely_Accept
 			}
 			modifier = {
 				add = 5
@@ -2137,7 +2179,7 @@ country_event = {
 			}
 			#Hitler Unwillingness to Surrender
 			modifier = {
-				add = 50
+				add = 500
 				ROOT = {
 					has_country_leader = {
 						name = "Adolf Hitler"
@@ -2147,7 +2189,7 @@ country_event = {
 			}
 			#Churchill's Refusal to negotiate with Fascists
 			modifier = {
-				add = 50
+				add = 500
 				ROOT = {
 					has_country_leader = {
 						name = "Winston Churchill"
@@ -2160,7 +2202,7 @@ country_event = {
 			}
 			#Japan's Bushido Code
 			modifier = {
-				add = 50
+				add = 500
 				ROOT = {
 					tag = JAP
 					has_government = fascism
@@ -2658,6 +2700,10 @@ country_event = {
 				has_global_flag = BPD_Always_Accept
 			}
 			modifier = {
+				add = 200
+				has_global_flag = BPD_Less_Likely_Accept
+			}
+			modifier = {
 				add = 50
 				ROOT = { surrender_progress < 0.11 }
 			}
@@ -2901,7 +2947,7 @@ country_event = {
 			}
 			#Hitler Unwillingness to Surrender
 			modifier = {
-				add = 50
+				add = 500
 				ROOT = {
 					has_country_leader = {
 						name = "Adolf Hitler"
@@ -2911,7 +2957,7 @@ country_event = {
 			}
 			#Churchill's Refusal to negotiate with Fascists
 			modifier = {
-				add = 50
+				add = 500
 				ROOT = {
 					has_country_leader = {
 						name = "Winston Churchill"
@@ -2924,7 +2970,7 @@ country_event = {
 			}
 			#Japan's Bushido Code
 			modifier = {
-				add = 50
+				add = 500
 				ROOT = {
 					tag = JAP
 					has_government = fascism
@@ -3430,6 +3476,10 @@ country_event = {
 				has_global_flag = BPD_Always_Accept
 			}
 			modifier = {
+				add = 200
+				has_global_flag = BPD_Less_Likely_Accept
+			}
+			modifier = {
 				add = 10
 				FROM = { surrender_progress > 0.50 }
 				FROM = { surrender_progress < 0.61 }
@@ -3688,7 +3738,7 @@ country_event = {
 			}
 			#Churchill's Refusal to negotiate with Fascists
 			modifier = {
-				add = 50
+				add = 500
 				ROOT = {
 					has_country_leader = {
 						name = "Winston Churchill"
@@ -4240,6 +4290,10 @@ country_event = {
 				has_global_flag = BPD_Always_Accept
 			}
 			modifier = {
+				add = 200
+				has_global_flag = BPD_Less_Likely_Accept
+			}
+			modifier = {
 				add = 10
 				FROM = { surrender_progress > 0.60 }
 				FROM = { surrender_progress < 0.71 }
@@ -4459,7 +4513,7 @@ country_event = {
 			}
 			#Churchill's Refusal to negotiate with Fascists
 			modifier = {
-				add = 50
+				add = 500
 				ROOT = {
 					has_country_leader = {
 						name = "Winston Churchill"
@@ -4980,6 +5034,17 @@ country_event = {
 						is_in_faction_with = FROM
 						has_war_with = ROOT
 						NOT = { tag = FROM }
+						is_subject = no
+					}
+					country_event = { id = BPD_Better_Peace_Deals_Country.101 hours = 4 }
+				}
+				#Enemy Faction Members Get The Territories They Control
+				every_country = {
+					limit = {
+						is_in_faction_with = FROM
+						has_war_with = ROOT
+						NOT = { tag = FROM }
+						is_subject = yes
 					}
 					country_event = { id = BPD_Better_Peace_Deals_Country.101 hours = 5 }
 				}
@@ -5106,6 +5171,17 @@ country_event = {
 						is_in_faction_with = FROM
 						has_war_with = ROOT
 						NOT = { tag = FROM }
+						is_subject = no
+					}
+					country_event = { id = BPD_Better_Peace_Deals_Country.131 }
+				}
+				#Enemy Faction Members Get The Territories They Control
+				every_country = {
+					limit = {
+						is_in_faction_with = FROM
+						has_war_with = ROOT
+						NOT = { tag = FROM }
+						is_subject = yes
 					}
 					country_event = { id = BPD_Better_Peace_Deals_Country.131 }
 				}
@@ -5190,6 +5266,17 @@ country_event = {
 						is_in_faction_with = FROM
 						has_war_with = ROOT
 						NOT = { tag = FROM }
+						is_subject = no
+					}
+					country_event = { id = BPD_Better_Peace_Deals_Country.151 hours = 4 }
+				}
+				#Enemy Faction Members Get The Territories They Control
+				every_country = {
+					limit = {
+						is_in_faction_with = FROM
+						has_war_with = ROOT
+						NOT = { tag = FROM }
+						is_subject = yes
 					}
 					country_event = { id = BPD_Better_Peace_Deals_Country.151 hours = 5 }
 				}
@@ -5273,6 +5360,17 @@ country_event = {
 						is_in_faction_with = FROM
 						has_war_with = ROOT
 						NOT = { tag = FROM }
+						is_subject = no
+					}
+					country_event = { id = BPD_Better_Peace_Deals_Country.171 }
+				}
+				#Enemy Faction Members Get The Territory They Need
+				every_country = {
+					limit = {
+						is_in_faction_with = FROM
+						has_war_with = ROOT
+						NOT = { tag = FROM }
+						is_subject = yes
 					}
 					country_event = { id = BPD_Better_Peace_Deals_Country.171 }
 				}
@@ -5340,37 +5438,120 @@ country_event = {
 
 }
 
-#Restore the Status Stalemate/Slightly Losing
+#Welcome Event
 country_event = {
 	id = BPD_Better_Peace_Deals_Country.1000
-	title = "AI Acceptance to Peace Deals"
-	desc = "AI Acceptance to Peace Deals"
+	title = "BPD_Better_Peace_Deals_Country.1000.t"
+	desc = "BPD_Better_Peace_Deals_Country.1000.d"
 	picture = GFX_report_event_Peace_Country
 
 	is_triggered_only = yes
 
 	option = {
-		#Accept
-		name = "AI Always Accepts"
+		#Play With Custom Settings
+		name = "BPD_Better_Peace_Deals_Country.1000.a"
 
 		ai_chance = {
 			factor = 50
 		}
 		
-		set_global_flag = BPD_Always_Accept
+		country_event = { id = BPD_Better_Peace_Deals_Country.1001 }
+		country_event = { id = BPD_Better_Peace_Deals_Country.1002 }
 		
 		
 	}
 	
 	option = {
-		#Decline
-		name = "50-50 Chance"
+		#Play with default settings
+		name = "BPD_Better_Peace_Deals_Country.1000.b"
 
 		ai_chance = {
 			factor = 50
 		}
 		
-		clr_global_flag = BPD_Always_Accept
+	}
+
+}
+
+#AI Acceptance of Peace Deals
+country_event = {
+	id = BPD_Better_Peace_Deals_Country.1001
+	title = "BPD_Better_Peace_Deals_Country.1001.t"
+	desc = "BPD_Better_Peace_Deals_Country.1001.d"
+	picture = GFX_report_event_Peace_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#AI Carefully Weighs Options
+		name = "BPD_Better_Peace_Deals_Country.1001.a"
+
+		ai_chance = {
+			factor = 50
+		}
+		
+		
+		
+		
+	}
+	
+	option = {
+		#50-50 Chance to Accept
+		name = "BPD_Better_Peace_Deals_Country.1001.b"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		set_global_flag = BPD_Less_Likely_Accept
+		
+	}
+	
+	option = {
+		#AI Always Accepts Peace Deals
+		name = "BPD_Better_Peace_Deals_Country.1001.c"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		set_global_flag = BPD_Always_Accept
+		
+	}
+
+}
+
+#Compatibility
+country_event = {
+	id = BPD_Better_Peace_Deals_Country.1002
+	title = "BPD_Better_Peace_Deals_Country.1002.t"
+	desc = "BPD_Better_Peace_Deals_Country.1002.d"
+	picture = GFX_report_event_Peace_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Vanilla Play
+		name = "BPD_Better_Peace_Deals_Country.1002.a"
+
+		ai_chance = {
+			factor = 50
+		}
+		
+		
+		
+		
+	}
+	
+	option = {
+		#Im Playing with a Total Conversion Mod
+		name = "BPD_Better_Peace_Deals_Country.1002.b"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		set_global_flag = BPD_Total_Conversion_Compatibility
 		
 	}
 

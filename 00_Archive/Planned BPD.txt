@@ -1,7 +1,5 @@
 Golden Edition:
 
-
-
 TOTAL VICTORY - VICTOR DEMANDS OCCUPIED STATES, CORES AND CLAIMS IN EXCHANGE FOR PEACE
 LIMITED VICTORY- VICTOR DEMANDS CORES AND CLAIMS ONLY IN EXCHANGE FOR PEACE
 STALEMATE - EVERYONE KEEPS WHATEVER THEY CONTROL
@@ -48,6 +46,8 @@ Ural Mountains as Border: Ural mountains as the boundary
 Japan Claims Chinese Coast
 Coast
 
+Japan Claims Against USSR
+
 Japan Claims Against The Allies:
 
 Light Demands Allied Colonies in China
@@ -55,3 +55,6 @@ Moderate Previous Plus Indochina, Malaya, Dutch East Indies, Phillipines
 Extreme Previous plus Australia, New Zealand and India.
 
 USSR Claims Against Germany and Japan
+USSR Claims Against Poland
+USSR Claim The Baltics
+USSR Claim Finland

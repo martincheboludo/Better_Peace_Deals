@@ -1,0 +1,10 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { is_ai = no }
+				country_event = { id = BPD_Better_Peace_Deals_Country.1000 }
+			}
+		}
+	}
+}

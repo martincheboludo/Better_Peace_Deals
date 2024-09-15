@@ -3,6 +3,10 @@ BPD_Handle_Vichy_France = {
 		if = {
 				limit = {
 				
+				NOT = {
+					has_global_flag = BPD_Total_Conversion_Compatibility
+				}
+				
 				original_tag = GER
 				
 				any_country_with_original_tag = {
@@ -67,6 +71,10 @@ BPD_Handle_Vichy_France = {
 BPD_Handle_Vichy_France_Lost = {
 		if = {
 				limit = {
+				
+				NOT = {
+					has_global_flag = BPD_Total_Conversion_Compatibility
+				}
 				
 				FROM = { original_tag = GER }
 				

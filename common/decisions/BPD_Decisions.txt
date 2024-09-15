@@ -347,6 +347,7 @@ show_hide_claim_decisions = {
 		
 		allowed = {
 			tag = ITA
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 		}
 
 		available = {
@@ -355,7 +356,7 @@ show_hide_claim_decisions = {
 		}
 
 		visible = {
-		NOT = { has_country_flag = show_claim_decisions }
+			NOT = { has_country_flag = show_claim_decisions }
 		}
 
 		cost = 50

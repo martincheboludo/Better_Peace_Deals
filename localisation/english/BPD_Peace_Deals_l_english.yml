@@ -143,4 +143,18 @@
  BPD_Better_Peace_Deals_Country.151.d:0 "Our faction leader has accepted [FROM.GetName]'s proposal for territorial concessions. The agreed-upon territories will be ceded, ending the conflict with [ROOT.GetName] gaining the land. This agreement signifies a major shift in borders and concludes the ongoing hostilities."
  BPD_Better_Peace_Deals_Country.151.a:1 "Excellent"
  
+BPD_Better_Peace_Deals_Country.1000.t:0 "Welcome to Better Peace Deals!"
+BPD_Better_Peace_Deals_Country.1000.d:0 "“In the chaos of war, the path to peace can seem elusive. Better Peace Deals is designed to bring a more realistic and dynamic approach to ending conflicts, ensuring that wars don’t drag on indefinitely. With this mod, peace deals are influenced by a range of factors such as surrender progress, stability, and strategic considerations, making the resolution of conflicts more nuanced and realistic. If you're playing with a total conversion mod, we highly encourage you to select the Compatibility option in the Custom Settings to avoid unpredictable bugs and errors. We also encourage you to join our vibrant Discord community and support us via our donation link to help us continue improving the mod. You can customize the settings to tailor the experience to your preferences or proceed with the default options for a balanced and engaging gameplay experience. The future of peace is in your hands—how will you negotiate it?"
+BPD_Better_Peace_Deals_Country.1000.a:0 "Customize Settings"
+BPD_Better_Peace_Deals_Country.1000.b:0 "Default Settings"
+
+ BPD_Better_Peace_Deals_Country.1001.t:0 "AI Acceptance of Peace Deals"
+ BPD_Better_Peace_Deals_Country.1001.d:0 "Adjust how the AI evaluates and responds to peace deals in your game.\nChoose the setting that best fits your preferred level of challenge and realism.\n\n- **AI Carefully Weighs Options**: With this option, the AI evaluates peace deals based on a range of strategic factors, making its decisions more nuanced and reflective of the broader context of the war. This setting provides a realistic and challenging gameplay experience, where each peace deal can significantly influence the outcome of the conflict.\n\n- **AI Increased Chance to Accept**: This setting gives the AI more of an equal (50-50) chance of either accepting or declining peace deals.\n\n- **AI Always Accepts Peace Deals**: Selecting this option ensures that the AI will accept any peace deal offered. This simplifies the peace negotiation process and brings a swift conclusion to wars, making it ideal for players who prefer a more straightforward and less challenging experience."
+ BPD_Better_Peace_Deals_Country.1001.a:0 "AI Carefully Weighs Options"
+ BPD_Better_Peace_Deals_Country.1001.b:0 "AI Increased Chance to Accept"
+ BPD_Better_Peace_Deals_Country.1001.c:0 "AI Always Accepts Peace Deals"
  
+ BPD_Better_Peace_Deals_Country.1002.t:0 "Compatibility Patch"
+ BPD_Better_Peace_Deals_Country.1002.d:0 "To ensure Better Peace Deals functions correctly alongside other mods, you can choose between the default or compatibility options. If you're playing with Vanilla Hearts of Iron IV, Golden Edition, Better Formable Nations, or any mod that doesn't alter the base game’s states or eras, selecting 'Default' is recommended to unlock all features of the mod without restrictions. However, if you’re using major total conversion mods such as Millennium Dawn, The Great War, Black Ice, or any mod that significantly changes states or eras, we highly recommend selecting the 'Compatibility' option to prevent potential bugs or unpredictable behavior."
+ BPD_Better_Peace_Deals_Country.1002.a:0 "Default"
+ BPD_Better_Peace_Deals_Country.1002.b:0 "Compatibility"
