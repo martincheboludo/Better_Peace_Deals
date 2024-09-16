@@ -56,10 +56,12 @@ BPD_Peace_Deal_Manager = {
 				is_in_faction = no
 				is_faction_leader = yes
 			}
-		
-			war_length_with = {
-				tag = FROM
-				months > 5
+			custom_trigger_tooltip = {
+				tooltip = BPD_War_Longer_Than_6_tt
+				war_length_with = {
+					tag = FROM
+					months > 5
+				}
 			}
 			OR = {
 				FROM = { 
@@ -121,9 +123,12 @@ BPD_Peace_Deal_Manager = {
 				is_faction_leader = yes
 			}
 		
-			war_length_with = {
-				tag = FROM
-				months > 5
+			custom_trigger_tooltip = {
+				tooltip = BPD_War_Longer_Than_6_tt
+				war_length_with = {
+					tag = FROM
+					months > 5
+				}
 			}
 			
 			OR = {
@@ -179,14 +184,19 @@ BPD_Peace_Deal_Manager = {
 
         available = {
 		
+			surrender_progress < 0.5
+		
 			OR = {
 				is_in_faction = no
 				is_faction_leader = yes
 			}
 		
-			war_length_with = {
-				tag = FROM
-				months > 5
+			custom_trigger_tooltip = {
+				tooltip = BPD_War_Longer_Than_6_tt
+				war_length_with = {
+					tag = FROM
+					months > 5
+				}
 			}
 
         }
@@ -230,14 +240,19 @@ BPD_Peace_Deal_Manager = {
 
         available = {
 		
+		surrender_progress < 0.5
+		
 			OR = {
 				is_in_faction = no
 				is_faction_leader = yes
 			}
 		
-			war_length_with = {
-				tag = FROM
-				months > 5
+			custom_trigger_tooltip = {
+				tooltip = BPD_War_Longer_Than_6_tt
+				war_length_with = {
+					tag = FROM
+					months > 5
+				}
 			}
 
         }
@@ -281,14 +296,19 @@ BPD_Peace_Deal_Manager = {
 
         available = {
 		
+			surrender_progress < 0.7
+		
 			OR = {
 				is_in_faction = no
 				is_faction_leader = yes
 			}
 		
-			war_length_with = {
-				tag = FROM
-				months > 5
+			custom_trigger_tooltip = {
+				tooltip = BPD_War_Longer_Than_6_tt
+				war_length_with = {
+					tag = FROM
+					months > 5
+				}
 			}
 
         }
@@ -337,9 +357,12 @@ BPD_Peace_Deal_Manager = {
 				is_faction_leader = yes
 			}
 		
-			war_length_with = {
-				tag = FROM
-				months > 5
+			custom_trigger_tooltip = {
+				tooltip = BPD_War_Longer_Than_6_tt
+				war_length_with = {
+					tag = FROM
+					months > 5
+				}
 			}
 
         }
