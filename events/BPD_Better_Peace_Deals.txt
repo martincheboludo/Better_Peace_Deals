@@ -15,10 +15,10 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.1.a
 
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
-				factor = 0
-				has_global_flag = BPD_Never_Accept
+				add = 1000
+				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
 				add = 50
@@ -420,6 +420,10 @@ country_event = {
 					has_government = democratic
 				}
 			}
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Never_Accept
+			}
 		}
 		
 		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.7 hours = 6 } }
@@ -432,14 +436,10 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.1.b
 
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
-				factor = 0
-				has_global_flag = BPD_Always_Accept
-			}
-			modifier = {
-				add = 200
-				has_global_flag = BPD_Less_Likely_Accept
+				add = 1000
+				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
 				add = 10
@@ -725,6 +725,10 @@ country_event = {
 					has_government = fascism
 				}
 			}
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Always_Accept
+			}
 		}
 		
 		add_war_support = 0.05
@@ -749,10 +753,10 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.2.a
 
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
-				factor = 0
-				has_global_flag = BPD_Never_Accept
+				add = 1000
+				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
 				add = 10
@@ -1177,6 +1181,10 @@ country_event = {
 					has_government = democratic
 				}
 			}
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Never_Accept
+			}
 		}
 		
 		every_country = {
@@ -1209,14 +1217,10 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.2.b
 
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
-				factor = 0
-				has_global_flag = BPD_Always_Accept
-			}
-			modifier = {
-				add = 200
-				has_global_flag = BPD_Less_Likely_Accept
+				add = 1000
+				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
 				add = 50
@@ -1501,6 +1505,10 @@ country_event = {
 					has_government = fascism
 				}
 			}
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Always_Accept
+			}
 		}
 		
 		add_war_support = 0.05
@@ -1525,10 +1533,10 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.3.a
 
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
-				factor = 0
-				has_global_flag = BPD_Never_Accept
+				add = 1000
+				has_global_flag = BPD_Equalizer
 			}
 			#Less Incentive to Continue War
 			modifier = {
@@ -1889,6 +1897,10 @@ country_event = {
 					has_government = democratic
 				}
 			}
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Never_Accept
+			}
 		}
 		
 		#Curent Country Gets The States They Control
@@ -1948,14 +1960,10 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.3.b
 
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
-				factor = 0
-				has_global_flag = BPD_Always_Accept
-			}
-			modifier = {
-				add = 200
-				has_global_flag = BPD_Less_Likely_Accept
+				add = 1000
+				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
 				add = 5
@@ -2220,6 +2228,10 @@ country_event = {
 					has_government = fascism
 				}
 			}
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Always_Accept
+			}
 		}
 		
 		add_war_support = 0.05
@@ -2245,10 +2257,10 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.4.a
 
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
-				factor = 0
-				has_global_flag = BPD_Never_Accept
+				add = 1000
+				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
 				add = 10
@@ -2698,6 +2710,10 @@ country_event = {
 					has_government = democratic
 				}
 			}
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Never_Accept
+			}
 		}
 		
 		FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.13 hours = 6 } }
@@ -2710,14 +2726,10 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.4.b
 
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
-				factor = 0
-				has_global_flag = BPD_Always_Accept
-			}
-			modifier = {
-				add = 200
-				has_global_flag = BPD_Less_Likely_Accept
+				add = 1000
+				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
 				add = 50
@@ -2992,6 +3004,10 @@ country_event = {
 					has_government = fascism
 				}
 			}
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Always_Accept
+			}
 		}
 		
 		add_war_support = 0.05
@@ -3017,10 +3033,10 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.5.a
 
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
-				factor = 0
-				has_global_flag = BPD_Never_Accept
+				add = 1000
+				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
 				add = 40
@@ -3447,6 +3463,10 @@ country_event = {
 					has_government = neutrality
 				}
 			}
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Never_Accept
+			}
 		}
 		
 		hidden_effect = {
@@ -3490,14 +3510,10 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.5.b
 
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
-				factor = 0
-				has_global_flag = BPD_Always_Accept
-			}
-			modifier = {
-				add = 200
-				has_global_flag = BPD_Less_Likely_Accept
+				add = 1000
+				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
 				add = 10
@@ -3769,6 +3785,10 @@ country_event = {
 					has_government = fascism
 				}
 			}
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Always_Accept
+			}
 		}
 		
 		add_war_support = 0.05
@@ -3794,10 +3814,10 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.6.a
 
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
-				factor = 0
-				has_global_flag = BPD_Never_Accept
+				add = 1000
+				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
 				add = 50
@@ -4263,6 +4283,10 @@ country_event = {
 					has_government = neutrality
 				}
 			}
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Never_Accept
+			}
 		}
 		
 		hidden_effect = {
@@ -4308,14 +4332,10 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.6.b
 
 		ai_chance = {
-			factor = 50
+			base = 50
 			modifier = {
-				factor = 0
-				has_global_flag = BPD_Always_Accept
-			}
-			modifier = {
-				add = 200
-				has_global_flag = BPD_Less_Likely_Accept
+				add = 1000
+				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
 				add = 10
@@ -4547,6 +4567,10 @@ country_event = {
 				FROM = {
 					has_government = fascism
 				}
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_Always_Accept
 			}
 		}
 		
@@ -5527,7 +5551,7 @@ country_event = {
 			factor = 0
 		}
 		
-		set_global_flag = BPD_Less_Likely_Accept
+		set_global_flag = BPD_Equalizer
 		
 	}
 	
