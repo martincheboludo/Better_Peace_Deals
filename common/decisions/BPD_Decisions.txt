@@ -28,6 +28,7 @@ BPD_Peace_Deal_Manager = {
 	
         visible = {
 			NOT = { has_country_flag = show_peace_decisions }
+			NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
         }
         target_trigger = {
             FROM = {
@@ -40,7 +41,8 @@ BPD_Peace_Deal_Manager = {
         }
         cost = 25
 		modifier = { }
-		days_re_enable = 180
+		days_re_enable = 90
+		days_remove = 30
 		
 		ai_will_do = {
 			factor = 0
@@ -73,7 +75,11 @@ BPD_Peace_Deal_Manager = {
 
         }
 		complete_effect = {
+			set_country_flag = BPD_Peace_Deal_Cooldown
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.4 hours = 6 } }
+		}
+		remove_effect = {
+			clr_country_flag = BPD_Peace_Deal_Cooldown
 		}
     }
 	
@@ -86,6 +92,7 @@ BPD_Peace_Deal_Manager = {
 	
         visible = {
 			NOT = { has_country_flag = show_peace_decisions }
+			NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
         }
         target_trigger = {
             FROM = {
@@ -98,7 +105,8 @@ BPD_Peace_Deal_Manager = {
         }
         cost = 25
 		modifier = { }
-		days_re_enable = 180
+		days_re_enable = 90
+		days_remove = 30
 		
 		ai_will_do = {
 			factor = 0
@@ -132,7 +140,11 @@ BPD_Peace_Deal_Manager = {
 
         }
 		complete_effect = {
+			set_country_flag = BPD_Peace_Deal_Cooldown
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.2 hours = 6 } }
+		}
+		remove_effect = {
+			clr_country_flag = BPD_Peace_Deal_Cooldown
 		}
     }
 	
@@ -145,6 +157,7 @@ BPD_Peace_Deal_Manager = {
 	
         visible = {
 			NOT = { has_country_flag = show_peace_decisions }
+			NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
         }
         target_trigger = {
             FROM = {
@@ -157,7 +170,8 @@ BPD_Peace_Deal_Manager = {
         }
         cost = 25
 		modifier = { }
-		days_re_enable = 180
+		days_re_enable = 90
+		days_remove = 30
 		
 		ai_will_do = {
 			factor = 0
@@ -177,7 +191,11 @@ BPD_Peace_Deal_Manager = {
 
         }
 		complete_effect = {
+			set_country_flag = BPD_Peace_Deal_Cooldown
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.3 hours = 6 } }
+		}
+		remove_effect = {
+			clr_country_flag = BPD_Peace_Deal_Cooldown
 		}
     }
 
@@ -190,6 +208,7 @@ BPD_Peace_Deal_Manager = {
 	
         visible = {
 			NOT = { has_country_flag = show_peace_decisions }
+			NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
         }
         target_trigger = {
             FROM = {
@@ -202,7 +221,8 @@ BPD_Peace_Deal_Manager = {
         }
         cost = 25
 		modifier = { }
-		days_re_enable = 180
+		days_re_enable = 90
+		days_remove = 30
 		
 		ai_will_do = {
 			factor = 0
@@ -222,7 +242,11 @@ BPD_Peace_Deal_Manager = {
 
         }
 		complete_effect = {
+			set_country_flag = BPD_Peace_Deal_Cooldown
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.1 hours = 6 } }
+		}
+		remove_effect = {
+			clr_country_flag = BPD_Peace_Deal_Cooldown
 		}
     }
 	
@@ -235,6 +259,7 @@ BPD_Peace_Deal_Manager = {
 	
         visible = {
 			NOT = { has_country_flag = show_peace_decisions }
+			NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
         }
         target_trigger = {
             FROM = {
@@ -247,7 +272,8 @@ BPD_Peace_Deal_Manager = {
         }
         cost = 25
 		modifier = { }
-		days_re_enable = 180
+		days_re_enable = 90
+		days_remove = 30
 		
 		ai_will_do = {
 			factor = 0
@@ -267,7 +293,11 @@ BPD_Peace_Deal_Manager = {
 
         }
 		complete_effect = {
+			set_country_flag = BPD_Peace_Deal_Cooldown
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.5 hours = 6 } }
+		}
+		remove_effect = {
+			clr_country_flag = BPD_Peace_Deal_Cooldown
 		}
     }
 	
@@ -280,6 +310,7 @@ BPD_Peace_Deal_Manager = {
 	
         visible = {
 			NOT = { has_country_flag = show_peace_decisions }
+			NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
         }
         target_trigger = {
             FROM = {
@@ -292,7 +323,8 @@ BPD_Peace_Deal_Manager = {
         }
         cost = 25
 		modifier = { }
-		days_re_enable = 180
+		days_re_enable = 90
+		days_remove = 30
 		
 		ai_will_do = {
 			factor = 0
@@ -312,7 +344,11 @@ BPD_Peace_Deal_Manager = {
 
         }
 		complete_effect = {
+			set_country_flag = BPD_Peace_Deal_Cooldown
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.6 hours = 6 } }
+		}
+		remove_effect = {
+			clr_country_flag = BPD_Peace_Deal_Cooldown
 		}
     }
 	
