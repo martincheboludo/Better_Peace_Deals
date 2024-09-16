@@ -15,7 +15,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.1.a
 
 		ai_chance = {
-			base = 50
+			base = 600
 			modifier = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
@@ -436,7 +436,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.1.b
 
 		ai_chance = {
-			base = 50
+			base = 400
 			modifier = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
@@ -753,7 +753,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.2.a
 
 		ai_chance = {
-			base = 50
+			base = 400
 			modifier = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
@@ -1217,7 +1217,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.2.b
 
 		ai_chance = {
-			base = 50
+			base = 600
 			modifier = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
@@ -1533,7 +1533,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.3.a
 
 		ai_chance = {
-			base = 50
+			base = 500
 			modifier = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
@@ -1960,7 +1960,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.3.b
 
 		ai_chance = {
-			base = 50
+			base = 500
 			modifier = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
@@ -2257,7 +2257,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.4.a
 
 		ai_chance = {
-			base = 50
+			base = 300
 			modifier = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
@@ -2726,7 +2726,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.4.b
 
 		ai_chance = {
-			base = 50
+			base = 700
 			modifier = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
@@ -3033,7 +3033,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.5.a
 
 		ai_chance = {
-			base = 50
+			base = 700
 			modifier = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
@@ -3510,7 +3510,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.5.b
 
 		ai_chance = {
-			base = 50
+			base = 300
 			modifier = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
@@ -3814,7 +3814,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.6.a
 
 		ai_chance = {
-			base = 50
+			base = 800
 			modifier = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
@@ -4332,7 +4332,7 @@ country_event = {
 		name = BPD_Better_Peace_Deals_Country.6.b
 
 		ai_chance = {
-			base = 50
+			base = 200
 			modifier = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
