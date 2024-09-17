@@ -25,15 +25,11 @@
  BPD_total_surrender_td_loser_desc:0 "Offer to surrender to [FROM.GetName], conceding not only the regions currently occupied by their forces but also any territories they have claimed or hold cores on. By accepting their demands, you seek a swift resolution to the conflict, albeit at the cost of significant territorial and political concessions. This gesture aims to end hostilities and prevent further devastation."
  BPD_War_Longer_Than_6_tt:0 "Has been at war with §Y[FROM.GetName]§! longer than §Y6§! months."
 
- show_hide_claim_decisions:0 "Show/Hide Claim Sate Decisions"
+ show_hide_claim_decisions:0 "Show/Hide Claim State Decisions"
  BFN_claim_states_targeted_decision:0 "Claim [FROM.GetName]"
  BFN_claim_states_targeted_decision_at_war:0 "Claim [FROM.GetName]"
  BFN_claim_states_targeted_decision_remote:0 "Claim [FROM.GetName]"
  BFN_claim_states_targeted_decision_remote_at_war:0 "Claim [FROM.GetName]"
- ITA_Italian_Demands_ETH:0 "Italian Claim on Ethiopia"
- ITA_Italian_Demands_TUN:0 "Italian Claim on Tunisia"
- ITA_Italian_Demands_EGY:0 "Italian Claim on Egypt"
- GER_German_Demands_POL:0 "German Claim on Poland"
 
  #Events
  
@@ -145,7 +141,7 @@
  BPD_Better_Peace_Deals_Country.151.a:1 "Excellent"
  
 BPD_Better_Peace_Deals_Country.1000.t:0 "Welcome to Better Peace Deals!"
-BPD_Better_Peace_Deals_Country.1000.d:0 "In the chaos of war, the path to peace can seem elusive. Better Peace Deals is designed to bring a more realistic and dynamic approach to ending conflicts, ensuring that wars don’t drag on indefinitely. With this mod, peace deals are influenced by a range of factors such as surrender progress, stability, and strategic considerations, making the resolution of conflicts more nuanced and realistic. To balance the peace deal proposals, you can only send the same type of peace deal to a specific country every 90 days, and only one peace deal of any type to any country every 30 days. If you're playing with a total conversion mod, we highly encourage you to select the Compatibility option in the Custom Settings to avoid unpredictable bugs and errors. We also encourage you to join our vibrant Discord community and support us via our donation link to help us continue improving the mod. You can customize the settings to tailor the experience to your preferences or proceed with the default options for a balanced and engaging gameplay experience. The future of peace is in your hands—how will you negotiate it?"
+BPD_Better_Peace_Deals_Country.1000.d:0 "In the chaos of war, the path to peace can seem elusive. Better Peace Deals is designed to bring a more realistic and dynamic approach to ending conflicts, ensuring that wars don’t drag on indefinitely. With this mod, peace deals are influenced by a range of factors such as surrender progress, stability, and strategic considerations, making the resolution of conflicts more nuanced and realistic. To balance the peace deal proposals, you can only send one peace deal of any type to any country every 30 days. If you're playing with a total conversion mod, we highly encourage you to select the Compatibility option in the Custom Settings to avoid unpredictable bugs and errors. We also encourage you to join our vibrant Discord community and support us via our donation link to help us continue improving the mod. You can customize the settings to tailor the experience to your preferences or proceed with the default options for a balanced and engaging gameplay experience. The future of peace is in your hands—how will you negotiate it?"
 BPD_Better_Peace_Deals_Country.1000.a:0 "Customize Settings"
 BPD_Better_Peace_Deals_Country.1000.b:0 "Default Settings"
 
@@ -160,3 +156,5 @@ BPD_Better_Peace_Deals_Country.1000.b:0 "Default Settings"
  BPD_Better_Peace_Deals_Country.1002.d:0 "To ensure Better Peace Deals functions correctly alongside other mods, you can choose between the default or compatibility options. If you're playing with Vanilla Hearts of Iron IV, Golden Edition, Better Formable Nations, or any mod that doesn't alter the base game’s states or eras, selecting 'Default' is recommended to unlock all features of the mod without restrictions. However, if you’re using major total conversion mods such as Millennium Dawn, The Great War, Black Ice, or any mod that significantly changes states or eras, we highly recommend selecting the 'Compatibility' option to prevent potential bugs or unpredictable behavior."
  BPD_Better_Peace_Deals_Country.1002.a:0 "Default"
  BPD_Better_Peace_Deals_Country.1002.b:0 "Compatibility"
+
+BPD_Total_Conversion_Compatibility:0 "Compatibility Patch Enabled"

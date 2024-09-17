@@ -1,0 +1,922 @@
+add_namespace = BPD_Specific_Claims_Country
+add_namespace = BPD_Specific_Claims_News
+
+#Italian Claim on Ethiopia
+country_event = {
+	id = BPD_Specific_Claims_Country.1
+	title = "BPD_Specific_Claims_Country.1.t"
+	desc = "BPD_Specific_Claims_Country.1.d"
+	picture = GFX_report_event_ITA_Claim_ETH_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Italy Claims Ethiopia
+		name = "BPD_Specific_Claims_Country.1.a"
+
+		ai_chance = {
+			factor = 50
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = ETH 
+					is_core_of = SOM 
+				} 
+				NOT = { 
+					is_core_of = ITA 
+				} 
+				NOT = { 
+					is_claimed_by = ITA 
+				} 
+			}
+			add_claim_by = ITA
+		}
+		
+
+	}
+
+}
+
+#Germany Claims Greece
+country_event = {
+	id = BPD_Specific_Claims_Country.2
+	title = "BPD_Specific_Claims_Country.2.t"
+	desc = "BPD_Specific_Claims_Country.2.d"
+	picture = GFX_report_event_GER_Claim_GRE_Country
+
+	is_triggered_only = yes
+	
+	option = {
+		#Historical Partition
+		name = BPD_Specific_Claims_Country.2.a
+
+		ai_chance = {
+			factor = 10
+		}
+		
+		if = {
+			limit = {
+				NOT = { country_exists = GRE }
+			}
+			#German Occupation Zone
+			GER = {
+				transfer_state = 731
+				transfer_state = 182
+			}
+			#Italian Occupation Zone
+			ITA = {
+				transfer_state = 47
+				transfer_state = 185
+				transfer_state = 186
+				transfer_state = 187
+				transfer_state = 164
+			}
+			#Bulgarian Occupation Zone
+			BUL = {
+				transfer_state = 184
+			}
+		}
+		else = {
+			#German Occupation Zone
+			GER = {
+				set_state_controller = 731
+				set_state_controller = 182
+				add_state_claim = 731
+				add_state_claim = 182
+			}
+			#Italian Occupation Zone
+			ITA = {
+				set_state_controller = 47
+				set_state_controller = 185
+				set_state_controller = 186
+				set_state_controller = 187
+				set_state_controller = 164
+				add_state_claim = 47
+				add_state_claim = 185
+				add_state_claim = 186
+				add_state_claim = 187
+				add_state_claim = 164
+			}
+			#Bulgarian Occupation Zone
+			BUL = {
+				set_state_controller = 184
+				add_state_claim = 184
+			}
+		}
+
+	}
+	
+	option = {
+		#Partition Between Italy and Bulgaria
+		name = BPD_Specific_Claims_Country.2.b
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		if = {
+			limit = {
+				NOT = { country_exists = GRE }
+			}
+			#Italian Occupation Zone
+			ITA = {
+				transfer_state = 47
+				transfer_state = 185
+				transfer_state = 186
+				transfer_state = 187
+				transfer_state = 164
+				transfer_state = 182
+			}
+			#Bulgarian Occupation Zone
+			BUL = {
+				transfer_state = 184
+				transfer_state = 731
+			}
+		}
+		else = {
+			#Italian Occupation Zone
+			ITA = {
+				set_state_controller = 47
+				set_state_controller = 185
+				set_state_controller = 186
+				set_state_controller = 187
+				set_state_controller = 164
+				set_state_controller = 182
+				add_state_claim = 47
+				add_state_claim = 185
+				add_state_claim = 186
+				add_state_claim = 187
+				add_state_claim = 164
+				add_state_claim = 182
+			}
+			#Bulgarian Occupation Zone
+			BUL = {
+				set_state_controller = 184
+				set_state_controller = 731
+				add_state_claim = 184
+				add_state_claim = 731
+			}
+		}
+
+	}
+}
+
+#Germany Claims Yugoslavia
+country_event = {
+	id = BPD_Specific_Claims_Country.3
+	title = "BPD_Specific_Claims_Country.3.t"
+	desc = "BPD_Specific_Claims_Country.3.d"
+	picture = GFX_report_event_GER_Claim_YUG_Country
+
+	is_triggered_only = yes
+	
+	option = {
+		#Historical Partition
+		name = BPD_Specific_Claims_Country.3.a
+
+		ai_chance = {
+			factor = 1000
+		}
+		
+		if = {
+			limit = {
+				NOT = { country_exists = YUG }
+			}
+			#Croatia
+			CRO = {
+				transfer_state = 103
+				transfer_state = 104
+				transfer_state = 804
+				transfer_state = 109
+				104 = { add_core_of = CRO }
+				804 = { add_core_of = CRO }
+			}
+			#Serbia
+			SER = {
+				transfer_state = 764
+				transfer_state = 107
+				transfer_state = 108
+			}
+			#German Occupation Zone
+			GER = {
+				transfer_state = 102
+			}
+			#Italian Occupation Zone
+			ITA = {
+				transfer_state = 853
+				transfer_state = 105
+				853 = { remove_core_of = GER }
+			}
+			#Bulgarian Occupation Zone
+			BUL = {
+				transfer_state = 803
+				transfer_state = 106
+			}
+			#Hungarian Occupation Zone
+			HUN = {
+				transfer_state = 45
+			}
+			if = {
+				limit = {
+					ALB = { is_subject_of = ITA exists = yes }
+				}
+				ALB = {
+					transfer_state = 802
+				}
+			}
+			else = {
+				ITA = {
+					transfer_state = 802
+				}
+			}
+			# Puppets
+			if = {
+				limit = {
+					has_dlc = "Death or Dishonor"
+				}
+				GER = {
+					set_autonomy = {
+						target = CRO
+						autonomous_state = autonomy_satellite
+						freedom_level = 0.1
+					}
+					set_autonomy = {
+						target = SER
+						autonomous_state = autonomy_satellite
+						freedom_level = 0.1
+					}
+				}
+				else = {
+					GER = {
+						puppet = CRO
+						puppet = SER
+					}
+				}
+			}
+		}
+		else = {
+			#German Occupation Zone
+			GER = {
+				set_state_controller = 102
+				add_state_claim = 102
+			}
+			#Italian Occupation Zone
+			ITA = {
+				set_state_controller = 853
+				set_state_controller = 105
+				add_state_claim = 853
+				add_state_claim = 105
+				853 = { remove_core_of = GER }
+			}
+			#Bulgarian Occupation Zone
+			BUL = {
+				set_state_controller = 803
+				set_state_controller = 106
+				add_state_claim = 803
+				add_state_claim = 106
+			}
+			#Hungarian Occupation Zone
+			HUN = {
+				set_state_controller = 45
+				add_state_claim = 45
+			}
+			if = {
+				limit = {
+					ALB = { is_subject_of = ITA exists = yes }
+				}
+				ALB = {
+					set_state_controller = 802
+					add_state_claim = 802
+				}
+			}
+			else = {
+				ITA = {
+					set_state_controller = 802
+					add_state_claim = 802
+				}
+			}
+			release_on_controlled = CRO
+			release_on_controlled = SER
+			#Croatia
+			CRO = {
+				set_state_controller = 103
+				set_state_controller = 104
+				set_state_controller = 804
+				set_state_controller = 109
+				104 = { add_core_of = CRO }
+				804 = { add_core_of = CRO }
+			}
+			#Serbia
+			SER = {
+				set_state_controller = 764
+				set_state_controller = 107
+				set_state_controller = 108
+			}
+			# Puppets
+			if = {
+				limit = {
+					has_dlc = "Death or Dishonor"
+				}
+				GER = {
+					set_autonomy = {
+						target = CRO
+						autonomous_state = autonomy_satellite
+						freedom_level = 0.1
+					}
+					set_autonomy = {
+						target = SER
+						autonomous_state = autonomy_satellite
+						freedom_level = 0.1
+					}
+				}
+				else = {
+					GER = {
+						puppet = CRO
+						puppet = SER
+					}
+				}
+			}
+		}
+
+	}
+	
+	option = {
+		#Give Dalmatia to Italy
+		name = BPD_Specific_Claims_Country.3.b
+
+		ai_chance = {
+			factor = 0
+		}
+	
+		if = {
+			limit = {
+				NOT = { country_exists = YUG }
+			}
+			#Croatia
+			CRO = {
+				transfer_state = 104
+				transfer_state = 804
+				transfer_state = 109
+				104 = { add_core_of = CRO }
+				804 = { add_core_of = CRO }
+			}
+			#Serbia
+			SER = {
+				transfer_state = 764
+				transfer_state = 107
+				transfer_state = 108
+			}
+			
+			#German Occupation Zone
+			GER = {
+				transfer_state = 102
+			}
+			
+			#Italian Occupation Zone
+			ITA = {
+				transfer_state = 853
+				transfer_state = 105
+				transfer_state = 103
+				853 = { remove_core_of = GER }
+			}
+			
+			#Bulgarian Occupation Zone
+			BUL = {
+				transfer_state = 803
+				transfer_state = 106
+			}
+			
+			#Hungarian Occupation Zone
+			HUN = {
+				transfer_state = 45
+			}
+			
+			if = {
+				limit = {
+					ALB = { is_subject_of = ITA exists = yes }
+				}
+				ALB = {
+					transfer_state = 802
+				}
+			}
+			else = {
+				ITA = {
+					transfer_state = 802
+				}
+			}
+			
+			# Puppets
+			if = {
+				limit = {
+					has_dlc = "Death or Dishonor"
+				}
+				GER = {
+					set_autonomy = {
+						target = CRO
+						autonomous_state = autonomy_satellite
+						freedom_level = 0.1
+					}
+					set_autonomy = {
+						target = SER
+						autonomous_state = autonomy_satellite
+						freedom_level = 0.1
+					}
+				}
+				else = {
+					GER = {
+						puppet = CRO
+						puppet = SER
+					}
+				}
+			}
+		}
+		else = {
+			#German Occupation Zone
+			GER = {
+				set_state_controller = 102
+				add_state_claim = 102
+			}
+			
+			#Italian Occupation Zone
+			ITA = {
+				set_state_controller = 853
+				set_state_controller = 105
+				set_state_controller = 103
+				add_state_claim = 853
+				add_state_claim = 105
+				add_state_claim = 103
+				853 = { remove_core_of = GER }
+			}
+			
+			#Bulgarian Occupation Zone
+			BUL = {
+				set_state_controller = 803
+				set_state_controller = 106
+				add_state_claim = 803
+				add_state_claim = 106
+			}
+			
+			#Hungarian Occupation Zone
+			HUN = {
+				set_state_controller = 45
+				add_state_claim = 45
+			}
+			
+			if = {
+				limit = {
+					ALB = { is_subject_of = ITA exists = yes }
+				}
+				ALB = {
+					set_state_controller = 802
+					add_state_claim = 802
+				}
+			}
+			else = {
+				ITA = {
+					set_state_controller = 802
+					add_state_claim = 802
+				}
+			}
+			
+			release_on_controlled = CRO
+			release_on_controlled = SER
+			#Croatia
+			CRO = {
+				set_state_controller = 104
+				set_state_controller = 804
+				set_state_controller = 109
+				104 = { add_core_of = CRO }
+				804 = { add_core_of = CRO }
+			}
+			#Serbia
+			SER = {
+				set_state_controller = 764
+				set_state_controller = 107
+				set_state_controller = 108
+			}
+			
+			# Puppets
+			if = {
+				limit = {
+					has_dlc = "Death or Dishonor"
+				}
+				GER = {
+					set_autonomy = {
+						target = CRO
+						autonomous_state = autonomy_satellite
+						freedom_level = 0.1
+					}
+					set_autonomy = {
+						target = SER
+						autonomous_state = autonomy_satellite
+						freedom_level = 0.1
+					}
+				}
+				else = {
+					GER = {
+						puppet = CRO
+						puppet = SER
+					}
+				}
+			}
+		}
+
+	}
+}
+
+#Italian Claim on Bulgaria
+country_event = {
+	id = BPD_Specific_Claims_Country.4
+	title = "BPD_Specific_Claims_Country.4.t"
+	desc = "BPD_Specific_Claims_Country.4.d"
+	picture = GFX_report_event_ITA_Claim_YUG_BUL_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Italy Claims Bulgaria
+		name = "BPD_Specific_Claims_Country.4.a"
+
+		ai_chance = {
+			factor = 50
+		}
+		
+		every_state = {
+			limit = { 
+				is_core_of = BUL 
+				NOT = { is_core_of = ITA } 
+				NOT = { is_claimed_by = ITA } 
+			}
+			add_claim_by = ITA
+		}
+		
+
+	}
+
+}
+
+#Italian Claim on Turkey
+country_event = {
+	id = BPD_Specific_Claims_Country.5
+	title = "BPD_Specific_Claims_Country.5.t"
+	desc = "BPD_Specific_Claims_Country.5.d"
+	picture = GFX_report_event_ITA_Claim_TUR_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Italy Claims Turkey
+		name = "BPD_Specific_Claims_Country.5.a"
+
+		ai_chance = {
+			factor = 50
+		}
+		
+		every_state = {
+			limit = { is_core_of = TUR NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+			add_claim_by = ITA
+		}
+		
+
+	}
+
+}
+
+#Italian Claim on Greece
+country_event = {
+	id = BPD_Specific_Claims_Country.6
+	title = "BPD_Specific_Claims_Country.6.t"
+	desc = "BPD_Specific_Claims_Country.6.d"
+	picture = GFX_report_event_ITA_Claim_GRE_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Italy Claims Greece
+		name = "BPD_Specific_Claims_Country.6.a"
+
+		ai_chance = {
+			factor = 50
+		}
+		
+		every_state = {
+			limit = { is_core_of = GRE NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+			add_claim_by = ITA
+		}
+		
+
+	}
+
+}
+
+#Italian Claim on Yugoslavia
+country_event = {
+	id = BPD_Specific_Claims_Country.7
+	title = "BPD_Specific_Claims_Country.7.t"
+	desc = "BPD_Specific_Claims_Country.7.d"
+	picture = GFX_report_event_ITA_Claim_YUG_BUL_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Italy Claims Yugoslavia
+		name = "BPD_Specific_Claims_Country.7.a"
+
+		ai_chance = {
+			factor = 50
+		}
+		
+		every_state = {
+			limit = { is_core_of = YUG NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+			add_claim_by = ITA
+		}
+		
+
+	}
+
+}
+
+#Italian Claim on France
+country_event = {
+	id = BPD_Specific_Claims_Country.8
+	title = "BPD_Specific_Claims_Country.8.t"
+	desc = "BPD_Specific_Claims_Country.8.d"
+	picture = GFX_report_event_ITA_Claim_FRA_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Italy Claims Savoy and Corsica
+		name = "BPD_Specific_Claims_Country.8.a"
+
+		ai_chance = {
+			factor = 1000
+		}
+		
+		add_state_claim = 1
+		add_state_claim = 735
+
+	}
+	
+	option = {
+		#Italy Claims Previous plus some more
+		name = "BPD_Specific_Claims_Country.8.b"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		add_state_claim = 1
+		add_state_claim = 735
+		add_state_claim = 32
+		add_state_claim = 21
+
+	}
+
+}
+
+#Italian Colonial Claims
+country_event = {
+	id = BPD_Specific_Claims_Country.9
+	title = "BPD_Specific_Claims_Country.9.t"
+	desc = "BPD_Specific_Claims_Country.9.d"
+	picture = GFX_report_event_ITA_Claim_Colonies_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Italy Claims Tunisia
+		name = "BPD_Specific_Claims_Country.9.a"
+
+		ai_chance = {
+			factor = 1000
+		}
+		
+		hidden_effect = {
+			every_state = {
+				limit = { OR = { is_core_of = ETH is_core_of = SOM } NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+				add_claim_by = ITA
+			}
+		}
+		
+		add_state_claim = 458
+		add_state_claim = 665
+
+	}
+	
+	option = {
+		#Italy Claims Previous plus Malta and Cyprus and Egypt
+		name = "BPD_Specific_Claims_Country.9.b"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		hidden_effect = {
+			every_state = {
+				limit = { OR = { is_core_of = ETH is_core_of = SOM } NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+				add_claim_by = ITA
+			}
+		}
+		
+		add_state_claim = 458
+		add_state_claim = 665
+		add_state_claim = 116
+		add_state_claim = 183
+		
+		every_state = {
+			limit = { is_core_of = EGY NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+			add_claim_by = ITA
+		}
+		
+		every_state = {
+			limit = { is_core_of = SUD NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+			add_claim_by = ITA
+		}
+
+	}
+	
+	option = {
+		#Italy Claims Previous Plus Arabian Peninsula
+		name = "BPD_Specific_Claims_Country.9.c"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		hidden_effect = {
+			every_state = {
+				limit = { OR = { is_core_of = ETH is_core_of = SOM } NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+				add_claim_by = ITA
+			}
+		}
+		
+		add_state_claim = 458
+		add_state_claim = 665
+		add_state_claim = 116
+		add_state_claim = 183
+		
+		every_state = {
+			limit = { is_core_of = EGY NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+			add_claim_by = ITA
+		}
+		
+		every_state = {
+			limit = { is_core_of = SUD NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
+			add_claim_by = ITA
+		}
+		
+		every_state = {
+			limit = { 
+				OR = {
+					is_core_of = PAL
+					is_core_of = JOR
+					is_core_of = SYR
+					is_core_of = LEB
+					is_core_of = IRQ
+					is_core_of = KUW
+					is_core_of = SAU
+					is_core_of = UAE
+					is_core_of = OMA
+					is_core_of = YEM
+					is_core_of = QAT
+				}
+				NOT = { is_core_of = ITA } 
+				NOT = { is_claimed_by = ITA } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = ITA
+		}
+
+	}
+
+}
+
+#Our Plans for Northern France
+country_event = {
+	id = BPD_Specific_Claims_Country.10
+	title = "BPD_Specific_Claims_Country.10.t"
+	desc = "BPD_Specific_Claims_Country.10.d"
+	picture = GFX_report_event_GER_Claim_FRA_Country
+
+	fire_only_once = yes
+	trigger = {
+			date > 1933.1.1
+			date < 1949.1.1
+			tag = GER
+			FRA = { has_capitulated = yes }
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			country_exists = VIC
+			
+			any_state = {
+				is_core_of = FRA 
+				is_controlled_by = GER
+			}
+	}
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = {
+		#Occupy Indefinitively
+		name = "BPD_Specific_Claims_Country.10.a"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		every_state = {
+			limit = { is_core_of = FRA is_controlled_by = GER NOT = { is_core_of = GER } }
+			add_claim_by = GER
+		}
+
+	}
+	
+	option = {
+		#Return It At the end of the war
+		name = "BPD_Specific_Claims_Country.10.b"
+
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+
+}
+
+#German Claim on Poland
+country_event = {
+	id = BPD_Specific_Claims_Country.11
+	title = "BPD_Specific_Claims_Country.11.t"
+	desc = "BPD_Specific_Claims_Country.11.d"
+	picture = GFX_report_event_GER_Claim_POL_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#1914 Border
+		name = "BPD_Specific_Claims_Country.11.a"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		add_state_claim = 85
+		add_state_claim = 86
+		add_state_claim = 807
+		add_state_claim = 762
+		add_state_claim = 188
+
+	}
+	
+	option = {
+		#Previous Plus Plock and Lodz
+		name = "BPD_Specific_Claims_Country.11.b"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		add_state_claim = 85
+		add_state_claim = 86
+		add_state_claim = 807
+		add_state_claim = 762
+		add_state_claim = 188
+		add_state_claim = 98
+		add_state_claim = 87
+
+	}
+	
+	option = {
+		#All of German Controlled Poland
+		name = "BPD_Specific_Claims_Country.11.c"
+
+		ai_chance = {
+			factor = 1000
+		}
+		
+		add_state_claim = 85
+		add_state_claim = 86
+		add_state_claim = 807
+		add_state_claim = 762
+		add_state_claim = 188
+		add_state_claim = 98
+		add_state_claim = 87
+		
+		every_state = {
+			limit = { 
+				is_owned_by = POL 
+				is_controlled_by_ROOT_or_ally = yes 
+				NOT = { is_core_of = GER } 
+				NOT = { is_claimed_by = GER } 
+				NOT = { is_core_of = UKR }
+				NOT = { is_core_of = BLR }
+				NOT = { is_core_of = LIT } 
+			}
+			add_claim_by = GER
+		}
+
+	}
+
+}

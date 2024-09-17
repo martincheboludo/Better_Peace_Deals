@@ -2,37 +2,38 @@
 ITALIAN CLAIMS 
 ---------------
 
-Claim Ethiopia
-Claim Greece
-Claim Yugoslavia
-Claim Bulgaria
+Claim Ethiopia - CHECK
+Claim Bulgaria - CHECK
+Claim Turkey - CHECK
+Claim Greece - CHECK
+Claim Yugoslavia - CHECK
 
-Italian Claims In France
+Italian Claims In France - CHECK
 - Savoy, Corsica
 - Previous Plus Provence, Alpes
 
-Italian Colonial Claims
+Italian Colonial Claims - CHECK
 - Minimalist Claims: Tunisia
 - Moderate Claims: Previous Plus Malta, Cyprus, Egypt
-- Maximalist Claims: Previous Plus Turkey, Iraq, Arabian Peninsula
+- Maximalist Claims: Previous Plus Arabian Peninsula
 
 ---------------
 GERMAN CLAIMS 
 ---------------
 
-Fate of Occupied France
+Fate of Occupied France - CHECK
 - Occupy Northern France Indefinitively
 - Return it at the End of the war
 
-Plan Partition of Greece
+Plan Partition of Greece - CHECK
 - Historical
 - Between Bulgaria and Italy
 
-Plan Partition of Yugoslavia
+Plan Partition of Yugoslavia - CHECK
 - Historical
 - Give Dalmatia To Italy
 
-Claim Poland
+Claim Poland - CHECK
 - 1914 border
 - Germany Keeps Wartheland and Danzig-Westpreussen
 - All of Poland Annexed to the Reich
@@ -43,14 +44,14 @@ German Claims In France (Has War with France, Not Has War with Britain)
 - Moderate Claims: Alsace and Nord Pais de Calais
 - Maximalist Claims: Alsace and Nord Pais de Calais and Eastern France (Holy Roman Empire Borders)
 
-German Claims In The West (Has War with both France and Britain )
+Axis Claims In The West (Has War with both France and Britain )
 - Concessions in Exchange for Peace: 1939 Borders in the West, Germany withdraws from the rest of western europe
 - Minimalist Claims: Alsace, Luxembourg and Switzerland*, Germany withdraws from the rest of western europe (German Speaking Lands)
 - Moderate Claims: Alsace, Luxembourg, Switzerland*, Belgium, Holland and Nord pas de calais. Germany withdraws from the rest of western europe (Historical Lands of the Holy Roman Empire.)
 - Maximalist Claims: Alsace, Luxembourg, Belgium, Holland, Denmark, Norway, Sweden* and Switzerland* (Greater Germanic Reich)
 
-German Colonial Claims (Has War with both France and Britain )
-- Concessions in Exchange for Peace: No Colonial Claims
+Axis Colonial Claims (Has War with both France and Britain )
+- Minimalist Claims: No Colonial Claims
 - Moderate Claims: Return of Colonies
 - Maximalist Claims: Mittelafrika
 
@@ -59,6 +60,9 @@ German Claims in the East
 - Moderate Claims: Brest Litovsk Border: Restoration of Brest Litovsk borders, with the Baltics, Poland, Belarus and Ukraine under German control.
 - Maximalist Claims: AA Line Border: AA Line as a boundary
 - Extreme Claims: Ural Mountains as Border: Ural mountains as the boundary
+
+Partition of Asia with Japan
+Partition of the Americas with Japan
 
 ---------------
 Japanese CLAIMS 
@@ -97,8 +101,20 @@ Chinese Claims Against USSR
 ---------------
 Soviet CLAIMS 
 ---------------
-Soviet Claims Against The Axis
-- Kaliningrad, Memel, Romania, Finland, Carpathian Ruthenia
+
+Soviet Claims in Against the Baltics (1939 Onwards)
+- Baltic States
+
+Soviet Claims Against Poland (1939 Onwards)
+- Eastern Poland
+- Congress Poland
+
+Soviet Claims Against Finland (1939 Onwards)
+- Lands Annexed After WW2 (Petsamo, Karelia, etc)
+- All of Finland
+
+Soviet Claims Against The Axis (At War With Germany)
+- Kaliningrad, Memel, Carpathian Ruthenia and lands annexed from Romania
 
 Soviet Claims Against Japan
 - Minimalist Claims: South Sakhalin, Kuril Islands

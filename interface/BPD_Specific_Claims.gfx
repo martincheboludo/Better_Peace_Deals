@@ -1,0 +1,79 @@
+spriteTypes = {
+	spriteType = {
+        name = "GFX_report_event_CHI_Claim_ASI_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/CHI_Claim_ASI_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_GER_Claim_Colonies_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/GER_Claim_Colonies_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_GER_Claim_FRA_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/GER_Claim_FRA_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_GER_Claim_GGR_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/GER_Claim_GGR_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_GER_Claim_GRE_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/GER_Claim_GRE_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_GER_Claim_POL_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/GER_Claim_POL_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_GER_Claim_YUG_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/GER_Claim_YUG_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_ITA_Claim_Colonies_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/ITA_Claim_Colonies_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_ITA_Claim_ETH_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/ITA_Claim_ETH_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_ITA_Claim_FRA_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/ITA_Claim_FRA_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_ITA_Claim_GRE_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/ITA_Claim_GRE_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_ITA_Claim_TUR_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/ITA_Claim_TUR_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_ITA_Claim_YUG_BUL_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/ITA_Claim_YUG_BUL_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_JAP_Claim_ASI_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/JAP_Claim_ASI_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_SOV_Claim_ASI_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/SOV_Claim_ASI_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_SOV_Claim_EUR_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/SOV_Claim_EUR_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_SOV_Claim_RUS_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/SOV_Claim_RUS_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_FIN_Claim_SOV_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/FIN_Claim_SOV_Country.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_ROM_Claim_SOV_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/ROM_Claim_SOV_Country.dds"
+    }
+	
+}
