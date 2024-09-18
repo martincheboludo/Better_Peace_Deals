@@ -1,4 +1,8 @@
 spriteTypes = {
+spriteType = {
+        name = "GFX_report_event_GER_Claim_SWI_Country"
+        texturefile = "gfx/event_pictures/BPD/Claims/GER_Claim_SWI_Country.dds"
+    }
 	spriteType = {
         name = "GFX_report_event_CHI_Claim_ASI_Country"
         texturefile = "gfx/event_pictures/BPD/Claims/CHI_Claim_ASI_Country.dds"

@@ -653,10 +653,16 @@ country_event = {
 
 		ai_chance = {
 			factor = 1000
+			modifier = {
+				factor = 0
+				has_global_flag = BPD_GER_Maximalist_Claims_France
+			}
 		}
 		
 		add_state_claim = 1
 		add_state_claim = 735
+		
+		set_global_flag = BPD_ITA_Minimalist_Claims_France
 
 	}
 	
@@ -665,13 +671,20 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.8.b"
 
 		ai_chance = {
-			factor = 0
+			factor = 1000
+			modifier = {
+				factor = 0
+				NOT = { has_global_flag = BPD_GER_Maximalist_Claims_France }
+			}
 		}
 		
 		add_state_claim = 1
 		add_state_claim = 735
 		add_state_claim = 32
 		add_state_claim = 21
+		add_state_claim = 851
+		
+		set_global_flag = BPD_ITA_Moderate_Claims_France
 
 	}
 
@@ -692,6 +705,12 @@ country_event = {
 
 		ai_chance = {
 			factor = 1000
+			modifier = {
+				factor = 0
+				NOT = { 
+					has_global_flag = BPD_GER_No_Claims_Colonies				
+				}
+			}
 		}
 		
 		hidden_effect = {
@@ -711,7 +730,13 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.9.b"
 
 		ai_chance = {
-			factor = 0
+			factor = 1000
+			modifier = {
+				factor = 0
+				NOT = { 
+					has_global_flag = BPD_GER_Moderate_Claims_Colonies				
+				}
+			}
 		}
 		
 		hidden_effect = {
@@ -743,7 +768,13 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.9.c"
 
 		ai_chance = {
-			factor = 0
+			factor = 1000
+			modifier = {
+				factor = 0
+				NOT = { 
+					has_global_flag = BPD_GER_Maximalist_Claims_Colonies				
+				}
+			}
 		}
 		
 		hidden_effect = {
@@ -885,6 +916,7 @@ country_event = {
 		add_state_claim = 188
 		add_state_claim = 98
 		add_state_claim = 87
+		add_state_claim = 72
 
 	}
 	
@@ -903,6 +935,7 @@ country_event = {
 		add_state_claim = 188
 		add_state_claim = 98
 		add_state_claim = 87
+		add_state_claim = 72
 		
 		every_state = {
 			limit = { 
@@ -918,5 +951,857 @@ country_event = {
 		}
 
 	}
+
+}
+
+#German Claim on France
+country_event = {
+	id = BPD_Specific_Claims_Country.12
+	title = "BPD_Specific_Claims_Country.12.t"
+	desc = "BPD_Specific_Claims_Country.12.d"
+	picture = GFX_report_event_GER_Claim_FRA_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Germany Claims Alsace
+		name = "BPD_Specific_Claims_Country.12.a"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		add_state_claim = 28
+		
+		if = {
+			limit = {
+				OR = {
+					ITA = { is_in_faction_with = GER }
+					AND = {
+						ITA = { has_war_with = FRA }
+						NOT = { ITA = { has_war_with = GER } }
+					}
+				}
+			}
+			ITA = { country_event = { id = BPD_Specific_Claims_Country.8 } }
+		}
+		
+		set_global_flag = BPD_GER_Minimalist_Claims_France
+
+	}
+	
+	option = {
+		#Germany Claims Alsace and Nord Pas du Calais
+		name = "BPD_Specific_Claims_Country.12.b"
+
+		ai_chance = {
+			factor = 1000
+		}
+		
+		add_state_claim = 28
+		add_state_claim = 29
+		
+		if = {
+			limit = {
+				OR = {
+					ITA = { is_in_faction_with = GER }
+					AND = {
+						ITA = { has_war_with = FRA }
+						NOT = { ITA = { has_war_with = GER } }
+					}
+				}
+			}
+			ITA = { country_event = { id = BPD_Specific_Claims_Country.8 } }
+		}
+		
+		set_global_flag = BPD_GER_Moderate_Claims_France
+
+	}
+	
+	option = {
+		#Germany Claims Previous Plus Eastern France
+		name = "BPD_Specific_Claims_Country.12.c"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		add_state_claim = 28
+		add_state_claim = 29
+		add_state_claim = 785
+		add_state_claim = 17
+		add_state_claim = 18
+		
+		if = {
+			limit = {
+				OR = {
+					ITA = { is_in_faction_with = GER }
+					AND = {
+						ITA = { has_war_with = FRA }
+						NOT = { ITA = { has_war_with = GER } }
+					}
+				}
+			}
+			ITA = { country_event = { id = BPD_Specific_Claims_Country.8 } }
+		}
+		
+		set_global_flag = BPD_GER_Maximalist_Claims_France
+
+	}
+
+}
+
+#German Claims in the West
+country_event = {
+	id = BPD_Specific_Claims_Country.13
+	title = "BPD_Specific_Claims_Country.13.t"
+	desc = "BPD_Specific_Claims_Country.13.d"
+	picture = GFX_report_event_GER_Claim_GGR_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Axis Withdraws From Western Europe
+		name = "BPD_Specific_Claims_Country.13.a"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		set_global_flag = BPD_GER_Withdraws_From_Western_Europe
+		
+
+	}
+	
+	option = {
+		#Minimalist Claim
+		name = "BPD_Specific_Claims_Country.13.b"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		add_state_claim = 8
+		add_state_claim = 28
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = AUS
+					state = 69
+					state = 74
+					state = 912
+				}
+				NOT = { is_core_of = GER } 
+				NOT = { is_claimed_by = GER } 
+				NOT = { is_claimed_by = ITA } 
+				NOT = { is_core_of = ITA } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = GER
+		}
+		
+		every_state = {
+			limit = { 
+				is_core_of = SWI
+				NOT = { is_core_of = GER } 
+				NOT = { is_claimed_by = GER } 
+				NOT = { is_claimed_by = ITA } 
+				NOT = { is_claimed_by = FRA }
+				NOT = { is_claimed_by = VIC }
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = GER
+		}
+		
+		country_event = { id = BPD_Specific_Claims_Country.12 }
+		
+		set_global_flag = BPD_GER_Minimalist_Claims_Western_Europe
+	
+
+	}
+	
+	option = {
+		#Moderate Claim
+		name = "BPD_Specific_Claims_Country.13.c"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		add_state_claim = 8
+		add_state_claim = 28
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = AUS
+					state = 69
+					state = 74
+					state = 912
+					state = 9
+					state = 75
+					state = 72
+					state = 102
+				}
+				NOT = { is_core_of = GER } 
+				NOT = { is_claimed_by = GER } 
+				NOT = { is_claimed_by = ITA } 
+				NOT = { is_core_of = ITA } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = GER
+		}
+		
+		every_state = {
+			limit = { 
+				is_core_of = SWI
+				NOT = { is_core_of = GER } 
+				NOT = { is_claimed_by = GER } 
+				NOT = { is_claimed_by = ITA } 
+				NOT = { is_claimed_by = FRA }
+				NOT = { is_claimed_by = VIC }
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = GER
+		}
+		
+		every_state = {
+			limit = { 
+				OR = {
+					is_core_of = BEL
+					is_core_of = HOL
+				}
+				NOT = { is_core_of = GER } 
+				NOT = { is_claimed_by = GER } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = GER
+		}
+		
+		
+		
+		country_event = { id = BPD_Specific_Claims_Country.12 }
+		
+		set_global_flag = BPD_GER_Moderate_Claims_Western_Europe
+		
+
+	}
+	
+	option = {
+		#Maximalist Claim
+		name = "BPD_Specific_Claims_Country.13.e"
+
+		ai_chance = {
+			factor = 1000
+		}
+		
+		add_state_claim = 8
+		add_state_claim = 28
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = AUS
+					state = 69
+					state = 74
+					state = 912
+					state = 9
+					state = 75
+					state = 72
+					state = 102
+				}
+				NOT = { is_core_of = GER } 
+				NOT = { is_claimed_by = GER } 
+				NOT = { is_claimed_by = ITA } 
+				NOT = { is_core_of = ITA } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = GER
+		}
+		
+		every_state = {
+			limit = { 
+				is_core_of = SWI
+				NOT = { is_core_of = GER } 
+				NOT = { is_claimed_by = GER } 
+				NOT = { is_claimed_by = ITA } 
+				NOT = { is_claimed_by = FRA }
+				NOT = { is_claimed_by = VIC }
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = GER
+		}
+		
+		every_state = {
+			limit = { 
+				OR = {
+					is_core_of = BEL
+					is_core_of = HOL
+					is_core_of = NOR
+					is_core_of = DEN
+					is_core_of = SWE
+				}
+				NOT = { is_core_of = GER } 
+				NOT = { is_claimed_by = GER } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = GER
+		}
+		
+		country_event = { id = BPD_Specific_Claims_Country.12 }
+		
+		set_global_flag = BPD_GER_Maximalist_Claims_Western_Europe
+		
+
+	}
+
+}
+
+#German Colonial Claims
+country_event = {
+	id = BPD_Specific_Claims_Country.14
+	title = "BPD_Specific_Claims_Country.14.t"
+	desc = "BPD_Specific_Claims_Country.14.d"
+	picture = GFX_report_event_GER_Claim_Colonies_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Gremany Claims No Colonies
+		name = "BPD_Specific_Claims_Country.14.a"
+
+		ai_chance = {
+			factor = 1000
+		}
+		
+		set_global_flag = BPD_GER_No_Claims_Colonies
+		
+		if = {
+			limit = {
+				OR = {
+					ITA = { is_in_faction_with = GER }
+					AND = {
+						ITA = { has_war_with = FRA }
+						NOT = { ITA = { has_war_with = GER } }
+					}
+				}
+			}
+			ITA = { country_event = { id = BPD_Specific_Claims_Country.9 } }
+		}
+		
+
+	}
+	
+	option = {
+		#Moderate Claim
+		name = "BPD_Specific_Claims_Country.14.b"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		set_global_flag = BPD_GER_Moderate_Claims_Colonies
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = TOG
+					is_core_of = CMR
+					is_core_of = NMB
+					is_core_of = TZN
+					is_core_of = RWA
+					is_core_of = BRD
+					state = 523
+					state = 737
+					state = 634
+				}
+				NOT = { is_core_of = GER } 
+				NOT = { is_claimed_by = GER } 
+				NOT = { is_claimed_by = ITA } 
+				NOT = { is_core_of = SOM } 
+				OR = {
+					owner = { has_war_with = ROOT }
+					owner = { original_tag = FRA }
+				}
+			}
+			add_claim_by = GER
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					ITA = { is_in_faction_with = GER }
+					AND = {
+						ITA = { has_war_with = FRA }
+						NOT = { ITA = { has_war_with = GER } }
+					}
+				}
+			}
+			ITA = { country_event = { id = BPD_Specific_Claims_Country.9 } }
+		}
+	
+
+	}
+	
+	option = {
+		#Maximalist Claim
+		name = "BPD_Specific_Claims_Country.14.c"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		set_global_flag = BPD_GER_Maximalist_Claims_Colonies
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = TOG
+					is_core_of = CMR
+					is_core_of = NMB
+					is_core_of = TZN
+					is_core_of = RWA
+					is_core_of = BRD
+					state = 523
+					state = 737
+					state = 634
+					is_core_of = BOT
+					is_core_of = ZIM
+					is_core_of = ZAM
+					is_core_of = MLW
+					is_core_of = KEN
+					is_core_of = UGA
+					is_core_of = COG
+					is_core_of = ANG
+					is_core_of = MZB
+					is_core_of = MAD
+					is_core_of = RCG
+					is_core_of = GAB
+					is_core_of = CAR
+					is_core_of = EQG
+					is_core_of = NGA
+					is_core_of = DAH
+					is_core_of = GNA
+					is_core_of = GHA
+					is_core_of = IVO
+					is_core_of = LIB
+					is_core_of = SIE
+					is_core_of = SEN
+					is_core_of = GNB
+					is_core_of = GAM
+				}
+				NOT = { is_core_of = GER } 
+				NOT = { is_claimed_by = GER } 
+				NOT = { is_claimed_by = ITA } 
+				NOT = { is_core_of = SOM } 
+				OR = {
+					owner = { has_war_with = ROOT }
+					owner = { original_tag = FRA }
+				}
+			}
+			add_claim_by = GER
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					ITA = { is_in_faction_with = GER }
+					AND = {
+						ITA = { has_war_with = FRA }
+						NOT = { ITA = { has_war_with = GER } }
+					}
+				}
+			}
+			ITA = { country_event = { id = BPD_Specific_Claims_Country.9 } }
+		}
+		
+
+	}
+
+
+}
+
+#Axis Occupation of Switzerland
+country_event = {
+	id = BPD_Specific_Claims_Country.15
+	title = BPD_Specific_Claims_Country.15.t
+	desc = BPD_Specific_Claims_Country.15.d
+	picture = GFX_report_event_GER_Claim_SWI_Country
+
+	is_triggered_only = yes
+
+
+	option = {
+		#Partition with Italy
+		name = BPD_Specific_Claims_Country.15.a
+
+		ai_chance = {
+			factor = 10
+		}
+		
+		#German Occupation Zone
+		if = {
+			limit = {
+				NOT = { GER = { has_war_with = SWI } }
+			}
+			GER = {
+				transfer_state = 151
+				transfer_state = 3
+				transfer_state = 847
+				transfer_state = 845
+			}
+		}
+		else = {
+			GER = {
+				set_state_controller = 151
+				set_state_controller = 3
+				set_state_controller = 847
+				set_state_controller = 845
+				add_state_claim = 151
+				add_state_claim = 3
+				add_state_claim = 847
+				add_state_claim = 845
+			}
+		}
+		
+		#Italian Occupation Zone
+		if = {
+			limit = {
+				NOT = { ITA = { has_war_with = SWI } }
+			}
+			
+			ITA = {
+				transfer_state = 846
+				846 = { remove_core_of = GER }
+			}
+		}
+		else = {
+			ITA = {
+				set_state_controller = 846
+				add_state_claim = 846
+				846 = { remove_core_of = GER }
+			}
+		}
+
+	}
+	
+	option = {
+		#Partition with Italy and France
+		name = BPD_Specific_Claims_Country.15.b
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		trigger = {
+			any_country = {
+				original_tag = FRA
+				exists = yes
+				NOT = { has_war_with = GER }
+			}
+		}
+		
+		#German Occupation Zone
+		if = {
+			limit = {
+				NOT = { GER = { has_war_with = SWI } }
+			}
+			GER = {
+				transfer_state = 151
+				transfer_state = 3
+				transfer_state = 847
+			}
+		}
+		else = {
+			GER = {
+				set_state_controller = 151
+				set_state_controller = 3
+				set_state_controller = 847
+				add_state_claim = 151
+				add_state_claim = 3
+				add_state_claim = 847
+			}
+		}
+		
+		#Italian Occupation Zone
+		if = {
+			limit = {
+				NOT = { ITA = { has_war_with = SWI } }
+			}
+			
+			ITA = {
+				transfer_state = 846
+				846 = { remove_core_of = GER }
+			}
+		}
+		else = {
+			ITA = {
+				set_state_controller = 846
+				add_state_claim = 846
+				846 = { remove_core_of = GER }
+			}
+		}
+		
+		# Romandie to France
+		if = {
+			limit = {
+				country_exists = FRA
+				FRA = { NOT = { has_war_with = GER }  }
+			}
+			#Italian Occupation Zone
+			if = {
+				limit = {
+					NOT = { FRA = { has_war_with = SWI } }
+				}
+				
+				FRA = {
+					transfer_state = 845
+					845 = { remove_core_of = GER }
+				}
+			}
+			else = {
+				FRA = {
+					set_state_controller = 845
+					add_state_claim = 845
+					846 = { remove_core_of = GER }
+				}
+			}
+		}	
+		
+		# Romandie to France
+		if = {
+			limit = {
+				country_exists = VIC
+				VIC = { NOT = { has_war_with = GER }  }
+			}
+			#Italian Occupation Zone
+			if = {
+				limit = {
+					NOT = { VIC = { has_war_with = SWI } }
+				}
+				
+				VIC = {
+					transfer_state = 845
+					845 = { remove_core_of = GER }
+				}
+			}
+			else = {
+				VIC = {
+					set_state_controller = 845
+					add_state_claim = 845
+					846 = { remove_core_of = GER }
+				}
+			}
+		}
+
+	}
+
+}
+
+country_event = {
+	id = BPD_Specific_Claims_Country.16
+	title = "BPD_Specific_Claims_Country.16.t"
+	desc = "BPD_Specific_Claims_Country.16.d"
+	picture = GFX_report_event_GER_Claim_GGR_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Germany Dnieper River Boundary
+		name = "BPD_Specific_Claims_Country.16.a"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		set_global_flag = BPD_GER_Minimalist_Claims_Russia
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = POL
+					is_core_of = LIT
+					AND = { 
+						is_core_of = BLR
+						NOT = { state = 241 }
+					}
+					state = 93
+					state = 91
+					state = 89
+					state = 199
+					state = 201
+					state = 203
+					state = 202
+					state = 197
+					state = 226
+					state = 809
+					state = 190
+				}
+				NOT = { is_core_of = GER } 
+				NOT = { is_claimed_by = GER } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = GER
+		}
+		
+		if = {
+			limit = { ROM = { is_in_faction_with = GER } }
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 198
+						state = 192
+						state = 834
+						state = 80
+						state = 78
+						state = 766
+					}
+					NOT = { is_core_of = GER } 
+					NOT = { is_claimed_by = GER } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = ROM
+			}
+		}
+		else = {
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 198
+						state = 192
+						state = 834
+						state = 80
+						state = 78
+						state = 766
+					}
+					NOT = { is_core_of = GER } 
+					NOT = { is_claimed_by = GER } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = GER
+			}
+		}
+		
+		
+
+	}
+	
+	option = {
+		#Moderate Claim Brest Litovsk
+		name = "BPD_Specific_Claims_Country.16.b"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		set_global_flag = BPD_GER_Moderate_Claims_Russia
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = POL
+					is_core_of = LIT
+					is_core_of = BLR
+					state = 93
+					state = 91
+					state = 89
+					state = 199
+					state = 201
+					state = 203
+					state = 202
+					state = 197
+					state = 226
+					state = 809
+					state = 190
+					is_core_of = LAT
+					is_core_of = EST
+					AND = { 
+						is_core_of = UKR
+						NOT = { state = 198 }
+						NOT = { state = 192 }
+						NOT = { state = 834 }
+						NOT = { state = 80 }
+						NOT = { state = 78 }
+						NOT = { state = 766 }
+						NOT = { state = 73 }
+					}
+				}
+				NOT = { is_core_of = GER } 
+				NOT = { is_claimed_by = GER } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = GER
+		}
+		
+		if = {
+			limit = { ROM = { is_in_faction_with = GER } }
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 198
+						state = 192
+						state = 834
+						state = 80
+						state = 78
+						state = 766
+					}
+					NOT = { is_core_of = GER } 
+					NOT = { is_claimed_by = GER } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = ROM
+			}
+		}
+		else = {
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 198
+						state = 192
+						state = 834
+						state = 80
+						state = 78
+						state = 766
+					}
+					NOT = { is_core_of = GER } 
+					NOT = { is_claimed_by = GER } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = GER
+			}
+		}
+
+
+	}
+	
+	option = {
+		#Maximalist Claim AA Line
+		name = "BPD_Specific_Claims_Country.16.c"
+
+		ai_chance = {
+			factor = 0
+		}
+		
+		set_global_flag = BPD_GER_Maximalist_Claims_Russia
+
+		
+
+	}
+	
+	option = {
+		#Maximalist Claim Ural Mountains
+		name = "BPD_Specific_Claims_Country.16.e"
+
+		ai_chance = {
+			factor = 1000
+		}
+		
+		set_global_flag = BPD_GER_Extreme_Claims_Russia
+
+		
+
+	}
+
 
 }

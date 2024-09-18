@@ -1187,6 +1187,10 @@ country_event = {
 			}
 		}
 		
+		hidden_effect = {
+			BPD_Cobelligrent_Finland_Limited_Victory = yes
+		}
+		
 		every_country = {
 			limit = {
 				is_in_faction_with = FROM
@@ -1923,9 +1927,17 @@ country_event = {
 			} 
 		}
 		
+		hidden_effect = {
+			BPD_Cobelligrent_Finland_Stalemate_SOV = yes
+		}
+		
 		#Enemy Faction Leader Gets Event to give Allied Faction Members The States They Control
 		hidden_effect = {
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.100 } }
+		}
+		
+		hidden_effect = {
+			BPD_Cobelligrent_Finland_Stalemate_FIN = yes
 		}
 		
 		#Enemy Faction Members Get The Territories They Control
@@ -3471,6 +3483,7 @@ country_event = {
 		
 		hidden_effect = {
 			BPD_Handle_Vichy_France_Lost = yes
+			BPD_Cobelligrent_Finland_Limited_Surrender_SOV = yes
 		}
 		
 		every_state = { 
@@ -4291,6 +4304,7 @@ country_event = {
 		
 		hidden_effect = {
 			BPD_Handle_Vichy_France_Lost = yes
+			BPD_Cobelligrent_Finland_Total_Surrender_SOV = yes
 		}
 		
 		#Get Claimed State
@@ -4599,6 +4613,7 @@ country_event = {
 		
 		hidden_effect = {
 		BPD_Handle_Vichy_France = yes
+		BPD_Cobelligrent_Finland_White_Peace = yes
 		}
 		
 		every_country = {
@@ -4661,6 +4676,7 @@ country_event = {
 		
 		hidden_effect = {
 		BPD_Handle_Vichy_France = yes
+		BPD_Cobelligrent_Finland_Limited_Victory_GER = yes
 		}
 		
 		every_state = { 
@@ -4744,7 +4760,8 @@ country_event = {
 		}
 		
 		hidden_effect = {
-		BPD_Handle_Vichy_France = yes
+			BPD_Handle_Vichy_France = yes
+			BPD_Cobelligrent_Finland_Stalemate_White_Peace = yes
 		}
 		
 		every_state = {
@@ -4826,7 +4843,7 @@ country_event = {
 		
 		
 		hidden_effect = {
-		BPD_Handle_Vichy_France = yes
+			BPD_Handle_Vichy_France = yes
 		}
 		
 		#Peace At Current Frontlines and Cores and Claims
@@ -4858,6 +4875,10 @@ country_event = {
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.130 } }
 		}
 		
+		hidden_effect = {
+			BPD_Cobelligrent_Finland_Total_Victory_White_Peace = yes
+		}
+		
 		every_country = {
 			limit = { is_in_faction_with = FROM }
 			white_peace = ROOT
@@ -4869,7 +4890,6 @@ country_event = {
 			white_peace = FROM
 			set_truce = { target = FROM days = 1825 }
 		}
-		
 		
 	}
 
@@ -4915,6 +4935,10 @@ country_event = {
 
 		ai_chance = {
 			factor = 50
+		}
+		
+		hidden_effect = {
+			BPD_Cobelligrent_Finland_Limited_Surrender_White_Peace = yes
 		}
 		
 		every_country = {
@@ -4973,6 +4997,10 @@ country_event = {
 
 		ai_chance = {
 			factor = 50
+		}
+		
+		hidden_effect = {
+			BPD_Cobelligrent_Finland_Total_Surrender_White_Peace = yes
 		}
 		
 		every_country = {
@@ -5213,6 +5241,7 @@ country_event = {
 	
 	immediate = {
 			hidden_effect = {
+				BPD_Cobelligrent_Finland_Total_Victory_FIN = yes
 				#Enemy Faction Members Get The Territories They Control
 				every_country = {
 					limit = {

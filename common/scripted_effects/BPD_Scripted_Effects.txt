@@ -112,3 +112,340 @@ BPD_Handle_Vichy_France_Lost = {
 				}
 			}
 }
+
+BPD_Cobelligrent_Finland_White_Peace = {
+
+	#Handle Cobelligrent Finland
+		if = {
+			limit = { 
+				ROOT = { tag = GER } 
+				FROM = { tag = SOV } 
+				NOT = {
+					has_global_flag = BPD_Total_Conversion_Compatibility
+				}
+				GER = { has_war_with = SOV } 
+				FIN = { has_war_with = SOV } 
+				NOT = { FIN = { has_war_with = GER } } 
+				FIN = { is_in_faction = no } 
+			}
+			
+			every_country = {
+				limit = { is_in_faction_with = FROM }
+				white_peace = FIN
+				set_truce = { target = FIN days = 365 }
+			}
+			
+		}
+
+}
+
+BPD_Cobelligrent_Finland_Limited_Victory = {
+
+	#Handle Cobelligrent Finland
+		if = {
+			limit = { 
+				ROOT = { tag = SOV } 
+				FROM = { tag = GER } 
+				NOT = {
+					has_global_flag = BPD_Total_Conversion_Compatibility
+				}
+				GER = { has_war_with = SOV } 
+				FIN = { has_war_with = SOV } 
+				NOT = { FIN = { has_war_with = GER } } 
+				FIN = { is_in_faction = no } 
+			}
+			
+			FIN = { country_event = { id = BPD_Better_Peace_Deals_Country.90 hours = 4 } }
+			
+		}
+
+}
+
+BPD_Cobelligrent_Finland_Limited_Victory_GER = {
+
+	#Handle Cobelligrent Finland
+		if = {
+			limit = { 
+				ROOT = { tag = GER } 
+				FROM = { tag = SOV } 
+				NOT = {
+					has_global_flag = BPD_Total_Conversion_Compatibility
+				}
+				GER = { has_war_with = SOV } 
+				FIN = { has_war_with = SOV } 
+				NOT = { FIN = { has_war_with = GER } } 
+				FIN = { is_in_faction = no } 
+			}
+			
+			every_country = {
+				limit = { is_in_faction_with = FROM }
+				white_peace = FIN
+				set_truce = { target = FIN days = 1095 }
+			}
+			
+		}
+
+}
+
+BPD_Cobelligrent_Finland_Stalemate_SOV = {
+
+	#Handle Cobelligrent Finland
+		if = {
+			limit = { 
+				ROOT = { tag = SOV } 
+				FROM = { tag = GER } 
+				NOT = {
+					has_global_flag = BPD_Total_Conversion_Compatibility
+				}
+				GER = { has_war_with = SOV } 
+				FIN = { has_war_with = SOV } 
+				NOT = { FIN = { has_war_with = GER } } 
+				FIN = { is_in_faction = no } 
+			}
+			
+			every_state = {
+				limit = { 
+					NOT = {
+						is_owned_by = ROOT 
+					} 
+					is_controlled_by = ROOT
+					owner = {
+						has_war_with = ROOT
+						tag = FIN
+					}
+				} 
+				ROOT = { 
+					transfer_state = PREV 
+				} 
+			}
+			
+		}
+
+}
+
+BPD_Cobelligrent_Finland_Stalemate_FIN = {
+
+	#Handle Cobelligrent Finland
+		if = {
+			limit = { 
+				ROOT = { tag = SOV } 
+				FROM = { tag = GER } 
+				NOT = {
+					has_global_flag = BPD_Total_Conversion_Compatibility
+				}
+				GER = { has_war_with = SOV } 
+				FIN = { has_war_with = SOV } 
+				NOT = { FIN = { has_war_with = GER } } 
+				FIN = { is_in_faction = no } 
+			}
+			
+			FIN = { country_event = { id = BPD_Better_Peace_Deals_Country.110 hours = 4 } }
+			
+		}
+
+}
+
+BPD_Cobelligrent_Finland_Stalemate_White_Peace = {
+
+	#Handle Cobelligrent Finland
+		if = {
+			limit = { 
+				ROOT = { tag = GER } 
+				FROM = { tag = SOV } 
+				NOT = {
+					has_global_flag = BPD_Total_Conversion_Compatibility
+				}
+				GER = { has_war_with = SOV } 
+				FIN = { has_war_with = SOV } 
+				NOT = { FIN = { has_war_with = GER } } 
+				FIN = { is_in_faction = no } 
+			}
+			
+			every_country = {
+				limit = { is_in_faction_with = FROM }
+				white_peace = FIN
+				set_truce = { target = FIN days = 730 }
+			}
+			
+		}
+
+}
+
+BPD_Cobelligrent_Finland_Total_Victory_White_Peace = {
+
+	#Handle Cobelligrent Finland
+		if = {
+			limit = { 
+				ROOT = { tag = GER } 
+				FROM = { tag = SOV } 
+				NOT = {
+					has_global_flag = BPD_Total_Conversion_Compatibility
+				}
+				GER = { has_war_with = SOV } 
+				FIN = { has_war_with = SOV } 
+				NOT = { FIN = { has_war_with = GER } } 
+				FIN = { is_in_faction = no } 
+			}
+			
+			every_country = {
+				limit = { is_in_faction_with = FROM }
+				white_peace = FIN
+				set_truce = { target = FIN days = 1825 }
+			}
+			
+		}
+
+}
+
+BPD_Cobelligrent_Finland_Total_Victory_FIN = {
+
+	#Handle Cobelligrent Finland
+		if = {
+			limit = { 
+				ROOT = { tag = SOV } 
+				FROM = { tag = GER } 
+				NOT = {
+					has_global_flag = BPD_Total_Conversion_Compatibility
+				}
+				GER = { has_war_with = SOV } 
+				FIN = { has_war_with = SOV } 
+				NOT = { FIN = { has_war_with = GER } } 
+				FIN = { is_in_faction = no } 
+			}
+			
+			FIN = { country_event = { id = BPD_Better_Peace_Deals_Country.131 } }
+			
+		}
+
+}
+
+BPD_Cobelligrent_Finland_Limited_Surrender_SOV = {
+
+	#Handle Cobelligrent Finland
+		if = {
+			limit = { 
+				ROOT = { tag = SOV } 
+				FROM = { tag = GER } 
+				NOT = {
+					has_global_flag = BPD_Total_Conversion_Compatibility
+				}
+				GER = { has_war_with = SOV } 
+				FIN = { has_war_with = SOV } 
+				NOT = { FIN = { has_war_with = GER } } 
+				FIN = { is_in_faction = no } 
+			}
+			
+			every_state = { 
+				limit = { 
+					NOT = {
+						is_owned_by = ROOT
+					} 
+					OR = { 
+						is_core_of = ROOT
+						is_claimed_by = ROOT
+					}
+					owner = {
+						has_war_with = ROOT
+						tag = FIN
+					}
+				} 
+				ROOT = { 
+					transfer_state = PREV 
+				} 
+			}
+			
+		}
+
+}
+
+BPD_Cobelligrent_Finland_Limited_Surrender_White_Peace = {
+
+	#Handle Cobelligrent Finland
+		if = {
+			limit = { 
+				ROOT = { tag = GER } 
+				FROM = { tag = SOV } 
+				NOT = {
+					has_global_flag = BPD_Total_Conversion_Compatibility
+				}
+				GER = { has_war_with = SOV } 
+				FIN = { has_war_with = SOV } 
+				NOT = { FIN = { has_war_with = GER } } 
+				FIN = { is_in_faction = no } 
+			}
+			
+			every_country = {
+				limit = { is_in_faction_with = FROM }
+				white_peace = FIN
+				set_truce = { target = FIN days = 1095 }
+			}
+			
+		}
+
+}
+
+BPD_Cobelligrent_Finland_Total_Surrender_White_Peace = {
+
+	#Handle Cobelligrent Finland
+		if = {
+			limit = { 
+				ROOT = { tag = GER } 
+				FROM = { tag = SOV } 
+				NOT = {
+					has_global_flag = BPD_Total_Conversion_Compatibility
+				}
+				GER = { has_war_with = SOV } 
+				FIN = { has_war_with = SOV } 
+				NOT = { FIN = { has_war_with = GER } } 
+				FIN = { is_in_faction = no } 
+			}
+			
+			every_country = {
+				limit = { is_in_faction_with = FROM }
+				white_peace = FIN
+				set_truce = { target = FIN days = 1825 }
+			}
+			
+		}
+
+}
+
+BPD_Cobelligrent_Finland_Total_Surrender_SOV = {
+
+	#Handle Cobelligrent Finland
+		if = {
+			limit = { 
+				ROOT = { tag = SOV } 
+				FROM = { tag = GER } 
+				NOT = {
+					has_global_flag = BPD_Total_Conversion_Compatibility
+				}
+				GER = { has_war_with = SOV } 
+				FIN = { has_war_with = SOV } 
+				NOT = { FIN = { has_war_with = GER } } 
+				FIN = { is_in_faction = no } 
+			}
+			
+			every_state = { 
+				limit = { 
+					NOT = {
+						is_owned_by = ROOT
+					} 
+					OR = { 
+						is_core_of = ROOT 
+						is_claimed_by = ROOT 
+						is_controlled_by = ROOT
+					}
+					owner = {
+						has_war_with = ROOT
+						tag = FIN
+					}
+				} 
+				ROOT = { 
+					transfer_state = PREV 
+				} 
+			}
+			
+		}
+
+}
