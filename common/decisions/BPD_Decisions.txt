@@ -304,13 +304,13 @@ BPD_Peace_Deal_Manager = {
 				is_faction_leader = yes
 			}
 		
-			custom_trigger_tooltip = {
-				tooltip = BPD_War_Longer_Than_6_tt
-				war_length_with = {
-					tag = FROM
-					months > 5
-				}
-			}
+			#custom_trigger_tooltip = {
+			#	tooltip = BPD_War_Longer_Than_6_tt
+			#	war_length_with = {
+			#		tag = FROM
+			#		months > 5
+			#	}
+			#}
 
         }
 		complete_effect = {
@@ -358,13 +358,13 @@ BPD_Peace_Deal_Manager = {
 				is_faction_leader = yes
 			}
 		
-			custom_trigger_tooltip = {
-				tooltip = BPD_War_Longer_Than_6_tt
-				war_length_with = {
-					tag = FROM
-					months > 5
-				}
-			}
+			#custom_trigger_tooltip = {
+			#	tooltip = BPD_War_Longer_Than_6_tt
+			#	war_length_with = {
+			#		tag = FROM
+			#		months > 5
+			#	}
+			#}
 
         }
 		complete_effect = {
