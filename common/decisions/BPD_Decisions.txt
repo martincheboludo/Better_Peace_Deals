@@ -63,16 +63,17 @@ BPD_Peace_Deal_Manager = {
 					months > 5
 				}
 			}
+			
 			OR = {
 				FROM = { 
 				surrender_progress > 0.69 
 				}
 				any_country = {
-					is_major = yes
-					has_war_with = ROOT
-					is_in_faction_with = FROM
-					has_capitulated = yes
-				}
+						is_major = yes
+						has_war_with = ROOT
+						is_in_faction_with = FROM
+						has_capitulated = yes
+					}
 			}
 
         }
@@ -131,17 +132,17 @@ BPD_Peace_Deal_Manager = {
 				}
 			}
 			
-			OR = {
-				FROM = { 
-				surrender_progress > 0.34
+				OR = {
+					FROM = { 
+					surrender_progress > 0.34
+					}
+					any_country = {
+						is_major = yes
+						has_war_with = ROOT
+						is_in_faction_with = FROM
+						has_capitulated = yes
+					}
 				}
-				any_country = {
-					is_major = yes
-					has_war_with = ROOT
-					is_in_faction_with = FROM
-					has_capitulated = yes
-				}
-			}
 
         }
 		complete_effect = {

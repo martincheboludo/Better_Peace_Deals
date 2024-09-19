@@ -1091,6 +1091,11 @@ country_event = {
 					state = 69
 					state = 74
 					state = 912
+					state = 85
+					state = 86
+					state = 807
+					state = 762
+					state = 188
 				}
 				NOT = { is_core_of = GER } 
 				NOT = { is_claimed_by = GER } 
@@ -1139,6 +1144,11 @@ country_event = {
 					state = 69
 					state = 74
 					state = 912
+					state = 85
+					state = 86
+					state = 807
+					state = 762
+					state = 188
 					state = 9
 					state = 75
 					state = 72
@@ -1206,6 +1216,11 @@ country_event = {
 					state = 69
 					state = 74
 					state = 912
+					state = 85
+					state = 86
+					state = 807
+					state = 762
+					state = 188
 					state = 9
 					state = 75
 					state = 72
@@ -1784,6 +1799,156 @@ country_event = {
 		}
 		
 		set_global_flag = BPD_GER_Maximalist_Claims_Russia
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = POL
+					is_core_of = LIT
+					is_core_of = BLR
+					state = 93
+					state = 91
+					state = 89
+					state = 199
+					state = 201
+					state = 203
+					state = 202
+					state = 197
+					state = 226
+					state = 809
+					state = 190
+					is_core_of = LAT
+					is_core_of = EST
+					AND = { 
+						is_core_of = UKR
+						NOT = { state = 198 }
+						NOT = { state = 192 }
+						NOT = { state = 834 }
+						NOT = { state = 80 }
+						NOT = { state = 78 }
+						NOT = { state = 766 }
+						NOT = { state = 73 }
+					}
+					AND = { 
+						is_on_continent = europe
+						NOT = { state = 198 }
+						NOT = { state = 192 }
+						NOT = { state = 834 }
+						NOT = { state = 80 }
+						NOT = { state = 78 }
+						NOT = { state = 766 }
+						NOT = { state = 73 }
+						NOT = { state = 213 }
+						NOT = { state = 215 }
+						NOT = { state = 216 }
+						NOT = { state = 722 }
+						NOT = { state = 147 }
+						NOT = { state = 146 }
+					}
+					state = 351
+					state = 880
+					state = 236
+					state = 252
+					state = 255
+					state = 239
+					state = 829
+					state = 826
+					state = 229
+					state = 230
+					state = 231
+				}
+				NOT = { is_core_of = GER } 
+				NOT = { is_claimed_by = GER } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = GER
+		}
+		
+		if = {
+			limit = { ROM = { is_in_faction_with = GER } }
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 198
+						state = 192
+						state = 834
+						state = 80
+						state = 78
+						state = 766
+					}
+					NOT = { is_core_of = GER } 
+					NOT = { is_claimed_by = GER } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = ROM
+			}
+		}
+		else = {
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 198
+						state = 192
+						state = 834
+						state = 80
+						state = 78
+						state = 766
+					}
+					NOT = { is_core_of = GER } 
+					NOT = { is_claimed_by = GER } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = GER
+			}
+		}
+		
+		if = {
+			limit = { 
+				OR = {
+					FIN = { is_in_faction_with = GER } 
+					AND = {
+						FIN = { has_war_with = SOV } 
+						NOT = { FIN = { has_war_with = GER } }
+					}
+				}
+			}
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 213
+						state = 215
+						state = 216
+						state = 722
+						state = 147
+						state = 146
+					}
+					NOT = { is_core_of = GER } 
+					NOT = { is_claimed_by = GER } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = FIN
+			}
+		}
+		else = {
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 213
+						state = 215
+						state = 216
+						state = 722
+						state = 147
+						state = 146
+					}
+					NOT = { is_core_of = GER } 
+					NOT = { is_claimed_by = GER } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = GER
+			}
+		}
+		
+		
 
 		
 
@@ -1798,6 +1963,174 @@ country_event = {
 		}
 		
 		set_global_flag = BPD_GER_Extreme_Claims_Russia
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = POL
+					is_core_of = LIT
+					is_core_of = BLR
+					state = 93
+					state = 91
+					state = 89
+					state = 199
+					state = 201
+					state = 203
+					state = 202
+					state = 197
+					state = 226
+					state = 809
+					state = 190
+					is_core_of = LAT
+					is_core_of = EST
+					AND = { 
+						is_core_of = UKR
+						NOT = { state = 198 }
+						NOT = { state = 192 }
+						NOT = { state = 834 }
+						NOT = { state = 80 }
+						NOT = { state = 78 }
+						NOT = { state = 766 }
+						NOT = { state = 73 }
+					}
+					AND = { 
+						is_on_continent = europe
+						is_core_of = SOV
+						NOT = { state = 198 }
+						NOT = { state = 192 }
+						NOT = { state = 834 }
+						NOT = { state = 80 }
+						NOT = { state = 78 }
+						NOT = { state = 766 }
+						NOT = { state = 73 }
+						NOT = { state = 213 }
+						NOT = { state = 215 }
+						NOT = { state = 216 }
+						NOT = { state = 722 }
+						NOT = { state = 147 }
+						NOT = { state = 146 }
+					}
+					state = 351
+					state = 880
+					state = 236
+					state = 252
+					state = 255
+					state = 239
+					state = 829
+					state = 826
+					state = 229
+					state = 230
+					state = 231
+					state = 825
+					state = 262
+					state = 581
+					state = 398
+					state = 573
+					state = 582
+					state = 406
+					state = 407
+					state = 397
+					state = 400
+					state = 651
+					state = 652
+					state = 833
+					state = 250
+					state = 249
+					state = 256
+					state = 399
+					state = 251
+					state = 401
+				}
+				NOT = { is_core_of = GER } 
+				NOT = { is_claimed_by = GER } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = GER
+		}
+		
+		if = {
+			limit = { ROM = { is_in_faction_with = GER } }
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 198
+						state = 192
+						state = 834
+						state = 80
+						state = 78
+						state = 766
+					}
+					NOT = { is_core_of = GER } 
+					NOT = { is_claimed_by = GER } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = ROM
+			}
+		}
+		else = {
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 198
+						state = 192
+						state = 834
+						state = 80
+						state = 78
+						state = 766
+					}
+					NOT = { is_core_of = GER } 
+					NOT = { is_claimed_by = GER } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = GER
+			}
+		}
+		
+		if = {
+			limit = { 
+				OR = {
+					FIN = { is_in_faction_with = GER } 
+					AND = {
+						FIN = { has_war_with = SOV } 
+						NOT = { FIN = { has_war_with = GER } }
+					}
+				}
+			}
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 213
+						state = 215
+						state = 216
+						state = 722
+						state = 147
+						state = 146
+					}
+					NOT = { is_core_of = GER } 
+					NOT = { is_claimed_by = GER } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = FIN
+			}
+		}
+		else = {
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 213
+						state = 215
+						state = 216
+						state = 722
+						state = 147
+						state = 146
+					}
+					NOT = { is_core_of = GER } 
+					NOT = { is_claimed_by = GER } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = GER
+			}
+		}
 
 		
 
