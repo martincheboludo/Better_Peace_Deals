@@ -15,6 +15,7 @@
  GER_German_Demands_West:0 "German Demands in Western Europe"
  GER_German_Colonial_Claims:0 "German Colonial Claims"
  GER_German_Claim_on_Russia:0 "German Claim on Russia"
+ JAP_Japan_Demands_China:0 "Japanese Claim on China"
  
 BPD_GER_Withdraws_From_Western_Europe:0 "Germany Offers To Withdraw From Western Europe"
 BPD_GER_Minimalist_Claims_Western_Europe:0 "German Minimalist Claims Western Europe"
@@ -108,3 +109,21 @@ BPD_Specific_Claims_Country.16.a:0 "Minimalist Claim"
 BPD_Specific_Claims_Country.16.b:0 "Moderate Claim"
 BPD_Specific_Claims_Country.16.c:0 "Maximalist Claim"
 BPD_Specific_Claims_Country.16.e:0 "Extreme Claim"
+
+BPD_Specific_Claims_Country.17.t:0 "Japanese Claim on China"
+BPD_Specific_Claims_Country.17.d:0 "As Japan continues its imperial ambitions, the vast expanse of China presents a unique opportunity for dominance in East Asia. With its rich resources, massive population, and strategic coastline, securing control over China could solidify Japan's status as a world power. However, the scope of our ambitions must be weighed carefully in light of the risks and rewards.\n\nWe are faced with two potential paths:\n\n§RModerate Claim§!:\nThis approach focuses on securing the Chinese coastline, from Manchuria down to Guangzhou. This would grant Japan control over critical ports, trade routes, and a large portion of China's industrial base, ensuring dominance over maritime trade and access to essential resources. While this would weaken China considerably, there remains a possibility—albeit slim—that under the right conditions, China may accede to this claim to avoid total collapse. It would still leave China as a viable entity in the interior but under Japanese influence.\n\n§RMaximalist Claim§!:\nThe maximalist option envisions full control of all Chinese territory. This would allow Japan to dominate the entire region, exploiting the vast resources and manpower of the Chinese mainland. However, such a claim is far more aggressive and would likely provoke fierce resistance from the Chinese government and population, as well as international powers. While this approach offers the greatest potential rewards, the possibility of China surrendering to such a demand is extremely unlikely, requiring either complete military collapse or unprecedented internal strife within China for it to become a reality."
+BPD_Specific_Claims_Country.17.a:0 "Moderate Claim"
+BPD_Specific_Claims_Country.17.b:0 "Maximalist Claim"
+
+BPD_Specific_Claims_Country.18.t:0 "Japanese Claim on Russia"
+BPD_Specific_Claims_Country.18.d:0 "As Japan looks to secure its northern frontier, the vast lands of Siberia present an opportunity for territorial expansion and resource acquisition. The scale of our ambitions in Russia must be carefully evaluated, balancing military effort and strategic gain.\n\nWe are presented with three options:\n\n§RMinimalist Claim§!:
+This focuses on securing North Sakhalin and the Siberian Pacific Coast, providing Japan with strategic coastal territories and access to vital resources, particularly around Vladivostok.\n\n§RModerate Claim§!:\nThe moderate claim expands Japanese control further into Siberia, along with all of Outer Manchuria. These territories would significantly strengthen Japan's northern position and grant broader access to Siberia's resource wealth.\n\n§RMaximalist Claim§!:\nThe most far-reaching option seeks to dominate most of Siberia, incorporating Mongolia, Tannu Tuva, and the remaining Siberian territories. While granting Japan vast resources and strategic depth, this would come at the cost of a massive military commitment and could provoke a deeper conflict with the Soviet Union."
+BPD_Specific_Claims_Country.18.a:0 "Minimalist Claim"
+BPD_Specific_Claims_Country.18.b:0 "Moderate Claim"
+BPD_Specific_Claims_Country.18.c:0 "Maximalist Claim"
+
+BPD_Specific_Claims_Country.19.t:0 "Japanese Claims in The Pacific"
+BPD_Specific_Claims_Country.19.d:0 "As Japan’s ambitions in the Pacific continue to grow, the opportunity to establish control over vast territories and secure dominance across the region presents itself. Each step of expansion comes with its own rewards and risks, from securing valuable resources to provoking larger conflicts. Japan must decide how far it is willing to extend its empire.\n\nWe are presented with three options:\n\n§RMinimalist Claim§!:\nThis approach focuses on securing the Allied colonial enclaves in China and India, alongside control of key strategic islands throughout the Pacific, such as Midway, Hawaii, and Samoa. While this would strengthen Japan’s position and secure maritime routes, it limits direct confrontation with major powers and keeps the expansion manageable.\n\n§RModerate Claim§!:\nIn this scenario, Japan extends its ambitions beyond the small islands and colonial enclaves to include Indochina, Malaya, the Dutch East Indies, and the Philippines. This would grant Japan control over vital resources, especially oil and rubber, and significantly weaken Western influence in Southeast Asia. However, such a move would draw the attention and opposition of the United States and Britain, leading to broader conflicts in the Pacific.\n\n§RMaximalist Claim§!:\nThe most expansive option envisions Japanese control stretching from the small islands and Southeast Asia to include Australia, New Zealand, and all of India. This would establish Japan as the dominant power across the entire Asia-Pacific region. While the rewards in terms of resources and strategic positioning are immense, the risks are equally severe. This would provoke global powers into full-scale war, stretching Japan’s military and economic resources to their limits. The scale of the resistance from Allied forces would be vast, making this option the most challenging and dangerous."
+BPD_Specific_Claims_Country.19.a:0 "Minimalist Claim"
+BPD_Specific_Claims_Country.19.b:0 "Moderate Claim"
+BPD_Specific_Claims_Country.19.c:0 "Maximalist Claim"

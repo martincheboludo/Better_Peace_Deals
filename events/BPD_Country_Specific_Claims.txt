@@ -652,7 +652,7 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.8.a"
 
 		ai_chance = {
-			factor = 1000
+			factor = 600
 			modifier = {
 				factor = 0
 				has_global_flag = BPD_GER_Maximalist_Claims_France
@@ -671,7 +671,7 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.8.b"
 
 		ai_chance = {
-			factor = 1000
+			factor = 400
 			modifier = {
 				factor = 0
 				NOT = { has_global_flag = BPD_GER_Maximalist_Claims_France }
@@ -704,7 +704,7 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.9.a"
 
 		ai_chance = {
-			factor = 1000
+			factor = 500
 			modifier = {
 				factor = 0
 				NOT = { 
@@ -730,7 +730,7 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.9.b"
 
 		ai_chance = {
-			factor = 1000
+			factor = 350
 			modifier = {
 				factor = 0
 				NOT = { 
@@ -768,7 +768,7 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.9.c"
 
 		ai_chance = {
-			factor = 1000
+			factor = 150
 			modifier = {
 				factor = 0
 				NOT = { 
@@ -854,7 +854,7 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.10.a"
 
 		ai_chance = {
-			factor = 0
+			factor = 600
 		}
 		
 		every_state = {
@@ -869,7 +869,7 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.10.b"
 
 		ai_chance = {
-			factor = 100
+			factor = 400
 		}
 
 	}
@@ -968,7 +968,7 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.12.a"
 
 		ai_chance = {
-			factor = 0
+			factor = 300
 		}
 		
 		add_state_claim = 28
@@ -995,7 +995,7 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.12.b"
 
 		ai_chance = {
-			factor = 1000
+			factor = 500
 		}
 		
 		add_state_claim = 28
@@ -1023,7 +1023,7 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.12.c"
 
 		ai_chance = {
-			factor = 0
+			factor = 200
 		}
 		
 		add_state_claim = 28
@@ -1078,7 +1078,7 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.13.b"
 
 		ai_chance = {
-			factor = 0
+			factor = 200
 		}
 		
 		add_state_claim = 8
@@ -1131,7 +1131,7 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.13.c"
 
 		ai_chance = {
-			factor = 0
+			factor = 400
 		}
 		
 		add_state_claim = 8
@@ -1203,7 +1203,7 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.13.e"
 
 		ai_chance = {
-			factor = 1000
+			factor = 400
 		}
 		
 		add_state_claim = 8
@@ -1629,7 +1629,7 @@ country_event = {
 	}
 
 }
-
+# German Claims in the East
 country_event = {
 	id = BPD_Specific_Claims_Country.16
 	title = "BPD_Specific_Claims_Country.16.t"
@@ -1723,10 +1723,10 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.16.b"
 
 		ai_chance = {
-			factor = 1000
+			base = 0
 			modifier = {
-				factor = 0
-				has_government = fascism
+				add = 1000
+				NOT = { has_government = fascism }
 			}
 		}
 		
@@ -1815,7 +1815,11 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.16.c"
 
 		ai_chance = {
-			factor = 0
+			base = 600
+			modifier = {
+				factor = 0
+				NOT = { has_government = fascism }
+			}
 		}
 		
 		set_global_flag = BPD_GER_Maximalist_Claims_Russia
@@ -1979,7 +1983,7 @@ country_event = {
 		name = "BPD_Specific_Claims_Country.16.e"
 
 		ai_chance = {
-			factor = 1000
+			base = 400
 			modifier = {
 				factor = 0
 				NOT = { has_government = fascism }
@@ -2160,5 +2164,545 @@ country_event = {
 
 	}
 
+
+}
+
+#Japanese Claim on China
+country_event = {
+	id = BPD_Specific_Claims_Country.17
+	title = "BPD_Specific_Claims_Country.17.t"
+	desc = "BPD_Specific_Claims_Country.17.d"
+	picture = GFX_report_event_JAP_Claim_ASI_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Claim Chinese Coast
+		name = "BPD_Specific_Claims_Country.17.a"
+
+		ai_chance = {
+			factor = 700
+		}
+		
+		every_state = {
+			limit = { 
+				is_core_of = CHI
+				is_coastal = yes
+				NOT = { 
+					is_core_of = JAP 
+				} 
+				NOT = { 
+					is_claimed_by = JAP 
+				}
+				NOT = { 
+					is_owned_by = JAP 
+				}
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = JAP
+		}
+
+	}
+	
+	option = {
+		#Claim All of China
+		name = "BPD_Specific_Claims_Country.17.b"
+
+		ai_chance = {
+			factor = 300
+		}
+		
+		every_state = {
+			limit = { 
+				is_core_of = CHI
+				NOT = { 
+					is_core_of = JAP 
+				} 
+				NOT = { 
+					is_claimed_by = JAP 
+				}
+				NOT = { 
+					is_owned_by = JAP 
+				}
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = JAP
+		}
+		
+
+	}
+
+}
+
+#Japanese Claim on Russia
+country_event = {
+	id = BPD_Specific_Claims_Country.18
+	title = "BPD_Specific_Claims_Country.18.t"
+	desc = "BPD_Specific_Claims_Country.18.d"
+	picture = GFX_report_event_JAP_Claim_ASI_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#- North Sakhalin and Siberian Pacific Coast only
+		name = "BPD_Specific_Claims_Country.18.a"
+
+		ai_chance = {
+			factor = 500
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					state = 655
+					state = 562
+					state = 874
+					state = 822
+					state = 637
+					state = 875
+				}
+				NOT = { is_core_of = JAP } 
+				NOT = { is_claimed_by = JAP } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = JAP
+		}
+		
+		if = {
+			limit = { MAN = { is_in_faction_with = JAP } }
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 408
+						state = 409
+						state = 560
+						state = 657
+					}
+					NOT = { is_core_of = JAP } 
+					NOT = { is_claimed_by = JAP } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = ROM
+			}
+		}
+		else = {
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 408
+						state = 409
+						state = 560
+						state = 657
+					}
+					NOT = { is_core_of = JAP } 
+					NOT = { is_claimed_by = JAP } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = JAP
+			}
+		}
+		
+		
+
+	}
+	
+	option = {
+		#- Moderate Claims: Previous, more of Siberia and all of Outer Manchuria
+		name = "BPD_Specific_Claims_Country.18.b"
+
+		ai_chance = {
+			factor = 350
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					state = 655
+					state = 562
+					state = 874
+					state = 822
+					state = 637
+					state = 875
+					state = 574
+					state = 877
+					state = 644
+				}
+				NOT = { is_core_of = JAP } 
+				NOT = { is_claimed_by = JAP } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = JAP
+		}
+		
+		if = {
+			limit = { MAN = { is_in_faction_with = JAP } }
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 408
+						state = 409
+						state = 560
+						state = 657
+						state = 561
+						state = 563
+					}
+					NOT = { is_core_of = JAP } 
+					NOT = { is_claimed_by = JAP } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = MAN
+			}
+		}
+		else = {
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 408
+						state = 409
+						state = 560
+						state = 657
+						state = 561
+						state = 563
+					}
+					NOT = { is_core_of = JAP } 
+					NOT = { is_claimed_by = JAP } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = JAP
+			}
+		}
+		
+		
+		
+
+	}
+	
+	option = {
+		#- Maximalist Claims: Previous Plus Most of Siberia
+		name = "BPD_Specific_Claims_Country.18.c"
+
+		ai_chance = {
+			factor = 150
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					state = 655
+					state = 562
+					state = 874
+					state = 822
+					state = 637
+					state = 875
+					state = 574
+					state = 877
+					state = 644
+					state = 567
+					state = 575
+					state = 876
+					state = 564
+					state = 565
+					state = 566
+				}
+				NOT = { is_core_of = JAP } 
+				NOT = { is_claimed_by = JAP } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = JAP
+		}
+		
+		if = {
+			limit = { MAN = { is_in_faction_with = JAP } }
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 408
+						state = 409
+						state = 560
+						state = 657
+						state = 561
+						state = 563
+					}
+					NOT = { is_core_of = JAP } 
+					NOT = { is_claimed_by = JAP } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = MAN
+			}
+		}
+		else = {
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 408
+						state = 409
+						state = 560
+						state = 657
+						state = 561
+						state = 563
+					}
+					NOT = { is_core_of = JAP } 
+					NOT = { is_claimed_by = JAP } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = JAP
+			}
+		}
+		
+		if = {
+			limit = { MEN = { is_in_faction_with = JAP } }
+			every_state = {
+				limit = { 
+					OR = { 
+						is_core_of = TAN
+						is_core_of = MON
+					}
+					NOT = { is_core_of = JAP } 
+					NOT = { is_claimed_by = JAP } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = MEN
+			}
+		}
+		else = {
+			every_state = {
+				limit = { 
+					OR = { 
+						is_core_of = TAN
+						is_core_of = MON
+					}
+					NOT = { is_core_of = JAP } 
+					NOT = { is_claimed_by = JAP } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = JAP
+			}
+		}
+		
+		
+		
+
+	}
+
+}
+
+#Japanese Claim on Pacific
+country_event = {
+	id = BPD_Specific_Claims_Country.19
+	title = "BPD_Specific_Claims_Country.19.t"
+	desc = "BPD_Specific_Claims_Country.19.d"
+	picture = GFX_report_event_JAP_Claim_ASI_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Allied Enclave Colonies in China and India and all small Islands in the Pacific
+		name = "BPD_Specific_Claims_Country.19.a"
+
+		ai_chance = {
+			factor = 250
+		}
+		#Enclaves
+		every_state = {
+			limit = { 
+				OR = { 
+					state = 728
+					state = 729
+					state = 326
+					state = 321
+					state = 320
+				}
+				NOT = { is_core_of = JAP } 
+				NOT = { is_claimed_by = JAP } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = JAP
+		}
+		#Islands
+		every_state = {
+			limit = { 
+				is_on_continent = asia
+				is_coastal = yes
+				NOT = { 
+					is_core_of = JAP 
+				} 
+				NOT = { 
+					is_claimed_by = JAP 
+				}
+				NOT = { 
+					is_owned_by = JAP 
+				}
+				owner = {
+					OR = { 
+						tag = ENG
+						tag = CAN
+						tag = FRA
+						tag = USA
+					}
+				}
+			}
+			add_claim_by = JAP
+		}
+		
+
+	}
+	
+	option = {
+		#Previous Plus Indochina, Malaya, Dutch East Indies, Phillipines
+		name = "BPD_Specific_Claims_Country.19.b"
+
+		ai_chance = {
+			factor = 550
+		}
+		
+		#Enclaves
+		every_state = {
+			limit = { 
+				OR = { 
+					state = 728
+					state = 729
+					state = 326
+					state = 321
+					state = 320
+				}
+				NOT = { is_core_of = JAP } 
+				NOT = { is_claimed_by = JAP } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = JAP
+		}
+		#Islands
+		every_state = {
+			limit = { 
+				is_on_continent = asia
+				is_coastal = yes
+				NOT = { 
+					is_core_of = JAP 
+				} 
+				NOT = { 
+					is_claimed_by = JAP 
+				}
+				NOT = { 
+					is_owned_by = JAP 
+				}
+				owner = {
+					OR = { 
+						tag = ENG
+						tag = CAN
+						tag = FRA
+						tag = USA
+					}
+				}
+			}
+			add_claim_by = JAP
+		}
+		
+		#Colonies
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = SIA
+					is_core_of = INS
+					is_core_of = MAL
+					is_core_of = VIN
+					is_core_of = LAO
+					is_core_of = CAM
+					is_core_of = PHI
+					state = 721
+					state = 523
+					state = 737
+					state = 634
+				}
+				NOT = { is_core_of = JAP } 
+				NOT = { is_claimed_by = JAP } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = JAP
+		}
+		
+
+	}
+	
+	option = {
+		#Previous plus Australia, New Zealand and India.
+		name = "BPD_Specific_Claims_Country.19.c"
+
+		ai_chance = {
+			factor = 200
+		}
+		
+		#Enclaves
+		every_state = {
+			limit = { 
+				OR = { 
+					state = 728
+					state = 729
+					state = 326
+					state = 321
+					state = 320
+				}
+				NOT = { is_core_of = JAP } 
+				NOT = { is_claimed_by = JAP } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = JAP
+		}
+		#Islands
+		every_state = {
+			limit = { 
+				is_on_continent = asia
+				is_coastal = yes
+				NOT = { 
+					is_core_of = JAP 
+				} 
+				NOT = { 
+					is_claimed_by = JAP 
+				}
+				NOT = { 
+					is_owned_by = JAP 
+				}
+				owner = {
+					OR = { 
+						tag = ENG
+						tag = CAN
+						tag = FRA
+						tag = USA
+					}
+				}
+			}
+			add_claim_by = JAP
+		}
+		
+		#Colonies
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = SIA
+					is_core_of = INS
+					is_core_of = MAL
+					is_core_of = VIN
+					is_core_of = LAO
+					is_core_of = CAM
+					is_core_of = PHI
+					is_core_of = RAJ
+					is_core_of = AST
+					is_core_of = NZL
+					is_owned_by = RAJ
+					is_owned_by = AST
+					is_owned_by = NZL
+					state = 721
+					state = 523
+					state = 737
+					state = 634
+				}
+				NOT = { is_core_of = JAP } 
+				NOT = { is_claimed_by = JAP } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = JAP
+		}
+		
+
+	}
 
 }

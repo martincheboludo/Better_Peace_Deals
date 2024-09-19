@@ -43,18 +43,18 @@ German Claims In France (Has War with France, Not Has War with Britain)}
 - Moderate Claims: Alsace and Nord Pais de Calais
 - Maximalist Claims: Alsace and Nord Pais de Calais and Eastern France (Holy Roman Empire Borders)
 
-Axis Claims In The West (Has War with both France and Britain )}
+Axis Claims In The West (Has War with both France and Britain )} - CHECK
 - Concessions in Exchange for Peace: 1939 Borders in the West, Germany withdraws from the rest of western europe
 - Minimalist Claims: Alsace, Luxembourg and Switzerland*, Germany withdraws from the rest of western europe (German Speaking Lands)
 - Moderate Claims: Alsace, Luxembourg, Switzerland*, Belgium, Holland and Nord pas de calais. Germany withdraws from the rest of western europe (Historical Lands of the Holy Roman Empire.)
 - Maximalist Claims: Alsace, Luxembourg, Belgium, Holland, Denmark, Norway, Sweden* and Switzerland* (Greater Germanic Reich)
 
-Axis Colonial Claims (Has War with both France and Britain )}
+Axis Colonial Claims (Has War with both France and Britain )} - CHECK
 - Minimalist Claims: No Colonial Claims
 - Moderate Claims: Return of Colonies
 - Maximalist Claims: Previous Plus Mittelafrika
 
-German Claims in Russia
+German Claims in Russia - CHECK
 - Minimalist Claims: Pretty straight forward, Dnieper River as the boundary.
 - Moderate Claims: Brest Litovsk Border: Restoration of Brest Litovsk borders, with the Baltics, Poland, Belarus and Ukraine under German control.
 - Maximalist Claims: AA Line Border: AA Line as a boundary
@@ -72,12 +72,12 @@ Japan Claims on China
 - Maximalist Claims: All of China and Tibet
 
 Japan Claims Against USSR
-- Minimalist Claims: Siberian Coast
-- Moderate Claims: Previous Plus Mongolia, Tanu Tuva and Outer Manchuria
-- Maximalist Claims: Previous Plus Most of Siberia
+- Minimalist Claims: North Sakhalin and Siberian Pacific Coast only
+- Moderate Claims: Previous, more of Siberia and all of Outer Manchuria
+- Maximalist Claims: Previous Plus Plus Mongolia, Tanu Tuva and Most of Siberia
 
 - Japan Claims Against The Allies
-- Minimalist Claims: Allied Colonies in China and India
+- Minimalist Claims: Allied Enclave Colonies in China and India and all small Islands in the Pacific
 - Moderate Claims: Previous Plus Indochina, Malaya, Dutch East Indies, Phillipines
 - Maximalist Claims: Previous plus Australia, New Zealand and India.
 
@@ -93,7 +93,7 @@ Chinese Claims Against Japan
 - Maximalist Claims: Previous plus All of Japan
 
 Chinese Claims Against USSR
-- Minimalist Claims: Outer Manchuria, North Sakhalin
+- Minimalist Claims: Outer Manchuria, North Sakhalin and Siberian Coast
 - Moderate Claims: Previous Plus Mongolia, Tanu Tuva
 - Maximalist Claims: Previous Plus Most of Siberia
 
