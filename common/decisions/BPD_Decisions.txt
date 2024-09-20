@@ -1054,6 +1054,198 @@ ITA_Italian_Demands_GRE = {
 		
 	}
 	
+	JAP_Japan_Demands_Tibet = {
+		priority = 90
+		icon = GFX_decision_eng_trade_unions_demand
+		
+		allowed = {
+			tag = JAP
+		}
+
+		available = {
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			has_war_with = TIB
+		}
+
+		visible = {
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			NOT = { has_country_flag = show_claim_decisions }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		complete_effect = {
+			country_event = { id = BPD_Specific_Claims_Country.21 }
+		}
+		
+	}
+	
+	JAP_Japan_Demands_Nepal = {
+		priority = 90
+		icon = GFX_decision_eng_trade_unions_demand
+		
+		allowed = {
+			tag = JAP
+		}
+
+		available = {
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			has_war_with = NEP
+		}
+
+		visible = {
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			NOT = { has_country_flag = show_claim_decisions }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		complete_effect = {
+			country_event = { id = BPD_Specific_Claims_Country.22 }
+		}
+		
+	}
+	
+	JAP_Japan_Demands_Bhutan = {
+		priority = 90
+		icon = GFX_decision_eng_trade_unions_demand
+		
+		allowed = {
+			tag = JAP
+		}
+
+		available = {
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			has_war_with = BHU
+		}
+
+		visible = {
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			NOT = { has_country_flag = show_claim_decisions }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		complete_effect = {
+			country_event = { id = BPD_Specific_Claims_Country.23 }
+		}
+		
+	}
+	
+	CHI_China_Demands_Tibet = {
+		priority = 90
+		icon = GFX_decision_eng_trade_unions_demand
+		
+		allowed = {
+			tag = CHI
+		}
+
+		available = {
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			has_war_with = TIB
+		}
+
+		visible = {
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			NOT = { has_country_flag = show_claim_decisions }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		complete_effect = {
+			country_event = { id = BPD_Specific_Claims_Country.20 }
+		}
+		
+	}
+	
+	CHI_China_Demands_Japan = {
+		priority = 90
+		icon = GFX_decision_eng_trade_unions_demand
+		
+		allowed = {
+			tag = CHI
+		}
+
+		available = {
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			has_war_with = JAP
+		}
+
+		visible = {
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			NOT = { has_country_flag = show_claim_decisions }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		complete_effect = {
+			country_event = { id = BPD_Specific_Claims_Country.24 }
+		}
+		
+	}
+	
+	CHI_China_Demands_Russia = {
+		priority = 90
+		icon = GFX_decision_eng_trade_unions_demand
+		
+		allowed = {
+			tag = CHI
+		}
+
+		available = {
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			has_war_with = SOV
+		}
+
+		visible = {
+			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			NOT = { has_country_flag = show_claim_decisions }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		complete_effect = {
+			country_event = { id = BPD_Specific_Claims_Country.25 }
+		}
+		
+	}
+	
 	BFN_claim_states_targeted_decision_at_war = {
 	icon = GFX_decision_eng_trade_unions_demand
     state_target = yes

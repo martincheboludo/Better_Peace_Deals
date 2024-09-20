@@ -67,16 +67,16 @@ Partition of the Americas with Japan
 Japanese CLAIMS 
 ---------------
 
-Japan Claims on China
+Japan Claims on China - CHECK
 - Moderate Claims: Chinese Coast
 - Maximalist Claims: All of China and Tibet
 
-Japan Claims Against USSR
+Japan Claims Against USSR - CHECK
 - Minimalist Claims: North Sakhalin and Siberian Pacific Coast only
 - Moderate Claims: Previous, more of Siberia and all of Outer Manchuria
 - Maximalist Claims: Previous Plus Plus Mongolia, Tanu Tuva and Most of Siberia
 
-- Japan Claims Against The Allies
+- Japan Claims Against The Allies - CHECK
 - Minimalist Claims: Allied Enclave Colonies in China and India and all small Islands in the Pacific
 - Moderate Claims: Previous Plus Indochina, Malaya, Dutch East Indies, Phillipines
 - Maximalist Claims: Previous plus Australia, New Zealand and India.
@@ -87,15 +87,15 @@ Chinese CLAIMS
 
 Claim Tibet
 
-Chinese Claims Against Japan
+Chinese Claims Against Japan - CHECK
 - Minimalist Claims: Return of All Chinese Territory
 - Moderate Claims: Previous Plus Korea
-- Maximalist Claims: Previous plus All of Japan
+- Maximalist Claims: Previous Plus South Sakhalin, Kuril Islands and Okinawa
+- Extreme Claims: Previous plus All of Japan
 
-Chinese Claims Against USSR
-- Minimalist Claims: Outer Manchuria, North Sakhalin and Siberian Coast
-- Moderate Claims: Previous Plus Mongolia, Tanu Tuva
-- Maximalist Claims: Previous Plus Most of Siberia
+Chinese Claims Against Russia - CHECK
+- Moderate Claims: Outer Manchuria and North Sakhalin
+- Maximalist Claims: Previous Plus Mongolia, Tanu Tuva
 
 ---------------
 Soviet CLAIMS 

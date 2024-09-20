@@ -2706,3 +2706,422 @@ country_event = {
 	}
 
 }
+
+#Chinese Claim on Tibet
+country_event = {
+	id = BPD_Specific_Claims_Country.20
+	title = "BPD_Specific_Claims_Country.20.t"
+	desc = "BPD_Specific_Claims_Country.20.d"
+	picture = GFX_report_event_CHI_Claim_ASI_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#China Claims Tibet
+		name = "BPD_Specific_Claims_Country.20.a"
+
+		ai_chance = {
+			factor = 50
+		}
+		
+		every_state = {
+			limit = { 
+				is_core_of = TIB 
+				NOT = { 
+					is_core_of = CHI
+				} 
+				NOT = { 
+					is_claimed_by = CHI
+				} 
+			}
+			add_claim_by = CHI
+		}
+		
+
+	}
+
+}
+
+#Japanese Claim on Tibet
+country_event = {
+	id = BPD_Specific_Claims_Country.21
+	title = "BPD_Specific_Claims_Country.21.t"
+	desc = "BPD_Specific_Claims_Country.21.d"
+	picture = GFX_report_event_JAP_Claim_ASI_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#China Claims Tibet
+		name = "BPD_Specific_Claims_Country.21.a"
+
+		ai_chance = {
+			factor = 50
+		}
+		
+		every_state = {
+			limit = { 
+				is_core_of = TIB 
+				NOT = { 
+					is_core_of = JAP
+				} 
+				NOT = { 
+					is_claimed_by = JAP
+				} 
+			}
+			add_claim_by = JAP
+		}
+		
+
+	}
+
+}
+
+#Japanese Claim on Nepal
+country_event = {
+	id = BPD_Specific_Claims_Country.22
+	title = "BPD_Specific_Claims_Country.22.t"
+	desc = "BPD_Specific_Claims_Country.22.d"
+	picture = GFX_report_event_JAP_Claim_ASI_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#China Claims Tibet
+		name = "BPD_Specific_Claims_Country.22.a"
+
+		ai_chance = {
+			factor = 50
+		}
+		
+		every_state = {
+			limit = { 
+				is_core_of = NEP
+				NOT = { 
+					is_core_of = JAP
+				} 
+				NOT = { 
+					is_claimed_by = JAP
+				} 
+			}
+			add_claim_by = JAP
+		}
+		
+
+	}
+
+}
+
+#Japanese Claim on Bhutan
+country_event = {
+	id = BPD_Specific_Claims_Country.23
+	title = "BPD_Specific_Claims_Country.23.t"
+	desc = "BPD_Specific_Claims_Country.23.d"
+	picture = GFX_report_event_JAP_Claim_ASI_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#China Claims Tibet
+		name = "BPD_Specific_Claims_Country.23.a"
+
+		ai_chance = {
+			factor = 50
+		}
+		
+		every_state = {
+			limit = { 
+				is_core_of = BHU 
+				NOT = { 
+					is_core_of = JAP
+				} 
+				NOT = { 
+					is_claimed_by = JAP
+				} 
+			}
+			add_claim_by = JAP
+		}
+		
+
+	}
+
+}
+
+#Chinese Claim on Japan
+country_event = {
+	id = BPD_Specific_Claims_Country.24
+	title = "BPD_Specific_Claims_Country.24.t"
+	desc = "BPD_Specific_Claims_Country.24.d"
+	picture = GFX_report_event_CHI_Claim_ASI_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#China Claims China
+		name = "BPD_Specific_Claims_Country.24.a"
+
+		ai_chance = {
+			factor = 600
+		}
+		
+		every_state = {
+			limit = { 
+				OR = {
+					is_core_of = MAN
+					is_core_of = MEN
+				}
+				NOT = { 
+					is_core_of = CHI
+				} 
+				NOT = { 
+					is_claimed_by = CHI
+				} 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = CHI
+		}
+		
+	}
+	
+	option = {
+		#China Claims Korea
+		name = "BPD_Specific_Claims_Country.24.b"
+
+		ai_chance = {
+			factor = 250
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		
+		every_state = {
+			limit = { 
+				OR = {
+					is_core_of = MAN
+					is_core_of = MEN
+				}
+				NOT = { 
+					is_core_of = CHI
+				} 
+				NOT = { 
+					is_claimed_by = CHI
+				} 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = CHI
+		}
+		
+		every_state = {
+			limit = { 
+				is_core_of = KOR
+				NOT = { 
+					is_core_of = CHI
+				} 
+				NOT = { 
+					is_claimed_by = CHI
+				} 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = CHI
+		}
+		
+
+	}
+	
+	option = {
+		#China Claims Korea, South Sakhalin, Kuril Islands and Okinawa
+		name = "BPD_Specific_Claims_Country.24.c"
+
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		
+		every_state = {
+			limit = { 
+				OR = {
+					is_core_of = MAN
+					is_core_of = MEN
+				}
+				NOT = { 
+					is_core_of = CHI
+				} 
+				NOT = { 
+					is_claimed_by = CHI
+				} 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = CHI
+		}
+		
+		every_state = {
+			limit = { 
+				is_core_of = KOR
+				NOT = { 
+					is_core_of = CHI
+				} 
+				NOT = { 
+					is_claimed_by = CHI
+				} 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = CHI
+		}
+		
+		every_state = {
+			limit = { 
+				OR = {
+					state = 537
+					state = 555
+					state = 526
+				}
+				NOT = { 
+					is_core_of = CHI
+				} 
+				NOT = { 
+					is_claimed_by = CHI
+				} 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = CHI
+		}
+		
+
+	}
+	
+	option = {
+		#China Claims Japan
+		name = "BPD_Specific_Claims_Country.24.e"
+
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		
+		every_state = {
+			limit = { 
+				OR = {
+					is_core_of = MAN
+					is_core_of = MEN
+				}
+				NOT = { 
+					is_core_of = CHI
+				} 
+				NOT = { 
+					is_claimed_by = CHI
+				} 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = CHI
+		}
+		
+		every_state = {
+			limit = { 
+				is_core_of = KOR
+				NOT = { 
+					is_core_of = CHI
+				} 
+				NOT = { 
+					is_claimed_by = CHI
+				} 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = CHI
+		}
+		
+		every_state = {
+			limit = { 
+				OR = {
+					is_core_of = JAP
+					is_owned_by = JAP
+				}
+				NOT = { 
+					is_core_of = CHI
+				} 
+				NOT = { 
+					is_claimed_by = CHI
+				} 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = CHI
+		}
+		
+		
+
+	}
+
+}
+
+#Chinese Claim on Russia
+country_event = {
+	id = BPD_Specific_Claims_Country.25
+	title = "BPD_Specific_Claims_Country.25.t"
+	desc = "BPD_Specific_Claims_Country.25.d"
+	picture = GFX_report_event_CHI_Claim_ASI_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#China Claims Outer Manchuria
+		name = "BPD_Specific_Claims_Country.25.a"
+
+		ai_chance = {
+			factor = 700
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					state = 655
+					state = 408
+					state = 409
+					state = 657
+					state = 561
+					state = 560
+				}
+				NOT = { is_core_of = CHI } 
+				NOT = { is_claimed_by = CHI } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = CHI
+		}
+		
+	}
+	
+	option = {
+		#China Claims Previous Plus Mongolia and Tannu Tuva
+		name = "BPD_Specific_Claims_Country.25.a"
+
+		ai_chance = {
+			factor = 300
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					state = 655
+					state = 408
+					state = 409
+					state = 657
+					state = 561
+					state = 560
+					is_core_of = MON
+					is_core_of = TAN
+				}
+				NOT = { is_core_of = CHI } 
+				NOT = { is_claimed_by = CHI } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = CHI
+		}
+		
+	}
+
+}
