@@ -893,6 +893,8 @@ country_event = {
 			factor = 0
 		}
 		
+		set_global_flag = BPD_GER_Minimalist_Claims_Poland
+		
 		add_state_claim = 85
 		add_state_claim = 86
 		add_state_claim = 807
@@ -908,6 +910,8 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
+		
+		set_global_flag = BPD_GER_Moderate_Claims_Poland
 		
 		add_state_claim = 85
 		add_state_claim = 86
@@ -927,6 +931,8 @@ country_event = {
 		ai_chance = {
 			factor = 1000
 		}
+		
+		set_global_flag = BPD_GER_Maximalist_Claims_Poland
 		
 		add_state_claim = 85
 		add_state_claim = 86
@@ -1066,6 +1072,40 @@ country_event = {
 
 		ai_chance = {
 			factor = 0
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = LUX
+					is_core_of = BEL
+					is_core_of = HOL
+					is_core_of = FRA
+					is_core_of = DEN
+					is_core_of = NOR
+					is_core_of = SWE
+				}
+				is_claimed_by = GER
+				owner = { has_war_with = ROOT }
+			}
+			remove_claim_by = GER
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = LUX
+					is_core_of = BEL
+					is_core_of = HOL
+					is_core_of = FRA
+					is_core_of = DEN
+					is_core_of = NOR
+					is_core_of = SWE
+				}
+				is_core_of = GER
+				owner = { has_war_with = ROOT }
+			}
+			remove_core_of = GER
 		}
 		
 		set_global_flag = BPD_GER_Withdraws_From_Western_Europe
@@ -1328,7 +1368,7 @@ country_event = {
 			}
 		}
 		
-		set_global_flag = BPD_GER_Moderate_Claims_Colonies
+		set_global_flag = BPD_GER_Maximalist_Claims_Colonies
 		
 		every_state = {
 			limit = { 
@@ -1383,7 +1423,7 @@ country_event = {
 			}
 		}
 		
-		set_global_flag = BPD_GER_Maximalist_Claims_Colonies
+		set_global_flag = BPD_GER_Extreme_Claims_Colonies
 		
 		every_state = {
 			limit = { 
