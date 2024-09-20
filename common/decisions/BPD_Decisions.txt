@@ -1252,6 +1252,7 @@ ITA_Italian_Demands_GRE = {
 		
 		allowed = {
 			tag = SOV
+			has_government = communism
 		}
 
 		available = {
@@ -1284,6 +1285,7 @@ ITA_Italian_Demands_GRE = {
 		
 		allowed = {
 			tag = SOV
+			has_government = communism
 		}
 
 		available = {
@@ -1316,6 +1318,7 @@ ITA_Italian_Demands_GRE = {
 		
 		allowed = {
 			tag = SOV
+			has_government = communism
 		}
 
 		available = {
@@ -1348,6 +1351,7 @@ ITA_Italian_Demands_GRE = {
 		
 		allowed = {
 			tag = SOV
+			has_government = communism
 		}
 
 		available = {
