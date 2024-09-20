@@ -28,7 +28,7 @@ BPD_Peace_Deal_Manager = {
 	
         visible = {
 			NOT = { has_country_flag = show_peace_decisions }
-			NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
+			#NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
         }
         target_trigger = {
             FROM = {
@@ -41,14 +41,16 @@ BPD_Peace_Deal_Manager = {
         }
         cost = 25
 		modifier = { }
-		days_re_enable = 30
-		days_remove = 30
+		#days_re_enable = 30
+		#days_remove = 30
 		
 		ai_will_do = {
 			factor = 0
 		}
 
         available = {
+		
+			NOT = { has_idea = BPD_Peace_Cooldown }
 		
 			surrender_progress < 0.1
 		
@@ -78,12 +80,16 @@ BPD_Peace_Deal_Manager = {
 
         }
 		complete_effect = {
-			set_country_flag = BPD_Peace_Deal_Cooldown
+			#set_country_flag = BPD_Peace_Deal_Cooldown
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.4 hours = 6 } }
+			add_timed_idea = {
+				idea = BPD_Peace_Cooldown
+				days = 30
+			}
 		}
-		remove_effect = {
-			clr_country_flag = BPD_Peace_Deal_Cooldown
-		}
+		#remove_effect = {
+		#	clr_country_flag = BPD_Peace_Deal_Cooldown
+		#}
     }
 	
 	BPD_secure_our_claims_td_attacker = {
@@ -95,7 +101,7 @@ BPD_Peace_Deal_Manager = {
 	
         visible = {
 			NOT = { has_country_flag = show_peace_decisions }
-			NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
+			#NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
         }
         target_trigger = {
             FROM = {
@@ -108,14 +114,16 @@ BPD_Peace_Deal_Manager = {
         }
         cost = 25
 		modifier = { }
-		days_re_enable = 30
-		days_remove = 30
+		#days_re_enable = 30
+		#days_remove = 30
 		
 		ai_will_do = {
 			factor = 0
 		}
 
         available = {
+		
+			NOT = { has_idea = BPD_Peace_Cooldown }
 		
 			surrender_progress < 0.1
 		
@@ -146,12 +154,16 @@ BPD_Peace_Deal_Manager = {
 
         }
 		complete_effect = {
-			set_country_flag = BPD_Peace_Deal_Cooldown
+			#set_country_flag = BPD_Peace_Deal_Cooldown
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.2 hours = 6 } }
+			add_timed_idea = {
+				idea = BPD_Peace_Cooldown
+				days = 30
+			}
 		}
-		remove_effect = {
-			clr_country_flag = BPD_Peace_Deal_Cooldown
-		}
+		#remove_effect = {
+		#	clr_country_flag = BPD_Peace_Deal_Cooldown
+		#}
     }
 	
 	BPD_peace_current_borders_td_attacker = {
@@ -163,7 +175,7 @@ BPD_Peace_Deal_Manager = {
 	
         visible = {
 			NOT = { has_country_flag = show_peace_decisions }
-			NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
+			#NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
         }
         target_trigger = {
             FROM = {
@@ -176,14 +188,16 @@ BPD_Peace_Deal_Manager = {
         }
         cost = 25
 		modifier = { }
-		days_re_enable = 30
-		days_remove = 30
+		#days_re_enable = 30
+		#days_remove = 30
 		
 		ai_will_do = {
 			factor = 0
 		}
 
         available = {
+		
+			NOT = { has_idea = BPD_Peace_Cooldown }
 		
 			surrender_progress < 0.5
 		
@@ -202,12 +216,16 @@ BPD_Peace_Deal_Manager = {
 
         }
 		complete_effect = {
-			set_country_flag = BPD_Peace_Deal_Cooldown
+			#set_country_flag = BPD_Peace_Deal_Cooldown
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.3 hours = 6 } }
+			add_timed_idea = {
+				idea = BPD_Peace_Cooldown
+				days = 30
+			}
 		}
-		remove_effect = {
-			clr_country_flag = BPD_Peace_Deal_Cooldown
-		}
+		#remove_effect = {
+		#	clr_country_flag = BPD_Peace_Deal_Cooldown
+		#}
     }
 
 	BPD_restore_status_quo_td_attacker = {
@@ -219,7 +237,7 @@ BPD_Peace_Deal_Manager = {
 	
         visible = {
 			NOT = { has_country_flag = show_peace_decisions }
-			NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
+			#NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
         }
         target_trigger = {
             FROM = {
@@ -232,14 +250,16 @@ BPD_Peace_Deal_Manager = {
         }
         cost = 25
 		modifier = { }
-		days_re_enable = 30
-		days_remove = 30
+		#days_re_enable = 30
+		#days_remove = 30
 		
 		ai_will_do = {
 			factor = 0
 		}
 
         available = {
+		
+		NOT = { has_idea = BPD_Peace_Cooldown }
 		
 		surrender_progress < 0.5
 		
@@ -258,12 +278,16 @@ BPD_Peace_Deal_Manager = {
 
         }
 		complete_effect = {
-			set_country_flag = BPD_Peace_Deal_Cooldown
+			#set_country_flag = BPD_Peace_Deal_Cooldown
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.1 hours = 6 } }
+			add_timed_idea = {
+				idea = BPD_Peace_Cooldown
+				days = 30
+			}
 		}
-		remove_effect = {
-			clr_country_flag = BPD_Peace_Deal_Cooldown
-		}
+		#remove_effect = {
+		#	clr_country_flag = BPD_Peace_Deal_Cooldown
+		#}
     }
 	
 	BPD_secure_our_claims_td_loser = {
@@ -275,7 +299,7 @@ BPD_Peace_Deal_Manager = {
 	
         visible = {
 			NOT = { has_country_flag = show_peace_decisions }
-			NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
+			#NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
         }
         target_trigger = {
             FROM = {
@@ -288,14 +312,16 @@ BPD_Peace_Deal_Manager = {
         }
         cost = 25
 		modifier = { }
-		days_re_enable = 30
-		days_remove = 30
+		#days_re_enable = 30
+		#days_remove = 30
 		
 		ai_will_do = {
 			factor = 0
 		}
 
         available = {
+		
+			NOT = { has_idea = BPD_Peace_Cooldown }
 		
 			surrender_progress < 0.7
 		
@@ -314,12 +340,16 @@ BPD_Peace_Deal_Manager = {
 
         }
 		complete_effect = {
-			set_country_flag = BPD_Peace_Deal_Cooldown
+			#set_country_flag = BPD_Peace_Deal_Cooldown
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.5 hours = 6 } }
+			add_timed_idea = {
+				idea = BPD_Peace_Cooldown
+				days = 30
+			}
 		}
-		remove_effect = {
-			clr_country_flag = BPD_Peace_Deal_Cooldown
-		}
+		#remove_effect = {
+		#	clr_country_flag = BPD_Peace_Deal_Cooldown
+		#}
     }
 	
 	BPD_total_surrender_td_loser = {
@@ -331,7 +361,7 @@ BPD_Peace_Deal_Manager = {
 	
         visible = {
 			NOT = { has_country_flag = show_peace_decisions }
-			NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
+			#NOT = { has_country_flag = BPD_Peace_Deal_Cooldown }
         }
         target_trigger = {
             FROM = {
@@ -344,14 +374,16 @@ BPD_Peace_Deal_Manager = {
         }
         cost = 25
 		modifier = { }
-		days_re_enable = 30
-		days_remove = 30
+		#days_re_enable = 30
+		#days_remove = 30
 		
 		ai_will_do = {
 			factor = 0
 		}
 
         available = {
+		
+			NOT = { has_idea = BPD_Peace_Cooldown }
 		
 			OR = {
 				is_in_faction = no
@@ -368,12 +400,16 @@ BPD_Peace_Deal_Manager = {
 
         }
 		complete_effect = {
-			set_country_flag = BPD_Peace_Deal_Cooldown
+			#set_country_flag = BPD_Peace_Deal_Cooldown
 			FROM = { country_event = { id = BPD_Better_Peace_Deals_Country.6 hours = 6 } }
+			add_timed_idea = {
+				idea = BPD_Peace_Cooldown
+				days = 30
+			}
 		}
-		remove_effect = {
-			clr_country_flag = BPD_Peace_Deal_Cooldown
-		}
+		#remove_effect = {
+		#	clr_country_flag = BPD_Peace_Deal_Cooldown
+		#}
     }
 	
 
@@ -939,7 +975,7 @@ ITA_Italian_Demands_GRE = {
 			FROM = { 
 				NOT = { is_core_of = ROOT }
 				NOT = { is_claimed_by = ROOT }
-				NOT = { has_state_flag = Claiming_In_Progress } 
+				#NOT = { has_state_flag = Claiming_In_Progress } 
 			}
         }
 	ai_will_do = {
@@ -950,16 +986,16 @@ ITA_Italian_Demands_GRE = {
     on_map_mode = map_and_decisions_view
     cost = 50
     complete_effect = {
-		hidden_effect = {
-			FROM = { 
-				set_state_flag = Claiming_In_Progress
-			}
-		}
+		#hidden_effect = {
+			#FROM = { 
+			#	set_state_flag = Claiming_In_Progress
+			#}
+		#}
 	}
 	remove_effect = {
 			FROM = {
 				add_claim_by = ROOT
-				clr_state_flag = Claiming_In_Progress
+				#clr_state_flag = Claiming_In_Progress
 			}
 	}
 }
@@ -989,7 +1025,7 @@ BFN_claim_states_targeted_decision_remote_at_war = {
 			FROM = { 
 				NOT = { is_core_of = ROOT }
 				NOT = { is_claimed_by = ROOT }
-				NOT = { has_state_flag = Claiming_In_Progress } 
+				#NOT = { has_state_flag = Claiming_In_Progress } 
 			}
         }
 	ai_will_do = {
@@ -1000,16 +1036,16 @@ BFN_claim_states_targeted_decision_remote_at_war = {
     on_map_mode = map_and_decisions_view
     cost = 150
     complete_effect = {
-		hidden_effect = {
-			FROM = { 
-				set_state_flag = Claiming_In_Progress
-			}
-		}
+		#hidden_effect = {
+			#FROM = { 
+			#	set_state_flag = Claiming_In_Progress
+			#}
+		#}
 	}
 	remove_effect = {
 			FROM = {
 				add_claim_by = ROOT
-				clr_state_flag = Claiming_In_Progress
+				#clr_state_flag = Claiming_In_Progress
 			}
 	}
 }

@@ -13,5 +13,9 @@ spriteTypes = {
 		name = "GFX_decision_cat_BPD_War_Aims"
 		texturefile = "gfx/interface/decisions/BPD/BPD_War_Aims.dds"
 	}
-	
+	#Ideas
+	spriteType = {
+		name = "GFX_idea_BPD_Peace_Cooldown"
+		texturefile = "gfx/interface/ideas/idea_hun_treaty_of_trianon.dds"
+	}
 }

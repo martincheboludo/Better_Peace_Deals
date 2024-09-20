@@ -158,3 +158,5 @@ BPD_Better_Peace_Deals_Country.1000.b:0 "Default Settings"
  BPD_Better_Peace_Deals_Country.1002.b:0 "Compatibility"
 
 BPD_Total_Conversion_Compatibility:0 "Compatibility Patch Enabled"
+BPD_Peace_Cooldown:0 "Initiated Peace Negotiations"
+BPD_Peace_Cooldown_desc:0 "The country has formally initiated peace talks with its adversaries. Diplomatic channels are now focused on the ongoing negotiations, preventing any further proposals for the next 30 days as both sides assess their positions and prepare for future offers."
