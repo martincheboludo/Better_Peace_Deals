@@ -101,24 +101,20 @@ Chinese Claims Against Russia - CHECK
 Soviet CLAIMS 
 ---------------
 
-Soviet Claims in Against the Baltics (1939 Onwards)
-- Baltic States
 
 Soviet Claims Against Poland (1939 Onwards)
-- Eastern Poland
-- Congress Poland
+- Belarus and Ukranian States
+- 1945 Border (Previous Minus Biyalistok)
 
 Soviet Claims Against Finland (1939 Onwards)
-- Lands Annexed After WW2 (Petsamo, Karelia, etc)
-- All of Finland
+- Minimalist: Salla, Karelia
+- Moderate: Previous Plus Petsamo
+- Maximalist: Previous Plus Aland
 
 Soviet Claims Against The Axis (At War With Germany)
-- Kaliningrad, Memel, Carpathian Ruthenia and lands annexed from Romania
+- Kaliningrad, Memel, Carpathian Ruthenia and lands annexed from Romania, Bielorussian and Ukranian Land, Baltics
 
 Soviet Claims Against Japan
 - Minimalist Claims: South Sakhalin, Kuril Islands
 - Moderate Claims: Previous Plus, Manchuria
-- Maximalist Claims: Previous Plus, Korea
-
-
-MECHANIC FOR FINLAND TO BE INCLUDED IN AXIS PEACE DEAL WITH USSR.
+- Maximalist Claims: Previous Plus North Korea

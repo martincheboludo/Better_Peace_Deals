@@ -3097,7 +3097,7 @@ country_event = {
 	
 	option = {
 		#China Claims Previous Plus Mongolia and Tannu Tuva
-		name = "BPD_Specific_Claims_Country.25.a"
+		name = "BPD_Specific_Claims_Country.25.b"
 
 		ai_chance = {
 			factor = 300
@@ -3120,6 +3120,398 @@ country_event = {
 				owner = { has_war_with = ROOT }
 			}
 			add_claim_by = CHI
+		}
+		
+	}
+
+}
+
+#Russian Claim on Poland
+country_event = {
+	id = BPD_Specific_Claims_Country.26
+	title = "BPD_Specific_Claims_Country.26.t"
+	desc = "BPD_Specific_Claims_Country.26.d"
+	picture = GFX_report_event_SOV_Claim_EUR_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Russian Claims
+		name = "BPD_Specific_Claims_Country.26.a"
+
+		ai_chance = {
+			factor = 600
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = BLR
+					is_core_of = UKR
+				}
+				NOT = { is_core_of = ROOT } 
+				NOT = { is_claimed_by = ROOT } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = ROOT
+		}
+		
+	}
+	
+	option = {
+		#1945 Polish Border
+		name = "BPD_Specific_Claims_Country.26.b"
+
+		ai_chance = {
+			factor = 400
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					AND = { 
+						is_core_of = BLR
+						NOT = { state = 97 }
+					}
+					is_core_of = UKR
+				}
+				NOT = { is_core_of = ROOT } 
+				NOT = { is_claimed_by = ROOT } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = ROOT
+		}
+		
+	}
+
+}
+
+#Russian Claim on Finland
+country_event = {
+	id = BPD_Specific_Claims_Country.27
+	title = "BPD_Specific_Claims_Country.27.t"
+	desc = "BPD_Specific_Claims_Country.27.d"
+	picture = GFX_report_event_SOV_Claim_EUR_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Russian Claims
+		name = "BPD_Specific_Claims_Country.27.a"
+
+		ai_chance = {
+			factor = 500
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					state = 146
+					state = 147
+				}
+				NOT = { is_core_of = ROOT } 
+				NOT = { is_claimed_by = ROOT } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = ROOT
+		}
+		
+	}
+	
+	option = {
+		#1945 Polish Border
+		name = "BPD_Specific_Claims_Country.27.b"
+
+		ai_chance = {
+			factor = 300
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					state = 146
+					state = 147
+					state = 722
+				}
+				NOT = { is_core_of = ROOT } 
+				NOT = { is_claimed_by = ROOT } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = ROOT
+		}
+		
+	}
+	
+	option = {
+		#1945 Polish Border
+		name = "BPD_Specific_Claims_Country.27.c"
+
+		ai_chance = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					state = 146
+					state = 147
+					state = 722
+					state = 145
+				}
+				NOT = { is_core_of = ROOT } 
+				NOT = { is_claimed_by = ROOT } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = ROOT
+		}
+		
+	}
+
+}
+
+#Russian Claim on Axis
+country_event = {
+	id = BPD_Specific_Claims_Country.28
+	title = "BPD_Specific_Claims_Country.28.t"
+	desc = "BPD_Specific_Claims_Country.28.d"
+	picture = GFX_report_event_SOV_Claim_EUR_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Russian Claims
+		name = "BPD_Specific_Claims_Country.28.a"
+
+		ai_chance = {
+			factor = 1000
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = LIT
+					is_core_of = LAT
+					is_core_of = EST
+					#Kaliningrad
+					state = 763
+					#Memel
+					state = 188
+					#Carpathian Ruthenia
+					state = 73
+					#Lands Annexed From Romania
+					state = 80
+					state = 78
+					state = 766
+				}
+				NOT = { is_core_of = SOV } 
+				NOT = { is_claimed_by = SOV } 
+				owner = { has_war_with = SOV }
+			}
+			add_claim_by = SOV
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					is_core_of = UKR
+					AND = { 
+						is_core_of = BLR
+						NOT = { state = 97 }
+					}
+				}
+				NOT = { is_core_of = SOV } 
+				NOT = { is_claimed_by = SOV } 
+				owner = { has_war_with = SOV }
+			}
+			add_claim_by = SOV
+		}
+		
+		if = {
+			limit = { 
+				OR = {
+					POL = { is_in_faction_with = SOV }
+					AND = {
+						POL = { has_war_with = GER }
+						NOT = { POL = { has_war_with = SOV } }
+					}
+				}
+			}
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 97
+						state = 63
+						state = 68
+						state = 66
+						state = 67
+						state = 762
+						state = 85
+						state = 86
+						state = 807
+						state = 5
+					}
+					NOT = { is_core_of = SOV } 
+					NOT = { is_claimed_by = SOV } 
+				}
+				add_claim_by = POL
+			}
+		}
+		else = {
+			every_state = {
+				limit = { 
+					OR = { 
+						state = 97
+					}
+					NOT = { is_core_of = GER } 
+					NOT = { is_claimed_by = GER } 
+				}
+				add_claim_by = GER
+			}
+		}
+		
+	}
+	
+}
+
+#Russian Claim on Japan
+country_event = {
+	id = BPD_Specific_Claims_Country.29
+	title = "BPD_Specific_Claims_Country.29.t"
+	desc = "BPD_Specific_Claims_Country.29.d"
+	picture = GFX_report_event_SOV_Claim_ASI_Country
+
+	is_triggered_only = yes
+
+	option = {
+		#Russian Claims
+		name = "BPD_Specific_Claims_Country.29.a"
+
+		ai_chance = {
+			factor = 500
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					state = 537
+					state = 555
+				}
+				NOT = { is_core_of = ROOT } 
+				NOT = { is_claimed_by = ROOT } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = ROOT
+		}
+		
+	}
+	
+	option = {
+		#1945 Polish Border
+		name = "BPD_Specific_Claims_Country.29.b"
+
+		ai_chance = {
+			factor = 300
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					state = 537
+					state = 555
+					is_core_of = MAN
+				}
+				NOT = { is_core_of = ROOT } 
+				NOT = { is_claimed_by = ROOT } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = ROOT
+		}
+		
+		if = {
+			limit = { 
+				OR = {
+					MON = { is_in_faction_with = SOV }
+					AND = {
+						MON = { has_war_with = JAP }
+						NOT = { MON = { has_war_with = SOV } }
+					}
+				}
+			}
+			every_state = {
+				limit = { 
+					is_core_of = MEN
+					NOT = { is_core_of = SOV } 
+					NOT = { is_claimed_by = SOV } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = MON
+			}
+		}
+		
+	}
+	
+	option = {
+		#1945 Polish Border
+		name = "BPD_Specific_Claims_Country.29.c"
+
+		ai_chance = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		
+		every_state = {
+			limit = { 
+				OR = { 
+					state = 537
+					state = 555
+					is_core_of = MAN
+					state = 527
+				}
+				NOT = { is_core_of = ROOT } 
+				NOT = { is_claimed_by = ROOT } 
+				owner = { has_war_with = ROOT }
+			}
+			add_claim_by = ROOT
+		}
+		
+		if = {
+			limit = { 
+				OR = {
+					MON = { is_in_faction_with = SOV }
+					AND = {
+						MON = { has_war_with = JAP }
+						NOT = { MON = { has_war_with = SOV } }
+					}
+				}
+			}
+			every_state = {
+				limit = { 
+					is_core_of = MEN
+					NOT = { is_core_of = SOV } 
+					NOT = { is_claimed_by = SOV } 
+					owner = { has_war_with = ROOT }
+				}
+				add_claim_by = MON
+			}
 		}
 		
 	}
