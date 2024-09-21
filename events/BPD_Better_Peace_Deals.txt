@@ -758,6 +758,51 @@ country_event = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
 			}
+			#German Concessions to Allies
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_No_Claims_Colonies
+			}
+			modifier = {
+				add = 400
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Withdraws_From_Western_Europe
+			}
 			#Specific German-Soviet War Demands
 			modifier = {
 				add = 100
@@ -826,6 +871,76 @@ country_event = {
 				}
 				has_global_flag = BPD_GER_Extreme_Claims_Russia
 				BPD_Soviet_Surrender_Req_4 = yes
+			}
+			#Specific German-British War Demands
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Minimalist_Claims_Western_Europe
+				BPD_British_Surrender_Req_2 = yes
+			}
+			modifier = {
+				add = 400
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Moderate_Claims_Western_Europe
+				BPD_British_Surrender_Req_3 = yes
+			}
+			modifier = {
+				add = 800
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Maximalist_Claims_Western_Europe
+				BPD_British_Surrender_Req_4 = yes
 			}
 			#End of Specific German-Soviet War Demands
 			modifier = {
@@ -1365,7 +1480,256 @@ country_event = {
 				has_global_flag = BPD_GER_Extreme_Claims_Russia
 				BPD_Soviet_Surrender_Req_4 = no
 			}
+			#Specific German-British War Demands
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Minimalist_Claims_Western_Europe
+				BPD_British_Surrender_Req_2 = no
+			}
+			modifier = {
+				add = 400
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Moderate_Claims_Western_Europe
+				BPD_British_Surrender_Req_3 = no
+			}
+			modifier = {
+				add = 800
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Maximalist_Claims_Western_Europe
+				BPD_British_Surrender_Req_4 = no
+			}
 			#End of German-Soviet Specific Claims
+			#German Claims on France
+			modifier = {
+				add = 50
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = FRA
+						AND = {
+							is_in_faction_with = FRA
+							FRA = { has_war_with = GER }
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Minimalist_Claims_France
+			}
+			modifier = {
+				add = 100
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = FRA
+						AND = {
+							is_in_faction_with = FRA
+							FRA = { has_war_with = GER }
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Moderate_Claims_France
+			}
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = FRA
+						AND = {
+							is_in_faction_with = FRA
+							FRA = { has_war_with = GER }
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Maximalist_Claims_France
+			}
+			#German Claims on Poland
+			modifier = {
+				add = 50
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = POL
+						AND = {
+							is_in_faction_with = POL
+							POL = { has_war_with = GER }
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Minimalist_Claims_Poland
+			}
+			modifier = {
+				add = 100
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = POL
+						AND = {
+							is_in_faction_with = POL
+							POL = { has_war_with = GER }
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Moderate_Claims_Poland
+			}
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = POL
+						AND = {
+							is_in_faction_with = POL
+							POL = { has_war_with = GER }
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Maximalist_Claims_Poland
+			}
+			#German Colonial Claims
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Maximalist_Claims_Colonies
+			}
+			modifier = {
+				add = 400
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Extreme_Claims_Colonies
+			}
 			modifier = {
 				add = 50
 				ROOT = { surrender_progress < 0.11 }
@@ -2414,6 +2778,51 @@ country_event = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
 			}
+			#German Concessions to Allies
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_No_Claims_Colonies
+			}
+			modifier = {
+				add = 400
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Withdraws_From_Western_Europe
+			}
 			#Specific German-Soviet War Demands
 			modifier = {
 				add = 100
@@ -2482,6 +2891,76 @@ country_event = {
 				}
 				has_global_flag = BPD_GER_Extreme_Claims_Russia
 				BPD_Soviet_Surrender_Req_4 = yes
+			}
+			#Specific German-British War Demands
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Minimalist_Claims_Western_Europe
+				BPD_British_Surrender_Req_2 = yes
+			}
+			modifier = {
+				add = 400
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Moderate_Claims_Western_Europe
+				BPD_British_Surrender_Req_3 = yes
+			}
+			modifier = {
+				add = 800
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Maximalist_Claims_Western_Europe
+				BPD_British_Surrender_Req_4 = yes
 			}
 			#End of Specific German-Soviet War Demands
 			modifier = {
@@ -3022,7 +3501,256 @@ country_event = {
 				has_global_flag = BPD_GER_Extreme_Claims_Russia
 				BPD_Soviet_Surrender_Req_4 = no
 			}
+			#Specific German-British War Demands
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Minimalist_Claims_Western_Europe
+				BPD_British_Surrender_Req_2 = no
+			}
+			modifier = {
+				add = 400
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Moderate_Claims_Western_Europe
+				BPD_British_Surrender_Req_3 = no
+			}
+			modifier = {
+				add = 800
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Maximalist_Claims_Western_Europe
+				BPD_British_Surrender_Req_4 = no
+			}
 			#End of German-Soviet Specific Claims
+			#German Claims on France
+			modifier = {
+				add = 50
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = FRA
+						AND = {
+							is_in_faction_with = FRA
+							FRA = { has_war_with = GER }
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Minimalist_Claims_France
+			}
+			modifier = {
+				add = 100
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = FRA
+						AND = {
+							is_in_faction_with = FRA
+							FRA = { has_war_with = GER }
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Moderate_Claims_France
+			}
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = FRA
+						AND = {
+							is_in_faction_with = FRA
+							FRA = { has_war_with = GER }
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Maximalist_Claims_France
+			}
+			#German Claims on Poland
+			modifier = {
+				add = 50
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = POL
+						AND = {
+							is_in_faction_with = POL
+							POL = { has_war_with = GER }
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Minimalist_Claims_Poland
+			}
+			modifier = {
+				add = 100
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = POL
+						AND = {
+							is_in_faction_with = POL
+							POL = { has_war_with = GER }
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Moderate_Claims_Poland
+			}
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = POL
+						AND = {
+							is_in_faction_with = POL
+							POL = { has_war_with = GER }
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Maximalist_Claims_Poland
+			}
+			#German Colonial Claims
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Maximalist_Claims_Colonies
+			}
+			modifier = {
+				add = 400
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_GER_Extreme_Claims_Colonies
+			}
 			modifier = {
 				add = 50
 				ROOT = { surrender_progress < 0.11 }

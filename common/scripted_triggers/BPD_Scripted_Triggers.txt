@@ -17,3 +17,347 @@ BPD_Soviet_Surrender_Req_3 = {
 BPD_Soviet_Surrender_Req_4 = {
 	SOV = { surrender_progress > 0.89 }
 }
+
+#German Withdrawal From Western Europe
+BPD_British_Surrender_Req_1 = {
+	OR = {
+		ROOT = {
+			surrender_progress > 0.19
+		}
+		AND = {
+			123 = { is_controlled_by_ROOT_or_ally = no }
+			126 = { is_controlled_by_ROOT_or_ally = no }
+			127 = { is_controlled_by_ROOT_or_ally = no }
+			338 = { is_controlled_by_ROOT_or_ally = no }
+			122 = { is_controlled_by_ROOT_or_ally = no }
+			125 = { is_controlled_by_ROOT_or_ally = no }
+			129 = { is_controlled_by_ROOT_or_ally = no }
+			128 = { is_controlled_by_ROOT_or_ally = no }
+			130 = { is_controlled_by_ROOT_or_ally = no }
+			132 = { is_controlled_by_ROOT_or_ally = no }
+			131 = { is_controlled_by_ROOT_or_ally = no }
+			121 = { is_controlled_by_ROOT_or_ally = no }
+			931 = { is_controlled_by_ROOT_or_ally = no }
+			133 = { is_controlled_by_ROOT_or_ally = no }
+			136 = { is_controlled_by_ROOT_or_ally = no }
+			120 = { is_controlled_by_ROOT_or_ally = no }
+		}
+	}
+	OR = {
+		NOT = { 
+			USA = { 
+				has_war_with = GER
+			}
+		}
+		AND = {
+			USA = { 
+				has_war_with = GER
+				has_capitulated = yes
+			}
+		}
+		SOV = {
+			has_capitulated = yes
+		}
+		SOV = {
+			exists = no
+		}
+		SOV = {
+			is_subject_of = GER
+		}
+		AND = {
+			SOV = { 
+				surrender_progress > 0.69
+			}
+			OR = {
+				GER = {
+					controls_state = 219
+				}
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 219
+				}
+			}
+			OR = {
+				GER = {
+					controls_state = 217
+				}
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 217
+				}
+			}
+			OR = {
+				GER = {
+					controls_state = 195
+				}
+				FIN = {
+					controls_state = 195
+				}
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 195
+				}
+			}
+		}
+	}
+}
+
+#German Speaking Territories Only
+BPD_British_Surrender_Req_2 = {
+	OR = {
+		ROOT = {
+			surrender_progress > 0.34
+		}
+		AND = {
+			123 = { is_controlled_by_ROOT_or_ally = no }
+			126 = { is_controlled_by_ROOT_or_ally = no }
+			127 = { is_controlled_by_ROOT_or_ally = no }
+			338 = { is_controlled_by_ROOT_or_ally = no }
+			122 = { is_controlled_by_ROOT_or_ally = no }
+			125 = { is_controlled_by_ROOT_or_ally = no }
+			129 = { is_controlled_by_ROOT_or_ally = no }
+			128 = { is_controlled_by_ROOT_or_ally = no }
+			130 = { is_controlled_by_ROOT_or_ally = no }
+			132 = { is_controlled_by_ROOT_or_ally = no }
+			131 = { is_controlled_by_ROOT_or_ally = no }
+			121 = { is_controlled_by_ROOT_or_ally = no }
+			931 = { is_controlled_by_ROOT_or_ally = no }
+			133 = { is_controlled_by_ROOT_or_ally = no }
+			136 = { is_controlled_by_ROOT_or_ally = no }
+			120 = { is_controlled_by_ROOT_or_ally = no }
+		}
+	}
+	OR = {
+		NOT = { 
+			USA = { 
+				has_war_with = GER
+			}
+		}
+		AND = {
+			USA = { 
+				has_war_with = GER
+				has_capitulated = yes
+			}
+		}
+		SOV = {
+			has_capitulated = yes
+		}
+		SOV = {
+			exists = no
+		}
+		SOV = {
+			is_subject_of = GER
+		}
+		AND = {
+			SOV = { 
+				surrender_progress > 0.69
+			}
+			OR = {
+				GER = {
+					controls_state = 219
+				}
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 219
+				}
+			}
+			OR = {
+				GER = {
+					controls_state = 217
+				}
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 217
+				}
+			}
+			OR = {
+				GER = {
+					controls_state = 195
+				}
+				FIN = {
+					controls_state = 195
+				}
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 195
+				}
+			}
+		}
+	}
+}
+
+#Benelux
+BPD_British_Surrender_Req_3 = {
+	OR = {
+		ROOT = {
+			surrender_progress > 0.69 
+		}
+		AND = {
+			123 = { is_controlled_by_ROOT_or_ally = no }
+			126 = { is_controlled_by_ROOT_or_ally = no }
+			127 = { is_controlled_by_ROOT_or_ally = no }
+			338 = { is_controlled_by_ROOT_or_ally = no }
+			122 = { is_controlled_by_ROOT_or_ally = no }
+			125 = { is_controlled_by_ROOT_or_ally = no }
+			129 = { is_controlled_by_ROOT_or_ally = no }
+			128 = { is_controlled_by_ROOT_or_ally = no }
+			130 = { is_controlled_by_ROOT_or_ally = no }
+			132 = { is_controlled_by_ROOT_or_ally = no }
+			131 = { is_controlled_by_ROOT_or_ally = no }
+			121 = { is_controlled_by_ROOT_or_ally = no }
+			931 = { is_controlled_by_ROOT_or_ally = no }
+			133 = { is_controlled_by_ROOT_or_ally = no }
+			136 = { is_controlled_by_ROOT_or_ally = no }
+			120 = { is_controlled_by_ROOT_or_ally = no }
+		}
+	}
+	OR = {
+		NOT = { 
+			USA = { 
+				has_war_with = GER
+			}
+		}
+		AND = {
+			USA = { 
+				has_war_with = GER
+				has_capitulated = yes
+			}
+		}
+		SOV = {
+			has_capitulated = yes
+		}
+		SOV = {
+			exists = no
+		}
+		SOV = {
+			is_subject_of = GER
+		}
+		AND = {
+			SOV = { 
+				surrender_progress > 0.69
+			}
+			OR = {
+				GER = {
+					controls_state = 219
+				}
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 219
+				}
+			}
+			OR = {
+				GER = {
+					controls_state = 217
+				}
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 217
+				}
+			}
+			OR = {
+				GER = {
+					controls_state = 195
+				}
+				FIN = {
+					controls_state = 195
+				}
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 195
+				}
+			}
+		}
+	}
+}
+
+#All Germanic Lands
+BPD_British_Surrender_Req_4 = {
+	OR = {
+		#Almost Capitulated
+		ROOT = {
+			surrender_progress > 0.89 
+		}
+		#Britain Fully Occupied
+		AND = {
+			123 = { is_controlled_by_ROOT_or_ally = no }
+			126 = { is_controlled_by_ROOT_or_ally = no }
+			127 = { is_controlled_by_ROOT_or_ally = no }
+			338 = { is_controlled_by_ROOT_or_ally = no }
+			122 = { is_controlled_by_ROOT_or_ally = no }
+			125 = { is_controlled_by_ROOT_or_ally = no }
+			129 = { is_controlled_by_ROOT_or_ally = no }
+			128 = { is_controlled_by_ROOT_or_ally = no }
+			130 = { is_controlled_by_ROOT_or_ally = no }
+			132 = { is_controlled_by_ROOT_or_ally = no }
+			131 = { is_controlled_by_ROOT_or_ally = no }
+			121 = { is_controlled_by_ROOT_or_ally = no }
+			931 = { is_controlled_by_ROOT_or_ally = no }
+			133 = { is_controlled_by_ROOT_or_ally = no }
+			136 = { is_controlled_by_ROOT_or_ally = no }
+			120 = { is_controlled_by_ROOT_or_ally = no }
+		}
+	}
+	OR = {
+		#America Not an Ally
+		NOT = { 
+			USA = { 
+				has_war_with = GER
+			}
+		}
+		#America has surrendered
+		AND = {
+			USA = { 
+				has_war_with = GER
+				has_capitulated = yes
+			}
+		}
+		#USSR has surrendered
+		SOV = {
+			has_capitulated = yes
+		}
+		#USSR doesn't exist therefore can't help
+		SOV = {
+			exists = no
+		}
+		#USSR has been subjugated by Germany
+		SOV = {
+			is_subject_of = GER
+		}
+		#Moscow, Leningrad and Stalingrad are occupied by the Axis or Finland, and the USSR is close to surrendering.
+		AND = {
+			SOV = { 
+				surrender_progress > 0.69 
+			}
+			OR = {
+				GER = {
+					controls_state = 219
+				}
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 219
+				}
+			}
+			OR = {
+				GER = {
+					controls_state = 217
+				}
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 217
+				}
+			}
+			OR = {
+				GER = {
+					controls_state = 195
+				}
+				FIN = {
+					controls_state = 195
+				}
+				any_other_country = {
+					is_in_faction_with = GER
+					controls_state = 195
+				}
+			}
+		}
+	}
+}
