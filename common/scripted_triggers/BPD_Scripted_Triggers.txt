@@ -1,327 +1,22 @@
-#Dnieper River Boundary
-BPD_Soviet_Surrender_Req_1 = {
-	SOV = { surrender_progress > 0.19 }
+BPD_Allies_Control_Sicily = {
+	115 = { is_controlled_by_ROOT_or_ally = yes }
 }
 
-#Brest Litovsk Boundary
-BPD_Soviet_Surrender_Req_2 = {
-	SOV = { surrender_progress > 0.34 }
+BPD_Allies_Control_Normandy = {
+	15 = { is_controlled_by_ROOT_or_ally = yes }
 }
 
-#AA-Line Boundary
-BPD_Soviet_Surrender_Req_3 = {
-	SOV = { surrender_progress > 0.69 }
+BPD_USA_Fighting_With_Axis = {
+	USA = { 
+		has_war_with = GER
+		has_capitulated = no
+	}
 }
 
-#Ural Mountains Boundary
-BPD_Soviet_Surrender_Req_4 = {
-	SOV = { surrender_progress > 0.89 }
-}
-
-#German Withdrawal From Western Europe
-BPD_British_Surrender_Req_1 = {
-	OR = {
-		ROOT = {
-			surrender_progress > 0.19
-		}
-		AND = {
-			123 = { is_controlled_by_ROOT_or_ally = no }
-			126 = { is_controlled_by_ROOT_or_ally = no }
-			127 = { is_controlled_by_ROOT_or_ally = no }
-			338 = { is_controlled_by_ROOT_or_ally = no }
-			122 = { is_controlled_by_ROOT_or_ally = no }
-			125 = { is_controlled_by_ROOT_or_ally = no }
-			129 = { is_controlled_by_ROOT_or_ally = no }
-			128 = { is_controlled_by_ROOT_or_ally = no }
-			130 = { is_controlled_by_ROOT_or_ally = no }
-			132 = { is_controlled_by_ROOT_or_ally = no }
-			131 = { is_controlled_by_ROOT_or_ally = no }
-			121 = { is_controlled_by_ROOT_or_ally = no }
-			931 = { is_controlled_by_ROOT_or_ally = no }
-			133 = { is_controlled_by_ROOT_or_ally = no }
-			136 = { is_controlled_by_ROOT_or_ally = no }
-			120 = { is_controlled_by_ROOT_or_ally = no }
-		}
-	}
-	OR = {
-		NOT = { 
-			USA = { 
-				has_war_with = GER
-			}
-		}
-		AND = {
-			USA = { 
-				has_war_with = GER
-				has_capitulated = yes
-			}
-		}
+BPD_Soviets_Neutralized_By_Germany = {
+		#USSR is allied to Germany
 		SOV = {
-			has_capitulated = yes
-		}
-		SOV = {
-			exists = no
-		}
-		SOV = {
-			is_subject_of = GER
-		}
-		AND = {
-			SOV = { 
-				surrender_progress > 0.69
-			}
-			OR = {
-				GER = {
-					controls_state = 219
-				}
-				any_other_country = {
-					is_in_faction_with = GER
-					controls_state = 219
-				}
-			}
-			OR = {
-				GER = {
-					controls_state = 217
-				}
-				any_other_country = {
-					is_in_faction_with = GER
-					controls_state = 217
-				}
-			}
-			OR = {
-				GER = {
-					controls_state = 195
-				}
-				FIN = {
-					controls_state = 195
-				}
-				any_other_country = {
-					is_in_faction_with = GER
-					controls_state = 195
-				}
-			}
-		}
-	}
-	#Sicily is not controlled by the Allies
-	115 = { is_controlled_by_ROOT_or_ally = no }
-	#Normandy is not controlled by the Allies
-	15 = { is_controlled_by_ROOT_or_ally = no }
-}
-
-#German Speaking Territories Only
-BPD_British_Surrender_Req_2 = {
-	OR = {
-		ROOT = {
-			surrender_progress > 0.34
-		}
-		AND = {
-			123 = { is_controlled_by_ROOT_or_ally = no }
-			126 = { is_controlled_by_ROOT_or_ally = no }
-			127 = { is_controlled_by_ROOT_or_ally = no }
-			338 = { is_controlled_by_ROOT_or_ally = no }
-			122 = { is_controlled_by_ROOT_or_ally = no }
-			125 = { is_controlled_by_ROOT_or_ally = no }
-			129 = { is_controlled_by_ROOT_or_ally = no }
-			128 = { is_controlled_by_ROOT_or_ally = no }
-			130 = { is_controlled_by_ROOT_or_ally = no }
-			132 = { is_controlled_by_ROOT_or_ally = no }
-			131 = { is_controlled_by_ROOT_or_ally = no }
-			121 = { is_controlled_by_ROOT_or_ally = no }
-			931 = { is_controlled_by_ROOT_or_ally = no }
-			133 = { is_controlled_by_ROOT_or_ally = no }
-			136 = { is_controlled_by_ROOT_or_ally = no }
-			120 = { is_controlled_by_ROOT_or_ally = no }
-		}
-	}
-	OR = {
-		NOT = { 
-			USA = { 
-				has_war_with = GER
-			}
-		}
-		AND = {
-			USA = { 
-				has_war_with = GER
-				has_capitulated = yes
-			}
-		}
-		SOV = {
-			has_capitulated = yes
-		}
-		SOV = {
-			exists = no
-		}
-		SOV = {
-			is_subject_of = GER
-		}
-		AND = {
-			SOV = { 
-				surrender_progress > 0.69
-			}
-			OR = {
-				GER = {
-					controls_state = 219
-				}
-				any_other_country = {
-					is_in_faction_with = GER
-					controls_state = 219
-				}
-			}
-			OR = {
-				GER = {
-					controls_state = 217
-				}
-				any_other_country = {
-					is_in_faction_with = GER
-					controls_state = 217
-				}
-			}
-			OR = {
-				GER = {
-					controls_state = 195
-				}
-				FIN = {
-					controls_state = 195
-				}
-				any_other_country = {
-					is_in_faction_with = GER
-					controls_state = 195
-				}
-			}
-		}
-	}
-	#Sicily is not controlled by the Allies
-	115 = { is_controlled_by_ROOT_or_ally = no }
-	#Normandy is not controlled by the Allies
-	15 = { is_controlled_by_ROOT_or_ally = no }
-}
-
-#Benelux
-BPD_British_Surrender_Req_3 = {
-	OR = {
-		ROOT = {
-			surrender_progress > 0.69 
-		}
-		AND = {
-			123 = { is_controlled_by_ROOT_or_ally = no }
-			126 = { is_controlled_by_ROOT_or_ally = no }
-			127 = { is_controlled_by_ROOT_or_ally = no }
-			338 = { is_controlled_by_ROOT_or_ally = no }
-			122 = { is_controlled_by_ROOT_or_ally = no }
-			125 = { is_controlled_by_ROOT_or_ally = no }
-			129 = { is_controlled_by_ROOT_or_ally = no }
-			128 = { is_controlled_by_ROOT_or_ally = no }
-			130 = { is_controlled_by_ROOT_or_ally = no }
-			132 = { is_controlled_by_ROOT_or_ally = no }
-			131 = { is_controlled_by_ROOT_or_ally = no }
-			121 = { is_controlled_by_ROOT_or_ally = no }
-			931 = { is_controlled_by_ROOT_or_ally = no }
-			133 = { is_controlled_by_ROOT_or_ally = no }
-			136 = { is_controlled_by_ROOT_or_ally = no }
-			120 = { is_controlled_by_ROOT_or_ally = no }
-		}
-	}
-	OR = {
-		NOT = { 
-			USA = { 
-				has_war_with = GER
-			}
-		}
-		AND = {
-			USA = { 
-				has_war_with = GER
-				has_capitulated = yes
-			}
-		}
-		SOV = {
-			has_capitulated = yes
-		}
-		SOV = {
-			exists = no
-		}
-		SOV = {
-			is_subject_of = GER
-		}
-		AND = {
-			SOV = { 
-				surrender_progress > 0.69
-			}
-			OR = {
-				GER = {
-					controls_state = 219
-				}
-				any_other_country = {
-					is_in_faction_with = GER
-					controls_state = 219
-				}
-			}
-			OR = {
-				GER = {
-					controls_state = 217
-				}
-				any_other_country = {
-					is_in_faction_with = GER
-					controls_state = 217
-				}
-			}
-			OR = {
-				GER = {
-					controls_state = 195
-				}
-				FIN = {
-					controls_state = 195
-				}
-				any_other_country = {
-					is_in_faction_with = GER
-					controls_state = 195
-				}
-			}
-		}
-	}
-	#Sicily is not controlled by the Allies
-	115 = { is_controlled_by_ROOT_or_ally = no }
-	#Normandy is not controlled by the Allies
-	15 = { is_controlled_by_ROOT_or_ally = no }
-}
-
-#All Germanic Lands
-BPD_British_Surrender_Req_4 = {
-	OR = {
-		#Almost Capitulated
-		ROOT = {
-			surrender_progress > 0.89 
-		}
-		#Britain Fully Occupied
-		AND = {
-			123 = { is_controlled_by_ROOT_or_ally = no }
-			126 = { is_controlled_by_ROOT_or_ally = no }
-			127 = { is_controlled_by_ROOT_or_ally = no }
-			338 = { is_controlled_by_ROOT_or_ally = no }
-			122 = { is_controlled_by_ROOT_or_ally = no }
-			125 = { is_controlled_by_ROOT_or_ally = no }
-			129 = { is_controlled_by_ROOT_or_ally = no }
-			128 = { is_controlled_by_ROOT_or_ally = no }
-			130 = { is_controlled_by_ROOT_or_ally = no }
-			132 = { is_controlled_by_ROOT_or_ally = no }
-			131 = { is_controlled_by_ROOT_or_ally = no }
-			121 = { is_controlled_by_ROOT_or_ally = no }
-			931 = { is_controlled_by_ROOT_or_ally = no }
-			133 = { is_controlled_by_ROOT_or_ally = no }
-			136 = { is_controlled_by_ROOT_or_ally = no }
-			120 = { is_controlled_by_ROOT_or_ally = no }
-		}
-	}
-	OR = {
-		#America Not an Ally
-		NOT = { 
-			USA = { 
-				has_war_with = GER
-			}
-		}
-		#America has surrendered
-		AND = {
-			USA = { 
-				has_war_with = GER
-				has_capitulated = yes
-			}
+			is_in_faction_with = GER
 		}
 		#USSR has surrendered
 		SOV = {
@@ -371,9 +66,162 @@ BPD_British_Surrender_Req_4 = {
 				}
 			}
 		}
+}
+
+#Dnieper River Boundary
+BPD_Soviet_Surrender_Req_1 = {
+	SOV = { surrender_progress > 0.19 }
+}
+
+#Brest Litovsk Boundary
+BPD_Soviet_Surrender_Req_2 = {
+	SOV = { surrender_progress > 0.34 }
+}
+
+#AA-Line Boundary
+BPD_Soviet_Surrender_Req_3 = {
+	SOV = { surrender_progress > 0.69 }
+}
+
+#Ural Mountains Boundary
+BPD_Soviet_Surrender_Req_4 = {
+	SOV = { surrender_progress > 0.89 }
+}
+
+#German Withdrawal From Western Europe
+BPD_British_Surrender_Req_1 = {
+	OR = {
+		#Britain 20% or more towards surrendering
+		ROOT = {
+			surrender_progress > 0.19
+		}
+		#British Isles Not Controlled By The Allies
+		AND = {
+			123 = { is_controlled_by_ROOT_or_ally = no }
+			126 = { is_controlled_by_ROOT_or_ally = no }
+			127 = { is_controlled_by_ROOT_or_ally = no }
+			338 = { is_controlled_by_ROOT_or_ally = no }
+			122 = { is_controlled_by_ROOT_or_ally = no }
+			125 = { is_controlled_by_ROOT_or_ally = no }
+			129 = { is_controlled_by_ROOT_or_ally = no }
+			128 = { is_controlled_by_ROOT_or_ally = no }
+			130 = { is_controlled_by_ROOT_or_ally = no }
+			132 = { is_controlled_by_ROOT_or_ally = no }
+			131 = { is_controlled_by_ROOT_or_ally = no }
+			121 = { is_controlled_by_ROOT_or_ally = no }
+			931 = { is_controlled_by_ROOT_or_ally = no }
+			133 = { is_controlled_by_ROOT_or_ally = no }
+			136 = { is_controlled_by_ROOT_or_ally = no }
+			120 = { is_controlled_by_ROOT_or_ally = no }
+		}
 	}
-	#Sicily is not controlled by the Allies
-	115 = { is_controlled_by_ROOT_or_ally = no }
-	#Normandy is not controlled by the Allies
-	15 = { is_controlled_by_ROOT_or_ally = no }
+	OR = {
+		BPD_USA_Fighting_With_Axis = no
+		BPD_Soviets_Neutralized_By_Germany = yes
+	}
+	BPD_Allies_Control_Sicily = no
+	BPD_Allies_Control_Normandy = no
+}
+
+#German Speaking Territories Only
+BPD_British_Surrender_Req_2 = {
+	OR = {
+		ROOT = {
+			surrender_progress > 0.34
+		}
+		AND = {
+			123 = { is_controlled_by_ROOT_or_ally = no }
+			126 = { is_controlled_by_ROOT_or_ally = no }
+			127 = { is_controlled_by_ROOT_or_ally = no }
+			338 = { is_controlled_by_ROOT_or_ally = no }
+			122 = { is_controlled_by_ROOT_or_ally = no }
+			125 = { is_controlled_by_ROOT_or_ally = no }
+			129 = { is_controlled_by_ROOT_or_ally = no }
+			128 = { is_controlled_by_ROOT_or_ally = no }
+			130 = { is_controlled_by_ROOT_or_ally = no }
+			132 = { is_controlled_by_ROOT_or_ally = no }
+			131 = { is_controlled_by_ROOT_or_ally = no }
+			121 = { is_controlled_by_ROOT_or_ally = no }
+			931 = { is_controlled_by_ROOT_or_ally = no }
+			133 = { is_controlled_by_ROOT_or_ally = no }
+			136 = { is_controlled_by_ROOT_or_ally = no }
+			120 = { is_controlled_by_ROOT_or_ally = no }
+		}
+	}
+	OR = {
+		BPD_USA_Fighting_With_Axis = no
+		BPD_Soviets_Neutralized_By_Germany = yes
+	}
+	BPD_Allies_Control_Sicily = no
+	BPD_Allies_Control_Normandy = no
+}
+
+#Benelux
+BPD_British_Surrender_Req_3 = {
+	OR = {
+		ROOT = {
+			surrender_progress > 0.69 
+		}
+		AND = {
+			123 = { is_controlled_by_ROOT_or_ally = no }
+			126 = { is_controlled_by_ROOT_or_ally = no }
+			127 = { is_controlled_by_ROOT_or_ally = no }
+			338 = { is_controlled_by_ROOT_or_ally = no }
+			122 = { is_controlled_by_ROOT_or_ally = no }
+			125 = { is_controlled_by_ROOT_or_ally = no }
+			129 = { is_controlled_by_ROOT_or_ally = no }
+			128 = { is_controlled_by_ROOT_or_ally = no }
+			130 = { is_controlled_by_ROOT_or_ally = no }
+			132 = { is_controlled_by_ROOT_or_ally = no }
+			131 = { is_controlled_by_ROOT_or_ally = no }
+			121 = { is_controlled_by_ROOT_or_ally = no }
+			931 = { is_controlled_by_ROOT_or_ally = no }
+			133 = { is_controlled_by_ROOT_or_ally = no }
+			136 = { is_controlled_by_ROOT_or_ally = no }
+			120 = { is_controlled_by_ROOT_or_ally = no }
+		}
+	}
+	OR = {
+		BPD_USA_Fighting_With_Axis = no
+		BPD_Soviets_Neutralized_By_Germany = yes
+	}
+	BPD_Allies_Control_Sicily = no
+	BPD_Allies_Control_Normandy = no
+}
+
+#All Germanic Lands
+BPD_British_Surrender_Req_4 = {
+	OR = {
+		#Almost Capitulated
+		ROOT = {
+			surrender_progress > 0.89 
+		}
+		#Britain Fully Occupied
+		AND = {
+			123 = { is_controlled_by_ROOT_or_ally = no }
+			126 = { is_controlled_by_ROOT_or_ally = no }
+			127 = { is_controlled_by_ROOT_or_ally = no }
+			338 = { is_controlled_by_ROOT_or_ally = no }
+			122 = { is_controlled_by_ROOT_or_ally = no }
+			125 = { is_controlled_by_ROOT_or_ally = no }
+			129 = { is_controlled_by_ROOT_or_ally = no }
+			128 = { is_controlled_by_ROOT_or_ally = no }
+			130 = { is_controlled_by_ROOT_or_ally = no }
+			132 = { is_controlled_by_ROOT_or_ally = no }
+			131 = { is_controlled_by_ROOT_or_ally = no }
+			121 = { is_controlled_by_ROOT_or_ally = no }
+			931 = { is_controlled_by_ROOT_or_ally = no }
+			133 = { is_controlled_by_ROOT_or_ally = no }
+			136 = { is_controlled_by_ROOT_or_ally = no }
+			120 = { is_controlled_by_ROOT_or_ally = no }
+		}
+	}
+	OR = {
+		#America Not an Ally
+		BPD_USA_Fighting_With_Axis = no
+		#USSR has surrendered
+		BPD_Soviets_Neutralized_By_Germany = yes
+	}
+	BPD_Allies_Control_Sicily = no
+	BPD_Allies_Control_Normandy = no
 }
