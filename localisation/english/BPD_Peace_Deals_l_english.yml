@@ -8,8 +8,6 @@
  BPD_War_Aims:0 "War Aims Manager"
  BPD_War_Aims_desc:0 "The War Aims Manager category empowers nations to strategically define and pursue their wartime objectives. This decision category allows players to outline their territorial ambitions, set strategic goals, and shape the outcome of conflicts in alignment with their national interests. Through the War Aims Manager, you can claim key regions, exert influence over neighboring states, and dictate the terms of post-war settlements. Each decision within this category involves specific political, military, or diplomatic costs and benefits, enabling you to align your war efforts with broader strategic goals. hether you aim to expand your borders, liberate occupied territories, or establish dominance over entire regions, the War Aims Manager provides the framework to guide your nation’s wartime strategy and achieve your desired outcomes on the global stage.\n§YDecisions only available at War Time.§!"
  
- 
-
  show_hide_peace_decisions:0 "Show/Hide State Peace Deal Decisions"
  BPD_demand_surrender_td_attacker:0 "Total Victory Over [FROM.GetName]"
  BPD_demand_surrender_td_attacker_desc:0 "We are in a strong position to demand [FROM.GetAdjective]’s surrender and force them to end this war on our terms. By doing so, we will solidify control over all territories currently occupied by our forces, along with any regions we claim or have cores on. This demand is not just for peace but for a decisive victory that reshapes the map in our favor. If [FROM.GetLeader] accepts, we will gain vast new territories, but if they refuse, the war may escalate further. The time has come to push for total dominance or risk a prolonged struggle."

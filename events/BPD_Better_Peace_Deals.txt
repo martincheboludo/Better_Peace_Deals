@@ -758,6 +758,76 @@ country_event = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
 			}
+			#Specific German-Soviet War Demands
+			modifier = {
+				add = 100
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Minimalist_Claims_Russia
+				BPD_Soviet_Surrender_Req_1 = yes
+			}
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Moderate_Claims_Russia
+				BPD_Soviet_Surrender_Req_2 = yes
+			}
+			modifier = {
+				add = 400
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Maximalist_Claims_Russia
+				BPD_Soviet_Surrender_Req_3 = yes
+			}
+			modifier = {
+				add = 800
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Extreme_Claims_Russia
+				BPD_Soviet_Surrender_Req_4 = yes
+			}
+			#End of Specific German-Soviet War Demands
 			modifier = {
 				add = 10
 				ROOT = { surrender_progress > 0.50 }
@@ -1226,6 +1296,76 @@ country_event = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
 			}
+			#Start of German-Soviet Specific Claims
+			modifier = {
+				add = 100
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Minimalist_Claims_Russia
+				BPD_Soviet_Surrender_Req_1 = no
+			}
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Moderate_Claims_Russia
+				BPD_Soviet_Surrender_Req_2 = no
+			}
+			modifier = {
+				add = 400
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Maximalist_Claims_Russia
+				BPD_Soviet_Surrender_Req_3 = no
+			}
+			modifier = {
+				add = 800
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Extreme_Claims_Russia
+				BPD_Soviet_Surrender_Req_4 = no
+			}
+			#End of German-Soviet Specific Claims
 			modifier = {
 				add = 50
 				ROOT = { surrender_progress < 0.11 }
@@ -2274,6 +2414,76 @@ country_event = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
 			}
+			#Specific German-Soviet War Demands
+			modifier = {
+				add = 100
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Minimalist_Claims_Russia
+				BPD_Soviet_Surrender_Req_1 = yes
+			}
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Moderate_Claims_Russia
+				BPD_Soviet_Surrender_Req_2 = yes
+			}
+			modifier = {
+				add = 400
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Maximalist_Claims_Russia
+				BPD_Soviet_Surrender_Req_3 = yes
+			}
+			modifier = {
+				add = 800
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Extreme_Claims_Russia
+				BPD_Soviet_Surrender_Req_4 = yes
+			}
+			#End of Specific German-Soviet War Demands
 			modifier = {
 				add = 10
 				ROOT = { surrender_progress > 0.60 }
@@ -2743,6 +2953,76 @@ country_event = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
 			}
+			#Start of German-Soviet Specific Claims
+			modifier = {
+				add = 100
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Minimalist_Claims_Russia
+				BPD_Soviet_Surrender_Req_1 = no
+			}
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Moderate_Claims_Russia
+				BPD_Soviet_Surrender_Req_2 = no
+			}
+			modifier = {
+				add = 400
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Maximalist_Claims_Russia
+				BPD_Soviet_Surrender_Req_3 = no
+			}
+			modifier = {
+				add = 800
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = SOV }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV 
+				}
+				has_global_flag = BPD_GER_Extreme_Claims_Russia
+				BPD_Soviet_Surrender_Req_4 = no
+			}
+			#End of German-Soviet Specific Claims
 			modifier = {
 				add = 50
 				ROOT = { surrender_progress < 0.11 }
