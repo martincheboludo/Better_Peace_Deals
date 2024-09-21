@@ -722,6 +722,8 @@ country_event = {
 		
 		add_state_claim = 458
 		add_state_claim = 665
+		
+		set_global_flag = BPD_ITA_Minimalist_Claims_Colonies	
 
 	}
 	
@@ -760,6 +762,8 @@ country_event = {
 			limit = { is_core_of = SUD NOT = { is_core_of = ITA } NOT = { is_claimed_by = ITA } }
 			add_claim_by = ITA
 		}
+		
+		set_global_flag = BPD_ITA_Moderate_Claims_Colonies
 
 	}
 	
@@ -820,6 +824,8 @@ country_event = {
 			}
 			add_claim_by = ITA
 		}
+		
+		set_global_flag = BPD_ITA_Maximalist_Claims_Colonies
 
 	}
 

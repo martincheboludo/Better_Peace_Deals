@@ -1730,6 +1730,140 @@ country_event = {
 				}
 				has_global_flag = BPD_GER_Extreme_Claims_Colonies
 			}
+			#Italian Claims on France
+			modifier = {
+				add = 50
+				FROM = { 
+					OR = {
+						tag = ITA 
+						AND = {
+							is_in_faction_with = ITA
+							ITA = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = FRA
+						AND = {
+							is_in_faction_with = FRA
+							FRA = { has_war_with = ITA }
+						}
+					}
+				}
+				has_global_flag = BPD_ITA_Minimalist_Claims_France
+			}
+			modifier = {
+				add = 100
+				FROM = { 
+					OR = {
+						tag = ITA 
+						AND = {
+							is_in_faction_with = ITA
+							ITA = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = FRA
+						AND = {
+							is_in_faction_with = FRA
+							FRA = { has_war_with = ITA }
+						}
+					}
+				}
+				has_global_flag = BPD_ITA_Moderate_Claims_France
+			}
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = ITA 
+						AND = {
+							is_in_faction_with = ITA
+							ITA = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = FRA
+						AND = {
+							is_in_faction_with = FRA
+							FRA = { has_war_with = ITA }
+						}
+					}
+				}
+				has_global_flag = BPD_ITA_Maximalist_Claims_France
+			}
+			#Italian Colonial Claims
+			modifier = {
+				add = 50
+				FROM = { 
+					OR = {
+						tag = ITA 
+						AND = {
+							is_in_faction_with = ITA
+							ITA = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_ITA_Minimalist_Claims_Colonies
+			}
+			modifier = {
+				add = 100
+				FROM = { 
+					OR = {
+						tag = ITA 
+						AND = {
+							is_in_faction_with = ITA
+							ITA = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_ITA_Moderate_Claims_Colonies
+			}
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = ITA 
+						AND = {
+							is_in_faction_with = ITA
+							ITA = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_ITA_Maximalist_Claims_Colonies
+			}
 			modifier = {
 				add = 50
 				ROOT = { surrender_progress < 0.11 }
@@ -3750,6 +3884,140 @@ country_event = {
 					}
 				}
 				has_global_flag = BPD_GER_Extreme_Claims_Colonies
+			}
+			#Italian Claims on France
+			modifier = {
+				add = 50
+				FROM = { 
+					OR = {
+						tag = ITA 
+						AND = {
+							is_in_faction_with = ITA
+							ITA = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = FRA
+						AND = {
+							is_in_faction_with = FRA
+							FRA = { has_war_with = ITA }
+						}
+					}
+				}
+				has_global_flag = BPD_ITA_Minimalist_Claims_France
+			}
+			modifier = {
+				add = 100
+				FROM = { 
+					OR = {
+						tag = ITA 
+						AND = {
+							is_in_faction_with = ITA
+							ITA = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = FRA
+						AND = {
+							is_in_faction_with = FRA
+							FRA = { has_war_with = ITA }
+						}
+					}
+				}
+				has_global_flag = BPD_ITA_Moderate_Claims_France
+			}
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = ITA 
+						AND = {
+							is_in_faction_with = ITA
+							ITA = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = FRA
+						AND = {
+							is_in_faction_with = FRA
+							FRA = { has_war_with = ITA }
+						}
+					}
+				}
+				has_global_flag = BPD_ITA_Maximalist_Claims_France
+			}
+			#Italian Colonial Claims
+			modifier = {
+				add = 50
+				FROM = { 
+					OR = {
+						tag = ITA 
+						AND = {
+							is_in_faction_with = ITA
+							ITA = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_ITA_Minimalist_Claims_Colonies
+			}
+			modifier = {
+				add = 100
+				FROM = { 
+					OR = {
+						tag = ITA 
+						AND = {
+							is_in_faction_with = ITA
+							ITA = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_ITA_Moderate_Claims_Colonies
+			}
+			modifier = {
+				add = 200
+				FROM = { 
+					OR = {
+						tag = ITA 
+						AND = {
+							is_in_faction_with = ITA
+							ITA = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				has_global_flag = BPD_ITA_Maximalist_Claims_Colonies
 			}
 			modifier = {
 				add = 50
