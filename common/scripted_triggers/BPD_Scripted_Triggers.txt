@@ -100,6 +100,10 @@ BPD_British_Surrender_Req_1 = {
 			}
 		}
 	}
+	#Sicily is not controlled by the Allies
+	115 = { is_controlled_by_ROOT_or_ally = no }
+	#Normandy is not controlled by the Allies
+	15 = { is_controlled_by_ROOT_or_ally = no }
 }
 
 #German Speaking Territories Only
@@ -184,6 +188,10 @@ BPD_British_Surrender_Req_2 = {
 			}
 		}
 	}
+	#Sicily is not controlled by the Allies
+	115 = { is_controlled_by_ROOT_or_ally = no }
+	#Normandy is not controlled by the Allies
+	15 = { is_controlled_by_ROOT_or_ally = no }
 }
 
 #Benelux
@@ -268,6 +276,10 @@ BPD_British_Surrender_Req_3 = {
 			}
 		}
 	}
+	#Sicily is not controlled by the Allies
+	115 = { is_controlled_by_ROOT_or_ally = no }
+	#Normandy is not controlled by the Allies
+	15 = { is_controlled_by_ROOT_or_ally = no }
 }
 
 #All Germanic Lands
@@ -360,4 +372,8 @@ BPD_British_Surrender_Req_4 = {
 			}
 		}
 	}
+	#Sicily is not controlled by the Allies
+	115 = { is_controlled_by_ROOT_or_ally = no }
+	#Normandy is not controlled by the Allies
+	15 = { is_controlled_by_ROOT_or_ally = no }
 }

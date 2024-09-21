@@ -448,11 +448,13 @@ show_hide_claim_decisions = {
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = ETH
+			tag = ITA
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = ITA
 		}
 
 		cost = 50
@@ -484,11 +486,13 @@ show_hide_claim_decisions = {
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = BUL
+			tag = ITA
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = ITA
 		}
 
 		cost = 50
@@ -516,11 +520,13 @@ show_hide_claim_decisions = {
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = TUR
+			tag = ITA
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = ITA
 		}
 
 		cost = 50
@@ -552,11 +558,13 @@ ITA_Italian_Demands_GRE = {
 			NOT = { GER = { has_war_with = GRE } }
 			NOT = { is_in_faction_with = GER }
 			NOT = { has_global_flag = EW_Fate_of_Greece }
+			tag = ITA
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = ITA
 		}
 
 		cost = 50
@@ -587,11 +595,13 @@ ITA_Italian_Demands_GRE = {
 			NOT = { GER = { has_war_with = YUG } }
 			NOT = { is_in_faction_with = GER }
 			NOT = { has_global_flag = EW_Fate_of_Yugoslavia }
+			tag = ITA
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = ITA
 		}
 
 		cost = 50
@@ -643,11 +653,13 @@ ITA_Italian_Demands_GRE = {
 				}
 			}
 			NOT = { has_global_flag = EW_Fate_of_Greece }
+			tag = GER
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = GER
 		}
 
 		cost = 50
@@ -706,11 +718,13 @@ ITA_Italian_Demands_GRE = {
 				}
 			}
 			NOT = { has_global_flag = EW_Fate_of_Yugoslavia }
+			tag = GER
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = GER
 		}
 
 		cost = 50
@@ -758,11 +772,13 @@ ITA_Italian_Demands_GRE = {
 				}
 			}
 			NOT = { has_global_flag = EW_Fate_of_Switzerland }
+			tag = GER
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = GER
 		}
 
 		cost = 50
@@ -811,12 +827,13 @@ ITA_Italian_Demands_GRE = {
 					}
 				}
 			}
-			
+			tag = GER
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = GER
 		}
 
 		cost = 50
@@ -845,11 +862,13 @@ ITA_Italian_Demands_GRE = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = ENG
 			has_war_with = FRA
+			tag = GER
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = GER
 		}
 
 		cost = 50
@@ -889,11 +908,13 @@ ITA_Italian_Demands_GRE = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = ENG
 			has_war_with = FRA
+			tag = GER
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = GER
 		}
 
 		cost = 50
@@ -921,11 +942,13 @@ ITA_Italian_Demands_GRE = {
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = SOV
+			tag = GER
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = GER
 		}
 
 		cost = 50
@@ -953,11 +976,13 @@ ITA_Italian_Demands_GRE = {
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = CHI
+			tag = JAP
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = JAP
 		}
 
 		cost = 50
@@ -989,11 +1014,13 @@ ITA_Italian_Demands_GRE = {
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = SOV
+			tag = JAP
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = JAP
 		}
 
 		cost = 50
@@ -1022,11 +1049,13 @@ ITA_Italian_Demands_GRE = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = ENG
 			has_war_with = FRA
+			tag = JAP
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = JAP
 		}
 
 		cost = 50
@@ -1065,11 +1094,13 @@ ITA_Italian_Demands_GRE = {
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = TIB
+			tag = JAP
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = JAP
 		}
 
 		cost = 50
@@ -1097,11 +1128,13 @@ ITA_Italian_Demands_GRE = {
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = NEP
+			tag = JAP
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = JAP
 		}
 
 		cost = 50
@@ -1129,11 +1162,13 @@ ITA_Italian_Demands_GRE = {
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = BHU
+			tag = JAP
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = JAP
 		}
 
 		cost = 50
@@ -1161,11 +1196,13 @@ ITA_Italian_Demands_GRE = {
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = TIB
+			tag = CHI
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = CHI
 		}
 
 		cost = 50
@@ -1193,11 +1230,13 @@ ITA_Italian_Demands_GRE = {
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = JAP
+			tag = CHI
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = CHI
 		}
 
 		cost = 50
@@ -1225,11 +1264,13 @@ ITA_Italian_Demands_GRE = {
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = SOV
+			tag = CHI
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = CHI
 		}
 
 		cost = 50
@@ -1252,17 +1293,20 @@ ITA_Italian_Demands_GRE = {
 		
 		allowed = {
 			tag = SOV
-			has_government = communism
 		}
 
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = POL
+			tag = SOV
+			has_government = communism
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = SOV
+			has_government = communism
 		}
 
 		cost = 50
@@ -1285,17 +1329,20 @@ ITA_Italian_Demands_GRE = {
 		
 		allowed = {
 			tag = SOV
-			has_government = communism
 		}
 
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = FIN
+			tag = SOV
+			has_government = communism
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = SOV
+			has_government = communism
 		}
 
 		cost = 50
@@ -1318,17 +1365,20 @@ ITA_Italian_Demands_GRE = {
 		
 		allowed = {
 			tag = SOV
-			has_government = communism
 		}
 
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = GER
+			tag = SOV
+			has_government = communism
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = SOV
+			has_government = communism
 		}
 
 		cost = 50
@@ -1351,17 +1401,20 @@ ITA_Italian_Demands_GRE = {
 		
 		allowed = {
 			tag = SOV
-			has_government = communism
 		}
 
 		available = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			has_war_with = JAP
+			tag = SOV
+			has_government = communism
 		}
 
 		visible = {
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			NOT = { has_country_flag = show_claim_decisions }
+			tag = SOV
+			has_government = communism
 		}
 
 		cost = 50
