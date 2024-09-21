@@ -943,21 +943,38 @@ country_event = {
 		add_state_claim = 87
 		add_state_claim = 72
 		
-		every_state = {
-			limit = { 
-				is_owned_by = POL 
-				is_controlled_by_ROOT_or_ally = yes 
-				NOT = { is_core_of = GER } 
-				NOT = { is_claimed_by = GER } 
-				NOT = { is_core_of = UKR }
-				NOT = { is_core_of = BLR }
-				NOT = { is_core_of = LIT } 
+		if = {
+			limit = {
+				GER = { 
+					has_completed_focus = GER_mol_rib_pact 
+				}
 			}
-			add_claim_by = GER
+			every_state = {
+				limit = { 
+					is_owned_by = POL 
+					is_controlled_by_ROOT_or_ally = yes 
+					NOT = { is_core_of = GER } 
+					NOT = { is_claimed_by = GER } 
+					NOT = { is_core_of = UKR }
+					NOT = { is_core_of = BLR }
+					NOT = { is_core_of = LIT } 
+				}
+				add_claim_by = GER
+			}
 		}
-
+		else = {
+			every_state = {
+				limit = { 
+					is_owned_by = POL 
+					is_controlled_by_ROOT_or_ally = yes 
+					NOT = { is_core_of = GER } 
+					NOT = { is_claimed_by = GER } 
+				}
+				add_claim_by = GER
+			}
+		}
+		
 	}
-
 }
 
 #German Claim on France
