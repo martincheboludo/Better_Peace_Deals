@@ -1,0 +1,19 @@
+#Dnieper River Boundary
+BPD_Soviet_Surrender_Req_1 = {
+	SOV = { surrender_progress > 0.19 }
+}
+
+#Brest Litovsk Boundary
+BPD_Soviet_Surrender_Req_2 = {
+	SOV = { surrender_progress > 0.34 }
+}
+
+#AA-Line Boundary
+BPD_Soviet_Surrender_Req_3 = {
+	SOV = { surrender_progress > 0.69 }
+}
+
+#Ural Mountains Boundary
+BPD_Soviet_Surrender_Req_4 = {
+	SOV = { surrender_progress > 0.89 }
+}
