@@ -68,6 +68,12 @@ BPD_Soviets_Neutralized_By_Germany = {
 		}
 }
 
+#Allied White Peace Requirement
+BPD_Allied_Peace_Req_1 = {
+	BPD_Allies_Control_Sicily = no
+	BPD_Allies_Control_Normandy = no
+}
+
 #British General Peace Requirement
 BPD_British_Peace_Req_1 = {
 	OR = {

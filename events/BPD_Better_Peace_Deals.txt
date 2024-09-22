@@ -21,6 +21,46 @@ country_event = {
 				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
+				add = 250
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				BPD_Allied_Peace_Req_1 = yes
+				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			}
+			modifier = {
+				add = 250
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV
+				}
+				BPD_Allied_Peace_Req_1 = yes
+				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			}
+			modifier = {
 				add = 50
 				ROOT = { surrender_progress < 0.11 }
 			}
@@ -442,6 +482,46 @@ country_event = {
 				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
+				add = 250
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				BPD_Allied_Peace_Req_1 = no
+				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			}
+			modifier = {
+				add = 250
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV
+				}
+				BPD_Allied_Peace_Req_1 = no
+				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			}
+			modifier = {
 				add = 10
 				ROOT = { surrender_progress > 0.50 }
 				ROOT = { surrender_progress < 0.61 }
@@ -759,7 +839,7 @@ country_event = {
 				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
-				add = 500
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -782,7 +862,7 @@ country_event = {
 				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			}
 			modifier = {
-				add = 500
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -799,8 +879,9 @@ country_event = {
 				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			}
 			#German Concessions to Allies
+			#Maximalist Concession (Renouncing Colonies)
 			modifier = {
-				add = 200
+				add = 150
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -821,8 +902,9 @@ country_event = {
 				}
 				has_global_flag = BPD_GER_No_Claims_Colonies
 			}
+			#Extreme Concession (Withdrawing From Western Europe)
 			modifier = {
-				add = 400
+				add = 200
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -845,7 +927,7 @@ country_event = {
 			}
 			#Specific German-Soviet War Demands
 			modifier = {
-				add = 100
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -862,7 +944,7 @@ country_event = {
 				BPD_Soviet_Surrender_Req_1 = yes
 			}
 			modifier = {
-				add = 200
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -879,7 +961,7 @@ country_event = {
 				BPD_Soviet_Surrender_Req_2 = yes
 			}
 			modifier = {
-				add = 400
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -896,7 +978,7 @@ country_event = {
 				BPD_Soviet_Surrender_Req_3 = yes
 			}
 			modifier = {
-				add = 800
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -914,7 +996,7 @@ country_event = {
 			}
 			#Specific German-British War Demands
 			modifier = {
-				add = 200
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -937,7 +1019,7 @@ country_event = {
 				BPD_British_Surrender_Req_2 = yes
 			}
 			modifier = {
-				add = 400
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -960,7 +1042,7 @@ country_event = {
 				BPD_British_Surrender_Req_3 = yes
 			}
 			modifier = {
-				add = 800
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -1452,7 +1534,7 @@ country_event = {
 				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
-				add = 500
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -1475,7 +1557,7 @@ country_event = {
 				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			}
 			modifier = {
-				add = 500
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -1493,7 +1575,7 @@ country_event = {
 			}
 			#Start of German-Soviet Specific Claims
 			modifier = {
-				add = 100
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -1510,7 +1592,7 @@ country_event = {
 				BPD_Soviet_Surrender_Req_1 = no
 			}
 			modifier = {
-				add = 200
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -1527,7 +1609,7 @@ country_event = {
 				BPD_Soviet_Surrender_Req_2 = no
 			}
 			modifier = {
-				add = 400
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -1544,7 +1626,7 @@ country_event = {
 				BPD_Soviet_Surrender_Req_3 = no
 			}
 			modifier = {
-				add = 800
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -1562,7 +1644,7 @@ country_event = {
 			}
 			#Specific German-British War Demands
 			modifier = {
-				add = 200
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -1585,7 +1667,7 @@ country_event = {
 				BPD_British_Surrender_Req_2 = no
 			}
 			modifier = {
-				add = 400
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -1608,7 +1690,7 @@ country_event = {
 				BPD_British_Surrender_Req_3 = no
 			}
 			modifier = {
-				add = 800
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -1677,7 +1759,7 @@ country_event = {
 				has_global_flag = BPD_GER_Moderate_Claims_France
 			}
 			modifier = {
-				add = 200
+				add = 150
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -1744,7 +1826,7 @@ country_event = {
 				has_global_flag = BPD_GER_Moderate_Claims_Poland
 			}
 			modifier = {
-				add = 200
+				add = 150
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -1767,7 +1849,7 @@ country_event = {
 			}
 			#German Colonial Claims
 			modifier = {
-				add = 200
+				add = 150
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -1789,7 +1871,7 @@ country_event = {
 				has_global_flag = BPD_GER_Maximalist_Claims_Colonies
 			}
 			modifier = {
-				add = 400
+				add = 200
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -1856,7 +1938,7 @@ country_event = {
 				has_global_flag = BPD_ITA_Moderate_Claims_France
 			}
 			modifier = {
-				add = 200
+				add = 150
 				FROM = { 
 					OR = {
 						tag = ITA 
@@ -1923,7 +2005,7 @@ country_event = {
 				has_global_flag = BPD_ITA_Moderate_Claims_Colonies
 			}
 			modifier = {
-				add = 200
+				add = 150
 				FROM = { 
 					OR = {
 						tag = ITA 
@@ -2261,7 +2343,7 @@ country_event = {
 				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
-				add = 500
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -2284,7 +2366,7 @@ country_event = {
 				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			}
 			modifier = {
-				add = 500
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -2302,7 +2384,7 @@ country_event = {
 			}
 			#Less Incentive to Continue War
 			modifier = {
-				add = 200
+				add = 50
 				NOT = {
 					is_neighbor_of = FROM
 				}
@@ -2736,7 +2818,7 @@ country_event = {
 				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
-				add = 500
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -2759,7 +2841,7 @@ country_event = {
 				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			}
 			modifier = {
-				add = 500
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3073,7 +3155,7 @@ country_event = {
 				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
-				add = 500
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3096,7 +3178,7 @@ country_event = {
 				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			}
 			modifier = {
-				add = 500
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3114,7 +3196,7 @@ country_event = {
 			}
 			#German Concessions to Allies
 			modifier = {
-				add = 200
+				add = 150
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3136,7 +3218,7 @@ country_event = {
 				has_global_flag = BPD_GER_No_Claims_Colonies
 			}
 			modifier = {
-				add = 400
+				add = 200
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3159,7 +3241,7 @@ country_event = {
 			}
 			#Specific German-Soviet War Demands
 			modifier = {
-				add = 100
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3176,7 +3258,7 @@ country_event = {
 				BPD_Soviet_Surrender_Req_1 = yes
 			}
 			modifier = {
-				add = 200
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3193,7 +3275,7 @@ country_event = {
 				BPD_Soviet_Surrender_Req_2 = yes
 			}
 			modifier = {
-				add = 400
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3210,7 +3292,7 @@ country_event = {
 				BPD_Soviet_Surrender_Req_3 = yes
 			}
 			modifier = {
-				add = 800
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3228,7 +3310,7 @@ country_event = {
 			}
 			#Specific German-British War Demands
 			modifier = {
-				add = 200
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3251,7 +3333,7 @@ country_event = {
 				BPD_British_Surrender_Req_2 = yes
 			}
 			modifier = {
-				add = 400
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3274,7 +3356,7 @@ country_event = {
 				BPD_British_Surrender_Req_3 = yes
 			}
 			modifier = {
-				add = 800
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3767,7 +3849,7 @@ country_event = {
 				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
-				add = 500
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3790,7 +3872,7 @@ country_event = {
 				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			}
 			modifier = {
-				add = 500
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3808,7 +3890,7 @@ country_event = {
 			}
 			#Start of German-Soviet Specific Claims
 			modifier = {
-				add = 100
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3825,7 +3907,7 @@ country_event = {
 				BPD_Soviet_Surrender_Req_1 = no
 			}
 			modifier = {
-				add = 200
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3842,7 +3924,7 @@ country_event = {
 				BPD_Soviet_Surrender_Req_2 = no
 			}
 			modifier = {
-				add = 400
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3859,7 +3941,7 @@ country_event = {
 				BPD_Soviet_Surrender_Req_3 = no
 			}
 			modifier = {
-				add = 800
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3877,7 +3959,7 @@ country_event = {
 			}
 			#Specific German-British War Demands
 			modifier = {
-				add = 200
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3900,7 +3982,7 @@ country_event = {
 				BPD_British_Surrender_Req_2 = no
 			}
 			modifier = {
-				add = 400
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3923,7 +4005,7 @@ country_event = {
 				BPD_British_Surrender_Req_3 = no
 			}
 			modifier = {
-				add = 800
+				add = 250
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -3992,7 +4074,7 @@ country_event = {
 				has_global_flag = BPD_GER_Moderate_Claims_France
 			}
 			modifier = {
-				add = 200
+				add = 150
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -4059,7 +4141,7 @@ country_event = {
 				has_global_flag = BPD_GER_Moderate_Claims_Poland
 			}
 			modifier = {
-				add = 200
+				add = 150
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -4082,7 +4164,7 @@ country_event = {
 			}
 			#German Colonial Claims
 			modifier = {
-				add = 200
+				add = 150
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -4104,7 +4186,7 @@ country_event = {
 				has_global_flag = BPD_GER_Maximalist_Claims_Colonies
 			}
 			modifier = {
-				add = 400
+				add = 200
 				FROM = { 
 					OR = {
 						tag = GER 
@@ -4171,7 +4253,7 @@ country_event = {
 				has_global_flag = BPD_ITA_Moderate_Claims_France
 			}
 			modifier = {
-				add = 200
+				add = 150
 				FROM = { 
 					OR = {
 						tag = ITA 
@@ -4238,7 +4320,7 @@ country_event = {
 				has_global_flag = BPD_ITA_Moderate_Claims_Colonies
 			}
 			modifier = {
-				add = 200
+				add = 150
 				FROM = { 
 					OR = {
 						tag = ITA 
@@ -4565,6 +4647,46 @@ country_event = {
 			modifier = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
+			}
+			modifier = {
+				add = 250
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				BPD_Allied_Peace_Req_1 = yes
+				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			}
+			modifier = {
+				add = 250
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV
+				}
+				BPD_Allied_Peace_Req_1 = yes
+				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			}
 			modifier = {
 				add = 40
@@ -5045,6 +5167,46 @@ country_event = {
 				has_global_flag = BPD_Equalizer
 			}
 			modifier = {
+				add = 250
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				BPD_Allied_Peace_Req_1 = no
+				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			}
+			modifier = {
+				add = 250
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV
+				}
+				BPD_Allied_Peace_Req_1 = no
+				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			}
+			modifier = {
 				add = 10
 				FROM = { surrender_progress > 0.50 }
 				FROM = { surrender_progress < 0.61 }
@@ -5347,6 +5509,46 @@ country_event = {
 			modifier = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
+			}
+			modifier = {
+				add = 250
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				BPD_Allied_Peace_Req_1 = yes
+				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			}
+			modifier = {
+				add = 250
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV
+				}
+				BPD_Allied_Peace_Req_1 = yes
+				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			}
 			modifier = {
 				add = 50
@@ -5866,6 +6068,46 @@ country_event = {
 			modifier = {
 				add = 1000
 				has_global_flag = BPD_Equalizer
+			}
+			modifier = {
+				add = 250
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					OR = {
+						tag = ENG
+						AND = {
+							tag = CAN
+							has_global_flag = EW_ENG_CAN_Fusion
+						}
+					}
+				}
+				BPD_Allied_Peace_Req_1 = no
+				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
+			}
+			modifier = {
+				add = 250
+				FROM = { 
+					OR = {
+						tag = GER 
+						AND = {
+							is_in_faction_with = GER
+							GER = { has_war_with = ROOT }
+						}
+					}
+				}
+				ROOT = { 
+					tag = SOV
+				}
+				BPD_Allied_Peace_Req_1 = no
+				NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			}
 			modifier = {
 				add = 10
