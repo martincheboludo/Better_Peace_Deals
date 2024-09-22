@@ -1,9 +1,9 @@
 BPD_Allies_Control_Sicily = {
-	115 = { is_controlled_by_ROOT_or_ally = yes }
+	115 = { CONTROLLER = { has_war_with = GER } }
 }
 
 BPD_Allies_Control_Normandy = {
-	15 = { is_controlled_by_ROOT_or_ally = yes }
+	15 = { CONTROLLER = { has_war_with = GER } }
 }
 
 BPD_USA_Fighting_With_Axis = {
@@ -68,6 +68,37 @@ BPD_Soviets_Neutralized_By_Germany = {
 		}
 }
 
+#British General Peace Requirement
+BPD_British_Peace_Req_1 = {
+	OR = {
+		BPD_USA_Fighting_With_Axis = no
+		BPD_Soviets_Neutralized_By_Germany = yes
+	}
+	BPD_Allies_Control_Sicily = no
+	BPD_Allies_Control_Normandy = no
+}
+
+#Soviets Stalemate
+BPD_Soviet_Peace_Req_1 = {
+	casualties > 2999999
+	BPD_Allies_Control_Sicily = no
+	BPD_Allies_Control_Normandy = no
+}
+
+#Soviets Limited Surrender
+BPD_Soviet_Peace_Req_2 = {
+	casualties > 4999999
+	BPD_Allies_Control_Sicily = no
+	BPD_Allies_Control_Normandy = no
+}
+
+#Soviets Total Surrender
+BPD_Soviet_Peace_Req_3 = {
+	casualties > 9999999
+	BPD_Allies_Control_Sicily = no
+	BPD_Allies_Control_Normandy = no
+}
+
 #Dnieper River Boundary
 BPD_Soviet_Surrender_Req_1 = {
 	SOV = { surrender_progress > 0.19 }
@@ -115,12 +146,6 @@ BPD_British_Surrender_Req_1 = {
 			120 = { is_controlled_by_ROOT_or_ally = no }
 		}
 	}
-	OR = {
-		BPD_USA_Fighting_With_Axis = no
-		BPD_Soviets_Neutralized_By_Germany = yes
-	}
-	BPD_Allies_Control_Sicily = no
-	BPD_Allies_Control_Normandy = no
 }
 
 #German Speaking Territories Only
@@ -148,12 +173,6 @@ BPD_British_Surrender_Req_2 = {
 			120 = { is_controlled_by_ROOT_or_ally = no }
 		}
 	}
-	OR = {
-		BPD_USA_Fighting_With_Axis = no
-		BPD_Soviets_Neutralized_By_Germany = yes
-	}
-	BPD_Allies_Control_Sicily = no
-	BPD_Allies_Control_Normandy = no
 }
 
 #Benelux
@@ -181,12 +200,6 @@ BPD_British_Surrender_Req_3 = {
 			120 = { is_controlled_by_ROOT_or_ally = no }
 		}
 	}
-	OR = {
-		BPD_USA_Fighting_With_Axis = no
-		BPD_Soviets_Neutralized_By_Germany = yes
-	}
-	BPD_Allies_Control_Sicily = no
-	BPD_Allies_Control_Normandy = no
 }
 
 #All Germanic Lands
@@ -216,12 +229,4 @@ BPD_British_Surrender_Req_4 = {
 			120 = { is_controlled_by_ROOT_or_ally = no }
 		}
 	}
-	OR = {
-		#America Not an Ally
-		BPD_USA_Fighting_With_Axis = no
-		#USSR has surrendered
-		BPD_Soviets_Neutralized_By_Germany = yes
-	}
-	BPD_Allies_Control_Sicily = no
-	BPD_Allies_Control_Normandy = no
 }
