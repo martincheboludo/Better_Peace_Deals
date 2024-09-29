@@ -143,6 +143,11 @@ BPD_Cobelligrent_Finland_White_Peace = {
 				set_truce = { target = FIN days = 365 }
 			}
 			
+			SOV = {
+				white_peace = FIN
+				set_truce = { target = FIN days = 365 }
+			}
+			
 		}
 
 }
@@ -187,6 +192,11 @@ BPD_Cobelligrent_Finland_Limited_Victory_GER = {
 			
 			every_country = {
 				limit = { is_in_faction_with = FROM }
+				white_peace = FIN
+				set_truce = { target = FIN days = 1095 }
+			}
+			
+			SOV = {
 				white_peace = FIN
 				set_truce = { target = FIN days = 1095 }
 			}
@@ -299,6 +309,11 @@ BPD_Cobelligrent_Finland_Stalemate_White_Peace = {
 				set_truce = { target = FIN days = 730 }
 			}
 			
+			SOV = {
+				white_peace = FIN
+				set_truce = { target = FIN days = 730 }
+			}
+			
 		}
 
 }
@@ -341,6 +356,11 @@ BPD_Cobelligrent_Finland_Total_Victory_SOV = {
 			
 			every_country = {
 				limit = { is_in_faction_with = ROOT }
+				white_peace = FIN
+				set_truce = { target = FIN days = 1095 }
+			}
+			
+			SOV = {
 				white_peace = FIN
 				set_truce = { target = FIN days = 1095 }
 			}
@@ -390,6 +410,11 @@ BPD_Cobelligrent_Finland_Limited_Victory_SOV = {
 				set_truce = { target = FIN days = 1095 }
 			}
 			
+			SOV = {
+				white_peace = FIN
+				set_truce = { target = FIN days = 1095 }
+			}
+			
 		}
 
 }
@@ -412,6 +437,11 @@ BPD_Cobelligrent_Finland_Total_Victory_White_Peace = {
 			
 			every_country = {
 				limit = { is_in_faction_with = FROM }
+				white_peace = FIN
+				set_truce = { target = FIN days = 1825 }
+			}
+			
+			SOV = {
 				white_peace = FIN
 				set_truce = { target = FIN days = 1825 }
 			}
@@ -503,6 +533,11 @@ BPD_Cobelligrent_Finland_Limited_Surrender_White_Peace = {
 				set_truce = { target = FIN days = 1095 }
 			}
 			
+			SOV = {
+				white_peace = FIN
+				set_truce = { target = FIN days = 1095 }
+			}
+			
 		}
 
 }
@@ -525,6 +560,11 @@ BPD_Cobelligrent_Finland_Total_Surrender_White_Peace = {
 			
 			every_country = {
 				limit = { is_in_faction_with = FROM }
+				white_peace = FIN
+				set_truce = { target = FIN days = 1825 }
+			}
+			
+			SOV = {
 				white_peace = FIN
 				set_truce = { target = FIN days = 1825 }
 			}

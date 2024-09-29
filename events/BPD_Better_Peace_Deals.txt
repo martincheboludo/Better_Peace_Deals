@@ -6386,6 +6386,16 @@ country_event = {
 			set_truce = { target = FROM days = 365 }
 		}
 		
+		FROM = {
+			white_peace = ROOT
+			set_truce = { target = ROOT days = 365 }
+		}
+		
+		ROOT = {
+			white_peace = FROM
+			set_truce = { target = FROM days = 365 }
+		}
+		
 		
 	}
 
@@ -6472,6 +6482,16 @@ country_event = {
 			set_truce = { target = FROM days = 1095 }
 		}
 		
+		FROM = {
+			white_peace = ROOT
+			set_truce = { target = ROOT days = 1095 }
+		}
+		
+		ROOT = {
+			white_peace = FROM
+			set_truce = { target = FROM days = 1095 }
+		}
+		
 		
 	}
 
@@ -6553,6 +6573,16 @@ country_event = {
 		
 		every_country = {
 			limit = { is_in_faction_with = ROOT }
+			white_peace = FROM
+			set_truce = { target = FROM days = 730 }
+		}
+		
+		FROM = {
+			white_peace = ROOT
+			set_truce = { target = ROOT days = 730 }
+		}
+		
+		ROOT = {
 			white_peace = FROM
 			set_truce = { target = FROM days = 730 }
 		}
@@ -6654,6 +6684,16 @@ country_event = {
 			set_truce = { target = FROM days = 1825 }
 		}
 		
+		FROM = {
+			white_peace = ROOT
+			set_truce = { target = ROOT days = 1825 }
+		}
+		
+		ROOT = {
+			white_peace = FROM
+			set_truce = { target = FROM days = 1825 }
+		}
+		
 	}
 
 }
@@ -6716,6 +6756,16 @@ country_event = {
 			set_truce = { target = FROM days = 1095 }
 		}
 		
+		FROM = {
+			white_peace = ROOT
+			set_truce = { target = ROOT days = 1095 }
+		}
+		
+		ROOT = {
+			white_peace = FROM
+			set_truce = { target = FROM days = 1095 }
+		}
+		
 		
 	}
 
@@ -6774,6 +6824,16 @@ country_event = {
 		
 		every_country = {
 			limit = { is_in_faction_with = ROOT }
+			white_peace = FROM
+			set_truce = { target = FROM days = 1825 }
+		}
+		
+		FROM = {
+			white_peace = ROOT
+			set_truce = { target = ROOT days = 1825 }
+		}
+		
+		ROOT = {
 			white_peace = FROM
 			set_truce = { target = FROM days = 1825 }
 		}
