@@ -627,6 +627,8 @@ ITA_Italian_Demands_GRE = {
 		}
 
 		available = {
+			is_subject = no
+			NOT = { is_in_faction_with = GRE }
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			country_exists = ITA
 			NOT = { has_war_with = ITA }
@@ -686,6 +688,8 @@ ITA_Italian_Demands_GRE = {
 		}
 
 		available = {
+			is_subject = no
+			NOT = { is_in_faction_with = YUG }
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			country_exists = ITA
 			NOT = { has_war_with = ITA }
@@ -751,6 +755,8 @@ ITA_Italian_Demands_GRE = {
 		}
 
 		available = {
+			is_subject = no
+			NOT = { is_in_faction_with = SWI }
 			NOT = { has_global_flag = BPD_Total_Conversion_Compatibility }
 			country_exists = ITA
 			NOT = { has_war_with = ITA }
