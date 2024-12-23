@@ -6,5 +6,5 @@ tags={
 }
 name="Better Peace Deals - Compatible With Most Mods"
 picture="thumbnail.png"
-supported_version="1.14.*"
+supported_version="1.15.*"
 remote_file_id="3331870680"
